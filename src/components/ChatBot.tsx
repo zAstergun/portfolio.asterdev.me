@@ -1,6 +1,10 @@
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
-import { classifyIntent, type ClassifierResult } from "../utils/heuristicClassifier";
 import { resolveBotLanguage, BOT_UI_TRANSLATIONS } from "../utils/botI18n";
+import {
+  sendChatMessage,
+  type AIChatMessage,
+} from "../services/geminiChatService";
+import { ChatMessageRenderer } from "../utils/chatMarkdown";
 import {
   Robot,
   ArrowCounterClockwise,
@@ -8,13 +12,16 @@ import {
   ArrowLeft,
   ArrowRight,
 } from "@phosphor-icons/react";
+import type { ActionButton } from "../utils/heuristicClassifier";
 
 export interface ChatMessage {
   id: string;
   sender: "user" | "bot";
   text: string;
   timestamp: string;
-  actions?: ClassifierResult["actions"];
+  source?: "gemini" | "heuristic";
+  modelUsed?: string;
+  actions?: ActionButton[];
   suggestions?: string[];
 }
 
@@ -27,6 +34,8 @@ interface ChatBotProps {
   isDark?: boolean;
   language?: string;
   ui: any;
+  onOpenPost?: (postId: string) => void;
+  onOpenFolder?: (folderId: string) => void;
 }
 
 export function ChatBot({
@@ -38,6 +47,8 @@ export function ChatBot({
   isDark = false,
   language = "br",
   ui,
+  onOpenPost,
+  onOpenFolder,
 }: ChatBotProps) {
   const currentLang = useMemo(() => resolveBotLanguage(language), [language]);
   const botUi = useMemo(
@@ -99,7 +110,7 @@ export function ChatBot({
   }, []);
 
   const handleSendMessage = useCallback(
-    (textToSend: string) => {
+    async (textToSend: string) => {
       const trimmed = textToSend.trim();
       if (!trimmed || isTyping) return;
 
@@ -113,18 +124,27 @@ export function ChatBot({
         }),
       };
 
+      // Collect conversation history for multi-turn AI context
+      const history: AIChatMessage[] = messages
+        .filter((m) => m.id !== "welcome-msg")
+        .map((m) => ({
+          role: m.sender === "user" ? ("user" as const) : ("model" as const),
+          text: m.text,
+        }));
+
       setMessages((prev) => [...prev, userMsg]);
       setInputValue("");
       setIsTyping(true);
 
-      // Natural conversational cadence delay (380ms)
-      setTimeout(() => {
-        const result = classifyIntent(trimmed, currentLang);
+      try {
+        const result = await sendChatMessage(trimmed, history, currentLang);
 
         const botMsg: ChatMessage = {
           id: `bot-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
           sender: "bot",
-          text: result.response,
+          text: result.text,
+          source: result.source,
+          modelUsed: result.modelUsed,
           timestamp: new Date().toLocaleTimeString(undefined, {
             hour: "2-digit",
             minute: "2-digit",
@@ -134,10 +154,13 @@ export function ChatBot({
         };
 
         setMessages((prev) => [...prev, botMsg]);
+      } catch (err) {
+        console.error("[AsterBot] Message generation error:", err);
+      } finally {
         setIsTyping(false);
-      }, 380);
+      }
     },
-    [isTyping, currentLang]
+    [isTyping, messages, currentLang]
   );
 
   const handleClearHistory = useCallback(() => {
@@ -207,9 +230,6 @@ export function ChatBot({
               <h2 className="font-bold text-sm @tablet:text-base tracking-tight leading-none">
                 AsterBot
               </h2>
-              <span className="px-1.5 py-0.5 rounded-full text-[9px] font-semibold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
-                {botUi.statusOnline}
-              </span>
             </div>
             <p
               className={`text-[11px] font-medium transition-colors duration-500 mt-0.5 ${
@@ -221,20 +241,20 @@ export function ChatBot({
           </div>
         </div>
 
-        {/* Clear chat */}
+        {/* Clear chat action */}
         <div className="flex items-center">
           <button
             type="button"
             onClick={handleClearHistory}
             title={botUi.clearButton}
-            className={`px-2.5 py-1.5 rounded-xl text-xs font-medium transition-all duration-200 cursor-pointer flex items-center gap-1.5 ${
+            className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all duration-200 cursor-pointer flex items-center gap-1.5 ${
               isDark
                 ? "bg-stone-800/80 hover:bg-stone-700 text-stone-400 hover:text-stone-200"
                 : "bg-aster-dark/[0.05] hover:bg-aster-dark/[0.1] text-aster-dark/60 hover:text-aster-dark"
             }`}
           >
             <ArrowCounterClockwise weight="bold" className="w-3.5 h-3.5" />
-            <span className="hidden @tablet:inline">{botUi.clearButton}</span>
+            <span className="hidden @tablet:inline font-semibold">{botUi.clearButton}</span>
           </button>
         </div>
       </div>
@@ -264,30 +284,74 @@ export function ChatBot({
                     : "bg-white/90 border border-aster-dark/[0.08] text-aster-dark rounded-tl-sm shadow-sm"
                 }`}
               >
-                {/* Message text with whitespace linebreaks */}
-                <p className="text-xs @tablet:text-sm leading-relaxed whitespace-pre-wrap font-normal selection:bg-stone-500 selection:text-white">
-                  {msg.text}
-                </p>
+                {/* Formatted Message text with complete markdown support (headings, bold, lists, links) */}
+                <ChatMessageRenderer text={msg.text} isDark={isDark} />
 
                 {/* Action buttons (if any) */}
                 {msg.actions && msg.actions.length > 0 && (
                   <div className="flex flex-wrap gap-2 mt-3 pt-2.5 border-t border-current/10">
-                    {msg.actions.map((act) => (
-                      <a
-                        key={act.label}
-                        href={act.url}
-                        target={act.type === "download" ? "_self" : "_blank"}
-                        rel="noopener noreferrer"
-                        download={act.type === "download" ? true : undefined}
-                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[11px] @tablet:text-xs font-semibold transition-all duration-200 shadow-sm ${
-                          isDark
-                            ? "bg-stone-700/80 text-stone-200 border border-stone-600 hover:bg-stone-700"
-                            : "bg-aster-dark/[0.06] text-aster-dark border border-aster-dark/10 hover:bg-aster-dark/[0.12]"
-                        }`}
-                      >
-                        {act.label}
-                      </a>
-                    ))}
+                    {msg.actions.map((act) => {
+                      if (act.type === "article") {
+                        return (
+                          <button
+                            key={act.label}
+                            type="button"
+                            onClick={() => {
+                              if (onOpenPost && act.url) {
+                                onOpenPost(act.url);
+                              } else if (act.url) {
+                                window.location.search = `?app=${act.url}`;
+                              }
+                            }}
+                            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[11px] @tablet:text-xs font-semibold transition-all duration-200 shadow-sm cursor-pointer ${
+                              isDark
+                                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30"
+                                : "bg-emerald-50 text-emerald-800 border border-emerald-300 hover:bg-emerald-100"
+                            }`}
+                          >
+                            {act.label}
+                          </button>
+                        );
+                      }
+
+                      if (act.type === "folder") {
+                        return (
+                          <button
+                            key={act.label}
+                            type="button"
+                            onClick={() => {
+                              if (onOpenFolder && act.url) {
+                                onOpenFolder(act.url);
+                              }
+                            }}
+                            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[11px] @tablet:text-xs font-semibold transition-all duration-200 shadow-sm cursor-pointer ${
+                              isDark
+                                ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500/30"
+                                : "bg-amber-50 text-amber-800 border border-amber-300 hover:bg-amber-100"
+                            }`}
+                          >
+                            {act.label}
+                          </button>
+                        );
+                      }
+
+                      return (
+                        <a
+                          key={act.label}
+                          href={act.url}
+                          target={act.type === "download" ? "_self" : "_blank"}
+                          rel="noopener noreferrer"
+                          download={act.type === "download" ? true : undefined}
+                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[11px] @tablet:text-xs font-semibold transition-all duration-200 shadow-sm ${
+                            isDark
+                              ? "bg-stone-700/80 text-stone-200 border border-stone-600 hover:bg-stone-700"
+                              : "bg-aster-dark/[0.06] text-aster-dark border border-aster-dark/10 hover:bg-aster-dark/[0.12]"
+                          }`}
+                        >
+                          {act.label}
+                        </a>
+                      );
+                    })}
                   </div>
                 )}
               </div>
@@ -327,10 +391,25 @@ export function ChatBot({
 
         {/* Typing indicator */}
         {isTyping && (
-          <div className="flex items-center gap-1.5 px-3.5 py-2.5 rounded-2xl rounded-tl-sm w-fit bg-stone-800/80 border border-stone-700/50 text-stone-300 animate-fade-in">
-            <span className="w-1.5 h-1.5 rounded-full bg-stone-400 animate-bounce" style={{ animationDelay: "0ms" }} />
-            <span className="w-1.5 h-1.5 rounded-full bg-stone-400 animate-bounce" style={{ animationDelay: "150ms" }} />
-            <span className="w-1.5 h-1.5 rounded-full bg-stone-400 animate-bounce" style={{ animationDelay: "300ms" }} />
+          <div
+            className={`flex items-center gap-1.5 px-4 py-3 rounded-2xl rounded-tl-sm w-fit shadow-sm animate-fade-in transition-colors duration-500 ${
+              isDark
+                ? "bg-stone-800/95 border border-stone-700/60"
+                : "bg-white/90 border border-aster-dark/[0.08]"
+            }`}
+          >
+            <span
+              className="w-1.5 h-1.5 rounded-full bg-stone-400 animate-bounce"
+              style={{ animationDuration: "1s", animationDelay: "0ms" }}
+            />
+            <span
+              className="w-1.5 h-1.5 rounded-full bg-stone-400 animate-bounce"
+              style={{ animationDuration: "1s", animationDelay: "180ms" }}
+            />
+            <span
+              className="w-1.5 h-1.5 rounded-full bg-stone-400 animate-bounce"
+              style={{ animationDuration: "1s", animationDelay: "360ms" }}
+            />
           </div>
         )}
 
@@ -350,8 +429,8 @@ export function ChatBot({
             isDesktop ? "max-w-4xl mx-auto w-full" : "w-full"
           } ${
             isDark
-              ? "bg-stone-800/90 border-stone-700/80 focus-within:border-stone-500 focus-within:bg-stone-800"
-              : "bg-white/90 border-aster-dark/15 focus-within:border-aster-dark/40 focus-within:bg-white"
+              ? "bg-stone-800/90 border-stone-700/80 focus-within:border-indigo-500/80 focus-within:bg-stone-800"
+              : "bg-white/90 border-aster-dark/15 focus-within:border-indigo-500/80 focus-within:bg-white"
           }`}
         >
           <input

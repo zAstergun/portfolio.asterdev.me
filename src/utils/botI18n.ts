@@ -67,7 +67,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Como entrar em contato?",
     ],
     inputPlaceholder: "Pergunte algo sobre o Aster ou projetos...",
-    assistantTitle: "Assistente Heurístico do Portfólio",
+    assistantTitle: "Assistente Oficial do Portfólio",
     statusOnline: "Online",
     clearButton: "Limpar",
   },
@@ -82,7 +82,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Como entrar em contacto?",
     ],
     inputPlaceholder: "Pergunte algo sobre o Aster ou projetos...",
-    assistantTitle: "Assistente Heurístico do Portfólio",
+    assistantTitle: "Assistente Oficial do Portfólio",
     statusOnline: "Online",
     clearButton: "Limpar",
   },
@@ -97,7 +97,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "How to contact him?",
     ],
     inputPlaceholder: "Ask anything about Aster or his projects...",
-    assistantTitle: "Heuristic Portfolio Assistant",
+    assistantTitle: "Official Portfolio Assistant",
     statusOnline: "Online",
     clearButton: "Clear",
   },
@@ -112,7 +112,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "¿Cómo contactarlo?",
     ],
     inputPlaceholder: "Pregunta algo sobre Aster o sus proyectos...",
-    assistantTitle: "Asistente Heurístico del Portafolio",
+    assistantTitle: "Asistente Oficial del Portafolio",
     statusOnline: "En línea",
     clearButton: "Limpiar",
   },
@@ -127,7 +127,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Comment le contacter ?",
     ],
     inputPlaceholder: "Posez une question sur Aster ou ses projets...",
-    assistantTitle: "Assistant Heuristique du Portfolio",
+    assistantTitle: "Assistant Officiel du Portfolio",
     statusOnline: "En ligne",
     clearButton: "Effacer",
   },
@@ -142,7 +142,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Kontakt aufnehmen",
     ],
     inputPlaceholder: "Stelle eine Frage zu Aster oder Projekten...",
-    assistantTitle: "Heuristischer Portfolio-Assistent",
+    assistantTitle: "Offizieller Portfolio-Assistent",
     statusOnline: "Online",
     clearButton: "Löschen",
   },
@@ -157,7 +157,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Come contattarlo?",
     ],
     inputPlaceholder: "Fai una domanda su Aster o sui suoi progetti...",
-    assistantTitle: "Assistente Euristico del Portfolio",
+    assistantTitle: "Assistente Ufficiale del Portfolio",
     statusOnline: "Online",
     clearButton: "Cancella",
   },
@@ -172,7 +172,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Hoe contact opnemen?",
     ],
     inputPlaceholder: "Stel een vraag over Aster of projecten...",
-    assistantTitle: "Heuristische Portfolio Assistent",
+    assistantTitle: "Officiële Portfolio Assistent",
     statusOnline: "Online",
     clearButton: "Wissen",
   },
@@ -187,7 +187,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Как связаться?",
     ],
     inputPlaceholder: "Спросите об Aster или его проектах...",
-    assistantTitle: "Эвристический ассистент портфолио",
+    assistantTitle: "Официальный ассистент портфолио",
     statusOnline: "В сети",
     clearButton: "Очистить",
   },
@@ -202,7 +202,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "كيفية التواصل معه؟",
     ],
     inputPlaceholder: "اسأل أي شيء عن Aster أو مشاريعه...",
-    assistantTitle: "مساعد المحفظة الارتقائي",
+    assistantTitle: "المساعد الرسمي للمحفظة",
     statusOnline: "متصل",
     clearButton: "مسح",
     isRtl: true,
@@ -218,7 +218,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "連絡方法は？",
     ],
     inputPlaceholder: "Asterやプロジェクトについて質問してください...",
-    assistantTitle: "ヒューリスティック・ポートフォリオ・アシスタント",
+    assistantTitle: "公式ポートフォリオ・アシスタント",
     statusOnline: "オンライン",
     clearButton: "クリア",
   },
@@ -233,7 +233,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "如何联系他？",
     ],
     inputPlaceholder: "提问关于 Aster 或其项目的问题...",
-    assistantTitle: "启发式作品集对话助手",
+    assistantTitle: "官方作品集对话助手",
     statusOnline: "在线",
     clearButton: "清除",
   },
@@ -248,7 +248,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "연락 방법은?",
     ],
     inputPlaceholder: "Aster나 프로젝트에 대해 질문해보세요...",
-    assistantTitle: "휴리스틱 포트폴리오 어시스턴트",
+    assistantTitle: "공식 포트폴리오 어시스턴트",
     statusOnline: "온라인",
     clearButton: "지우기",
   },
@@ -263,7 +263,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Cách thức liên hệ?",
     ],
     inputPlaceholder: "Hỏi bất cứ điều gì về Aster hoặc dự án...",
-    assistantTitle: "Trợ lý Heuristic cho Portfolio",
+    assistantTitle: "Trợ lý chính thức của Portfolio",
     statusOnline: "Trực tuyến",
     clearButton: "Xóa",
   },
@@ -278,7 +278,7 @@ export const BOT_UI_TRANSLATIONS: Record<BotLanguage, BotUiText> = {
       "Bagaimana cara menghubunginya?",
     ],
     inputPlaceholder: "Tanyakan apa saja tentang Aster atau proyeknya...",
-    assistantTitle: "Asisten Portofolio Heuristik",
+    assistantTitle: "Asisten Resmi Portofolio",
     statusOnline: "Online",
     clearButton: "Hapus",
   },
@@ -1186,64 +1186,553 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
 
   BLOG_HACKATHONS: {
     br: {
-      text: "Na seção de Blog & Hackathons, o Aster documenta processos de engenharia, participações em maratonas de código, desafios e lições aprendidas em projetos colaborativos.",
-      suggestions: ["Quais são os projetos?", "Qual a stack técnica?", "Quem é o Aster?"],
+      text: "O blog do Aster conta com três artigos técnicos aprofundados sobre arquitetura de software, interfaces e ciência de dados:\n\n1. **Três anos depois do primeiro commit (Soul Fighter)**: Como reconstruiu o jogo da memória do zero com Web Audio API nativa (< 2ms de latência), renderização 3D na GPU a 60 FPS e state machines em React 19.\n2. **A arquitetura do StudioOS**: Como desenhou um SO web para criadores com a Regra de Calibração Central (cérebro único persistente) e Astro Islands no edge.\n3. **O mito do parceiro ideal (Ideal Calculator)**: Como cruzou microdados reais do IBGE (Censo 2022 + PNAD) em TypeScript puro no cliente (< 8ms) para medir a raridade estatística de checklists de relacionamento.\n\nVocê pode abrir os artigos diretamente no leitor deste dispositivo tocando nos botões abaixo:",
+      actions: [
+        { label: "📖 Artigo Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 Artigo StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Artigo Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["O que aprendeu no Soul Fighter?", "Como funciona a calibração do StudioOS?", "Como o Ideal Calc usa o IBGE?"],
     },
     pt: {
-      text: "Na secção de Blog & Hackathons, o Aster documenta processos de engenharia, maratonas de código e lições de projetos colaborativos.",
-      suggestions: ["Quais são os projetos?", "Qual a stack técnica?", "Quem é o Aster?"],
+      text: "O blog do Aster conta com três artigos técnicos aprofundados sobre arquitetura de software, interfaces e ciência de dados:\n\n1. **Três anos depois do primeiro commit (Soul Fighter)**: Reconstrução de raiz com Web Audio API (< 2ms), GPU 3D a 60 FPS e state machines determinísticas.\n2. **A arquitetura do StudioOS**: SO web para criadores com Regra de Calibração Central e Astro Islands no edge.\n3. **O mito do parceiro ideal (Ideal Calculator)**: Cruzamento de microdados do IBGE (Censo 2022 + PNAD) em TypeScript puro no cliente (< 8ms).\n\nPode ler os artigos diretamente neste dispositivo:",
+      actions: [
+        { label: "📖 Artigo Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 Artigo StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Artigo Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["O que aprendeu no Soul Fighter?", "Como funciona a calibração do StudioOS?", "Como o Ideal Calc usa o IBGE?"],
     },
     en: {
-      text: "In the Blog & Hackathons section, Aster documents engineering decisions, hackathon sprints, coding challenges, and lessons learned in collaborative work.",
-      suggestions: ["What are his projects?", "What is his tech stack?", "Who is Aster?"],
+      text: "Aster's blog features three in-depth technical articles on architecture, frontend performance, and data engineering:\n\n1. **Three years after the first commit (Soul Fighter)**: Rebuilding the game from scratch with native Web Audio API (< 2ms latency), GPU 3D rendering at 60 FPS, and deterministic state machines in React 19.\n2. **The StudioOS Architecture**: Designing a web OS for creators with the Central Calibration Rule (persistent brain) and Astro Islands at the edge.\n3. **The Myth of the Ideal Partner (Ideal Calculator)**: Cross-referencing official IBGE census datasets in pure client-side TypeScript (< 8ms) to benchmark relationship checklists against statistical reality.\n\nYou can read the articles directly on this device using the buttons below:",
+      actions: [
+        { label: "📖 Soul Fighter Post", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 StudioOS Post", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Ideal Calc Post", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["What did he learn in Soul Fighter?", "How does StudioOS calibration work?", "How does Ideal Calc use IBGE data?"],
     },
     es: {
-      text: "En el Blog y Hackathons, Aster documenta procesos de ingeniería, maratones de código y lecciones aprendidas en proyectos de equipo.",
-      suggestions: ["¿Cuáles son sus proyectos?", "¿Cuál es su stack?", "¿Quién es Aster?"],
+      text: "El blog de Aster cuenta con tres artículos técnicos profundos sobre arquitectura, UI y ciencia de datos:\n\n1. **Soul Fighter**: Reconstrucción desde cero con Web Audio API (< 2ms) y GPU 3D a 60 FPS.\n2. **StudioOS**: Sistema operativo web para creadores con Regla de Calibración Central y Astro Islands.\n3. **Ideal Calculator**: Cruce de microdatos oficiales del IBGE en TypeScript cliente (< 8ms).\n\nPuedes leerlos directamente en este dispositivo:",
+      actions: [
+        { label: "📖 Artículo Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 Artículo StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Artículo Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["¿Qué aprendió en Soul Fighter?", "¿Cómo funciona StudioOS?", "¿Cómo se calcularon los datos del IBGE?"],
     },
     fr: {
-      text: "Dans la section Blog & Hackathons, Aster documente ses choix d'architecture, marathons de code et retours d'expérience.",
-      suggestions: ["Quels sont ses projets ?", "Quel est son stack ?", "Qui est Aster ?"],
+      text: "Le blog d'Aster propose trois articles techniques approfondis sur l'architecture et les performances web:\n\n1. **Soul Fighter**: Refonte complète avec Web Audio API (< 2ms) et GPU 3D à 60 FPS.\n2. **StudioOS**: OS web pour créateurs avec Règle de Calibration Centrale et Astro Islands.\n3. **Ideal Calculator**: Analyse des microdonnées du recensement IBGE en pur TypeScript côté client (< 8ms).",
+      actions: [
+        { label: "📖 Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Quels enseignements sur Soul Fighter ?", "Comment fonctionne StudioOS ?", "Quelles données IBGE ?"],
     },
     de: {
-      text: "Im Bereich Blog & Hackathons dokumentiert Aster Architekturentscheidungen, Programmierwettbewerbe und Learnings aus Teamprojekten.",
-      suggestions: ["Welche Projekte gibt es?", "Welcher Tech-Stack?", "Wer ist Aster?"],
+      text: "Asters Blog umfasst drei ausführliche technische Artikel zu Architektur und Performance:\n\n1. **Soul Fighter**: Kompletter Neubau mit nativer Web Audio API (< 2ms) und GPU-3D-Rendering bei 60 FPS.\n2. **StudioOS**: Web-Betriebssystem für Content-Creator mit zentraler Kalibrierungsregel und Astro Islands.\n3. **Ideal Calculator**: Statistische Analyse von IBGE-Zensusdaten in reinem Client-TypeScript (< 8ms).",
+      actions: [
+        { label: "📖 Soul Fighter Artikel", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 StudioOS Artikel", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Ideal Calc Artikel", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Was hat er bei Soul Fighter gelernt?", "Wie funktioniert StudioOS?", "Wie nutzt Ideal Calc IBGE?"],
     },
     it: {
-      text: "Nella sezione Blog & Hackathon, Aster condivide processi ingegneristici, maratone di codice e riflessioni sui progetti.",
-      suggestions: ["Quali sono i suoi progetti?", "Qual è il suo stack?", "Chi è Aster?"],
+      text: "Il blog di Aster include tre articoli tecnici su architettura e prestazioni web:\n\n1. **Soul Fighter**: Ricostruzione da zero con Web Audio API (< 2ms) e GPU 3D a 60 FPS.\n2. **StudioOS**: OS web per creator con Regola di Calibrazione Centrale e Astro Islands.\n3. **Ideal Calculator**: Incrocio di microdati censuari IBGE in TypeScript lato client (< 8ms).",
+      actions: [
+        { label: "📖 Articolo Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 Articolo StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Articolo Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Cosa ha imparato con Soul Fighter?", "Come funziona StudioOS?", "Come usa i dati IBGE?"],
     },
     nl: {
-      text: "In de sectie Blog & Hackathons documenteert Aster technische keuzes, hackathon-ervaringen en geleerde lessen.",
-      suggestions: ["Welke projecten zijn er?", "Wat is zijn stack?", "Wie is Aster?"],
+      text: "Asters blog bevat drie technische artikelen over architectuur en webprestaties:\n\n1. **Soul Fighter**: Vanaf nul herbouwd met Web Audio API (< 2ms) en GPU 3D op 60 FPS.\n2. **StudioOS**: Web-OS voor creators met Centrale Kalibratieregel en Astro Islands.\n3. **Ideal Calculator**: Kruisen van IBGE-data in pure client-side TypeScript (< 8ms).",
+      actions: [
+        { label: "📖 Soul Fighter Artikel", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 StudioOS Artikel", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Ideal Calc Artikel", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Wat leerde hij bij Soul Fighter?", "Hoe werkt StudioOS?", "Hoe gebruikt hij IBGE?"],
     },
     ru: {
-      text: "В разделе «Блог и хакатоны» Aster документирует архитектурные решения, участие в хакатонах и выводы из командных проектов.",
-      suggestions: ["Какие есть проекты?", "Какой стек технологий?", "Кто такой Aster?"],
+      text: "В блоге Aster опубликованы три подробных технических статьи об архитектуре и производительности:\n\n1. **Soul Fighter**: Полная переработка с нуля с Web Audio API (< 2 мс) и 3D на GPU при 60 FPS.\n2. **StudioOS**: Веб-ОС для авторов контента с центральным правилом калибровки и Astro Islands.\n3. **Ideal Calculator**: Анализ микроданных переписи IBGE на чистом TypeScript в браузере (< 8 мс).",
+      actions: [
+        { label: "📖 Статья Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 Статья StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Статья Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Что он узнал в Soul Fighter?", "Как работает StudioOS?", "Как используются данные IBGE?"],
     },
     ar: {
-      text: "في قسم المدونة والهاكاثون، يوثق Aster قراراته الهندسية وتجاربه في ماراثونات البرمجة والدروس المستفادة.",
-      suggestions: ["ما هي مشاريعه؟", "ما هو مكدسه التقني؟", "من هو Aster؟"],
+      text: "تتضمن مدونة Aster ثلاثة مقالات تقنية معمقة حول الهندسة والأداء:\n\n1. **Soul Fighter**: إعادة بناء كاملة من الصفر مع Web Audio API وسرعة استجابة < 2ms ورسوم ثلاثية الأبعاد بـ 60 إطاراً.\n2. **StudioOS**: نظام تشغيل ويب للمنشئين مع قاعدة المعايرة المركزية وAstro Islands.\n3. **Ideal Calculator**: تقاطع بيانات التعداد السكاني IBGE عبر TypeScript في المتصفح (< 8ms).",
+      actions: [
+        { label: "📖 مقال Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 مقال StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 مقال Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["ماذا تعلّم من Soul Fighter؟", "كيف تعمل معايرة StudioOS؟", "كيف تُستخدم بيانات IBGE؟"],
     },
     jp: {
-      text: "ブログ＆ハッカソンセクションでは、コードの最終形だけでなく、ハッカソンでの挑戦や設計上の意思決定プロセスを共有しています。",
-      suggestions: ["プロジェクト一覧", "技術スタックは？", "Asterとは誰ですか？"],
+      text: "Asterの技術ブログには、アーキテクチャとWebパフォーマンスに関する3つの詳細な記事があります：\n\n1. **Soul Fighter**: Web Audio API（< 2ms）とGPU 3Dによる60 FPSでのゼロからの再構築。\n2. **StudioOS**: 中央キャリブレーションルールとAstro Islandsを採用したクリエイター向けWeb OS。\n3. **Ideal Calculator**: IBGE国勢調査データをブラウザ上のTypeScriptで高速処理（< 8ms）。",
+      actions: [
+        { label: "📖 Soul Fighter 記事", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 StudioOS 記事", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Ideal Calc 記事", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Soul Fighterでの学びは？", "StudioOSの仕組みは？", "IBGEデータはどう使われた？"],
     },
     cn: {
-      text: "在 Blog 与黑客松板块，Aster 记录了工程实战、代码马拉松经历以及团队协作中的技术复盘与反思。",
-      suggestions: ["有哪些项目？", "技术栈是什么？", "Aster 是谁？"],
+      text: "Aster 的技术博客包含三篇关于软件架构与前端高性能的深度长文：\n\n1. **Soul Fighter**: 从零重构，采用原生 Web Audio API（延迟 < 2ms）和 GPU 3D 渲染锁定 60 FPS。\n2. **StudioOS**: 创作者专属 Web 操作系统，具备统一校准规则与边缘 Astro Islands 架构。\n3. **Ideal Calculator**: 在纯前端 TypeScript 中秒级交叉比对 IBGE 官方人口普查微观数据（< 8ms）。",
+      actions: [
+        { label: "📖 阅读 Soul Fighter 文章", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 阅读 StudioOS 文章", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 阅读 Ideal Calc 文章", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["重构 Soul Fighter 学到了什么？", "StudioOS 架构如何设计？", "Ideal Calc 如何使用 IBGE 数据？"],
     },
     kr: {
-      text: "블로그 & 해커톤 섹션에서는 단순 결과물이 아닌, 코드 마라톤 참가 경험과 엔지니어링 문제 해결 과정을 기록합니다.",
-      suggestions: ["어떤 프로젝트가 있나요?", "기술 스택 확인", "Aster는 누구인가요?"],
+      text: "Aster의 블로그에는 아키텍처와 프론트엔드 성능에 관한 3편의 심도 있는 기술 글이 있습니다:\n\n1. **Soul Fighter**: Web Audio API(< 2ms) 및 GPU 3D(60 FPS)로 처음부터 재구축한 과정.\n2. **StudioOS**: 중앙 보정 규칙과 Astro Islands를 적용한 크리에이터용 웹 OS.\n3. **Ideal Calculator**: 브라우저 순수 TypeScript(< 8ms)로 IBGE 인구 센서스 데이터를 교차 검증한 통계 엔진.",
+      actions: [
+        { label: "📖 Soul Fighter 글 읽기", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 StudioOS 글 읽기", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Ideal Calc 글 읽기", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Soul Fighter 재구축에서 배운 점은?", "StudioOS 보정 기능은 어떻게 작동하나요?", "IBGE 데이터는 어떻게 활용했나요?"],
     },
     vn: {
-      text: "Trong mục Blog & Hackathon, Aster ghi lại các quyết định kỹ thuật, trải nghiệm hackathon và bài học từ các dự án nhóm.",
-      suggestions: ["Các dự án nổi bật?", "Stack công nghệ là gì?", "Aster là ai?"],
+      text: "Blog của Aster có 3 bài viết kỹ thuật chuyên sâu về kiến trúc và hiệu năng:\n\n1. **Soul Fighter**: Tái cấu trúc từ đầu với Web Audio API (< 2ms) và GPU 3D ở 60 FPS.\n2. **StudioOS**: Hệ điều hành web cho nhà sáng tạo với Quy tắc Hiệu chuẩn Trung tâm và Astro Islands.\n3. **Ideal Calculator**: Đối soát vi dữ liệu điều tra dân số IBGE bằng TypeScript thuần trong trình duyệt (< 8ms).",
+      actions: [
+        { label: "📖 Đọc bài Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 Đọc bài StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Đọc bài Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Bài học từ Soul Fighter là gì?", "StudioOS hoạt động như thế nào?", "Ideal Calc dùng dữ liệu IBGE ra sao?"],
     },
     id: {
-      text: "Di bagian Blog & Hackathon, Aster mendokumentasikan keputusan rekayasa, maraton koding, dan pembelajaran dalam proyek tim.",
-      suggestions: ["Apa saja proyeknya?", "Apa tech stack-nya?", "Siapa Aster?"],
+      text: "Blog Aster memiliki 3 artikel teknis mendalam tentang arsitektur dan performa web:\n\n1. **Soul Fighter**: Membangun ulang dari nol dengan Web Audio API (< 2ms) dan GPU 3D pada 60 FPS.\n2. **StudioOS**: OS web untuk kreator dengan Aturan Kalibrasi Sentral dan Astro Islands.\n3. **Ideal Calculator**: Memproses data sensus IBGE di TypeScript murni sisi klien (< 8ms).",
+      actions: [
+        { label: "📖 Baca Artikel Soul Fighter", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "📖 Baca Artikel StudioOS", url: "blog-studioos-architecture", type: "article" },
+        { label: "📖 Baca Artikel Ideal Calc", url: "blog-ideal-calculator", type: "article" },
+      ],
+      suggestions: ["Apa yang dipelajari di Soul Fighter?", "Bagaimana cara kerja StudioOS?", "Bagaimana Ideal Calc menggunakan IBGE?"],
+    },
+  },
+
+  BLOG_POST_SOUL_FIGHTER: {
+    br: {
+      text: "No artigo **'Três anos depois do primeiro commit: o que aprendi refazendo o Soul Fighter do zero'**, o Aster analisa a transição do seu primeiro commit amador em novembro de 2023 para uma arquitetura moderna e rigorosa em 2026:\n\n- **Web Audio API nativa (< 2ms)**: Substituiu a tag `new Audio()` por um `AudioContext` singleton com buffers decodificados em memória, entregando feedback tátil instantâneo sem cortes.\n- **Renderização 3D na GPU**: 24 cartas virando simultaneamente a 60 FPS estáveis via `transform-style: preserve-3d` e camadas de composição isoladas.\n- **Máquina de Estados Determinística**: Estados finitos (`idle`, `flipping`, `comparing`, `combo`, `victory`) em React 19 e TypeScript estrito, eliminando bugs de concorrência.\n- **Ranking Global no Supabase**: Sincronização em tempo real de pontuações com validações no servidor.",
+      actions: [
+        { label: "📖 Ler Artigo no Dispositivo", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Jogar Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Como foi feita a Web Audio API?", "Ver post do StudioOS", "Ver post do Ideal Calc"],
+    },
+    pt: {
+      text: "No artigo **'Três anos depois do primeiro commit: o que aprendi refazendo o Soul Fighter do zero'**, o Aster relata a evolução técnica entre 2023 e 2026:\n\n- **Web Audio API nativa (< 2ms)**: Latência tátil imediata com AudioContext singleton.\n- **GPU 3D**: 60 FPS cravados sem reflow na CPU.\n- **State Machine Determinística**: React 19 e TypeScript eliminando race conditions.\n- **Supabase**: Leaderboard mundial persistido em tempo real.",
+      actions: [
+        { label: "📖 Ler Artigo no Dispositivo", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Jogar Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Como funciona o áudio tátil?", "Ver artigo do StudioOS", "Ver artigo do Ideal Calc"],
+    },
+    en: {
+      text: "In the article **'Three years after the first commit: what I learned rebuilding Soul Fighter from scratch'**, Aster details the architectural leap from a beginner 2023 script to high-performance modern engineering in 2026:\n\n- **Native Web Audio API (< 2ms)**: Swapped laggy `new Audio()` tags for an `AudioContext` singleton with RAM pre-decoded buffers and instant tactile clicks.\n- **Hardware 3D Acceleration**: 24 cards flipping simultaneously at locked 60 FPS via GPU compositing layers.\n- **Deterministic State Machine**: React 19 and strict TypeScript modeling game phases (`idle`, `flipping`, `comparing`, `combo`, `victory`) to eliminate race conditions.\n- **Real-time Leaderboard**: Supabase integration with difficulty multipliers and server-side validation.",
+      actions: [
+        { label: "📖 Read Article on Device", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Play Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub Repo", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["How does the Web Audio API work?", "Tell me about the StudioOS post", "Tell me about the Ideal Calc post"],
+    },
+    es: {
+      text: "En el artículo sobre Soul Fighter, Aster documenta su salto técnico entre 2023 y 2026: Web Audio API con latencia < 2ms, aceleración 3D en GPU a 60 FPS, máquina de estados determinista en React 19 y clasificación global con Supabase.",
+      actions: [
+        { label: "📖 Leer en el Dispositivo", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Jugar Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["¿Cómo funciona el audio táctil?", "Ver artículo de StudioOS", "Ver artículo de Ideal Calc"],
+    },
+    fr: {
+      text: "Dans l'article sur Soul Fighter, Aster documente sa montée en compétences: Web Audio API (< 2ms), accélération GPU 3D à 60 FPS, machine à états en React 19 et classement Supabase.",
+      actions: [
+        { label: "📖 Lire l'article", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Jouer à Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Comment fonctionne l'audio natif ?", "Voir article StudioOS", "Voir article Ideal Calc"],
+    },
+    de: {
+      text: "Im Soul Fighter Artikel dokumentiert Aster seinen technischen Reifegrad von 2023 bis 2026: Web Audio API (< 2ms), GPU-3D-Rendering bei 60 FPS, deterministische Zustandsmaschine und Supabase-Bestenliste.",
+      actions: [
+        { label: "📖 Artikel auf Gerät lesen", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Soul Fighter spielen", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Wie funktioniert das Audio?", "StudioOS Artikel ansehen", "Ideal Calc Artikel ansehen"],
+    },
+    it: {
+      text: "Nell'articolo di Soul Fighter, Aster analizza l'evoluzione da un codice amatoriale a un'architettura rigorosa: Web Audio API (< 2ms), rendering GPU 3D a 60 FPS, state machine deterministica e classifica Supabase.",
+      actions: [
+        { label: "📖 Leggi sul dispositivo", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Gioca a Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Come funziona l'audio tascabile?", "Vedi articolo StudioOS", "Vedi articolo Ideal Calc"],
+    },
+    nl: {
+      text: "In het artikel over Soul Fighter beschrijft Aster de transformatie naar moderne architectuur: Web Audio API (< 2ms), 3D GPU-rendering op 60 FPS, deterministische state machine en Supabase-ranglijst.",
+      actions: [
+        { label: "📖 Lees artikel op apparaat", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Speel Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Hoe werkt de Web Audio API?", "Bekijk StudioOS artikel", "Bekijk Ideal Calc artikel"],
+    },
+    ru: {
+      text: "В статье о Soul Fighter описана эволюция проекта: Web Audio API (< 2 мс), 3D-ускорение на GPU при 60 FPS, конечный автомат на React 19 и таблица лидеров на Supabase.",
+      actions: [
+        { label: "📖 Читать статью", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Играть в Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Как работает Web Audio API?", "Статья о StudioOS", "Статья об Ideal Calc"],
+    },
+    ar: {
+      text: "في مقال Soul Fighter، يوثق Aster قفزته الهندسية: Web Audio API (< 2ms)، تسريع 3D على GPU بـ 60 FPS، آلة حالات حتمية وتكامل كامل مع Supabase.",
+      actions: [
+        { label: "📖 قراءة المقال على الجهاز", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 العب Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["كيف تعمل Web Audio API؟", "مقال StudioOS", "مقال Ideal Calc"],
+    },
+    jp: {
+      text: "Soul Fighterの記事では、2023年の初期コードから2026年の高品質エンジニアリングへの進化を解説：Web Audio API（< 2ms）、GPU 3D（60 FPS）、決定論的ステートマシン、Supabaseランキング。",
+      actions: [
+        { label: "📖 端末上で記事を読む", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Soul Fighter をプレイ", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub リポジトリ", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Web Audio APIの仕組みは？", "StudioOSの記事を見る", "Ideal Calcの記事を見る"],
+    },
+    cn: {
+      text: "在 Soul Fighter 文章中，Aster 详述了从 2023 年新手代码到 2026 年高性能工程的蜕变：原生 Web Audio API（< 2ms 延迟）、GPU 3D 锁定 60 FPS、确定性状态机与 Supabase 全球排行榜。",
+      actions: [
+        { label: "📖 在设备上阅读全文", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 试玩 Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub 仓库", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Web Audio API 是如何实现的？", "查看 StudioOS 文章", "查看 Ideal Calc 文章"],
+    },
+    kr: {
+      text: "Soul Fighter 글에서 Aster는 2023년 초보 코드에서 2026년 고성능 아키텍처로의 도약을 다룹니다: Web Audio API(< 2ms), GPU 3D 60 FPS, 결정론적 상태 머신 및 Supabase 리더보드.",
+      actions: [
+        { label: "📖 디바이스에서 글 읽기", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Soul Fighter 플레이", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Web Audio API 구현 원리는?", "StudioOS 글 보기", "Ideal Calc 글 보기"],
+    },
+    vn: {
+      text: "Trong bài viết về Soul Fighter, Aster chia sẻ bước tiến kỹ thuật từ 2023 đến 2026: Web Audio API (< 2ms), GPU 3D ở 60 FPS mượt mà, máy trạng thái hữu hạn và bảng xếp hạng Supabase.",
+      actions: [
+        { label: "📖 Đọc bài trên thiết bị", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Chơi Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Web Audio API hoạt động thế nào?", "Xem bài StudioOS", "Xem bài Ideal Calc"],
+    },
+    id: {
+      text: "Dalam artikel Soul Fighter, Aster mendokumentasikan lompatan teknis dari 2023 ke 2026: Web Audio API (< 2ms), akselerasi GPU 3D pada 60 FPS, state machine deterministik, dan leaderboard Supabase.",
+      actions: [
+        { label: "📖 Baca di Perangkat", url: "blog-soulfighter-microinteractions", type: "article" },
+        { label: "🎮 Mainkan Soul Fighter", url: "https://soulfighter.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/Soul-Fighter-Memory-Game", type: "link" },
+      ],
+      suggestions: ["Bagaimana cara kerja Web Audio API?", "Lihat artikel StudioOS", "Lihat artikel Ideal Calc"],
+    },
+  },
+
+  BLOG_POST_STUDIO_OS: {
+    br: {
+      text: "No artigo **'A arquitetura do StudioOS: da ideia crua a uma esteira de IA usada por criadores'**, o Aster analisa a engenharia por trás do sistema operacional para criadores:\n\n- **Crítica a Wrappers de IA**: Rejeita caixas de prompt rasas e cria fluxos com contexto persistente, números e velocidade.\n- **Regra de Calibração Central**: Ponto único de verdade onde o canal define persona, dores e tom de voz uma única vez, alimentando todas as 12 ferramentas do ecossistema.\n- **Pipeline Integrado**: Rank de Ideia (0 a 10), Mentor IA & 6 variações táticas de ganchos, Roteirização em blocos e teleprompter em tela.\n- **Astro Islands no Edge**: Astro 7 e React 19 Islands hidratando sob demanda com LCP < 800ms e streaming via Cloudflare Workers com TTFT < 350ms.",
+      actions: [
+        { label: "📖 Ler Artigo no Dispositivo", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Acessar StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["O que é a Regra de Calibração Central?", "Ver post do Soul Fighter", "Ver post do Ideal Calc"],
+    },
+    pt: {
+      text: "No artigo **'A arquitetura do StudioOS: da ideia crua a uma esteira de IA usada por criadores'**, o Aster disseca a arquitetura da sua esteira para criadores:\n\n- **Regra de Calibração Central**: Cérebro único que alimenta 12 ferramentas sem repetir contexto.\n- **Pipeline Objetivo**: Rank de Ideia (0 a 10), gerador de ganchos e teleprompter in-page.\n- **Astro Islands no Edge**: HTML estático com hidratação sob demanda e TTFT < 350ms.",
+      actions: [
+        { label: "📖 Ler Artigo no Dispositivo", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Acessar StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["O que é a Regra de Calibração Central?", "Ver post do Soul Fighter", "Ver post do Ideal Calc"],
+    },
+    en: {
+      text: "In the article **'The StudioOS Architecture: from raw ideas to an AI pipeline creators actually use'**, Aster breaks down his creator operating system:\n\n- **Beyond Lazy Wrappers**: Replaced generic prompt boxes with structured, persistent workflows.\n- **Central Calibration Rule**: A single source of truth for channel tone, audience pain points, and references, powering all 12 pipeline tools seamlessly.\n- **Creator Pipeline**: Algorithmic Idea Ranking (0-10 score), tactical Hook Generator with 6 retention variants, Block Scripting, and in-page Teleprompter.\n- **Astro Islands on the Edge**: Astro 7 with on-demand React 19 hydration (LCP < 800ms) and Cloudflare Workers SSE streaming (TTFT < 350ms).",
+      actions: [
+        { label: "📖 Read Article on Device", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Open StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub Repo", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["What is the Central Calibration Rule?", "Tell me about the Soul Fighter post", "Tell me about the Ideal Calc post"],
+    },
+    es: {
+      text: "En el artículo sobre StudioOS, Aster explica la arquitectura del sistema operativo para creadores: Regla de Calibración Central (un solo cerebro para 12 herramientas), Rank de Idea, teleprompter integrado y Astro Islands con TTFT < 350ms.",
+      actions: [
+        { label: "📖 Leer en el Dispositivo", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Abrir StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["¿Qué es la Calibración Central?", "Ver artículo de Soul Fighter", "Ver artículo de Ideal Calc"],
+    },
+    fr: {
+      text: "Dans l'article sur StudioOS, Aster détaille l'architecture de son OS pour créateurs: Règle de Calibration Centrale, classement d'idées (0 à 10), téléprompteur et Astro Islands avec TTFT < 350ms.",
+      actions: [
+        { label: "📖 Lire l'article", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Ouvrir StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["Qu'est-ce que la Calibration Centrale ?", "Voir article Soul Fighter", "Voir article Ideal Calc"],
+    },
+    de: {
+      text: "Im StudioOS-Artikel erklärt Aster die Architektur: Zentrale Kalibrierungsregel für 12 Tools, mathematisches Ideen-Ranking (0-10), integrierter Teleprompter und Astro Islands mit TTFT < 350ms.",
+      actions: [
+        { label: "📖 Artikel auf Gerät lesen", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 StudioOS öffnen", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["Was ist die zentrale Kalibrierungsregel?", "Soul Fighter Artikel ansehen", "Ideal Calc Artikel ansehen"],
+    },
+    it: {
+      text: "Nell'articolo su StudioOS, Aster descrive la sua architettura per creator: Regola di Calibrazione Centrale, ranking idee (0-10), teleprompter e Astro Islands su Cloudflare con TTFT < 350ms.",
+      actions: [
+        { label: "📖 Leggi sul dispositivo", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Apri StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["Cos'è la Calibrazione Centrale?", "Vedi articolo Soul Fighter", "Vedi articolo Ideal Calc"],
+    },
+    nl: {
+      text: "In het artikel over StudioOS legt Aster de architectuur uit: Centrale Kalibratieregel voor 12 tools, ideeën-ranking (0-10), in-page teleprompter en Astro Islands met TTFT < 350ms.",
+      actions: [
+        { label: "📖 Lees artikel op apparaat", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Open StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["Wat is de Centrale Kalibratieregel?", "Bekijk Soul Fighter artikel", "Bekijk Ideal Calc artikel"],
+    },
+    ru: {
+      text: "В статье об архитектуре StudioOS Aster объясняет создание веб-ОС для блогеров: центральное правило калибровки (единый контекст для 12 инструментов), ранжирование идей и Astro Islands с TTFT < 350 мс.",
+      actions: [
+        { label: "📖 Читать статью", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Открыть StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["Что такое центральная калибровка?", "Статья о Soul Fighter", "Статья об Ideal Calc"],
+    },
+    ar: {
+      text: "في مقال StudioOS، يوضح Aster هيكلية نظام التشغيل للمنشئين: قاعدة المعايرة المركزية (ذاكرة موحدة لـ 12 أداة)، وتقييم الأفكار، والتلقين البصري مع Astro Islands واستجابة < 350ms.",
+      actions: [
+        { label: "📖 قراءة المقال على الجهاز", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 فتح StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["ما هي قاعدة المعايرة المركزية؟", "مقال Soul Fighter", "مقال Ideal Calc"],
+    },
+    jp: {
+      text: "StudioOSの記事では、クリエイター向けOSの設計を解説：12のツールを統括する中央キャリブレーションルール、アイデア評価（0〜10点）、画面内プロンプター、TTFT < 350msのAstro Islands構成。",
+      actions: [
+        { label: "📖 端末上で記事を読む", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 StudioOS を開く", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub リポジトリ", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["中央キャリブレーションルールとは？", "Soul Fighterの記事を見る", "Ideal Calcの記事を見る"],
+    },
+    cn: {
+      text: "在 StudioOS 文章中，Aster 深入剖析了创作者操作系统的设计：抛弃无脑 GPT 包装壳，引入“统一校准规则”（单个大脑服务 12 款工具）、算法级选题评分、分块脚本提词器与 TTFT < 350ms 的 Astro Islands 边缘架构。",
+      actions: [
+        { label: "📖 在设备上阅读全文", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 打开 StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub 仓库", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["什么是统一校准规则？", "查看 Soul Fighter 文章", "查看 Ideal Calc 文章"],
+    },
+    kr: {
+      text: "StudioOS 글에서 Aster는 크리에이터 OS 아키텍처를 설명합니다: 12가지 도구를 위한 중앙 보정 규칙(단일 컨텍스트), 아이디어 평가 점수(0~10), 인페이지 프롬프터 및 TTFT < 350ms의 Astro Islands.",
+      actions: [
+        { label: "📖 디바이스에서 글 읽기", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 StudioOS 열기", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["중앙 보정 규칙이란 무엇인가요?", "Soul Fighter 글 보기", "Ideal Calc 글 보기"],
+    },
+    vn: {
+      text: "Trong bài viết về StudioOS, Aster phân tích kiến trúc hệ điều hành cho nhà sáng tạo: Quy tắc Hiệu chuẩn Trung tâm cho 12 công cụ, chấm điểm ý tưởng (0-10), máy nhắc chữ và Astro Islands với TTFT < 350ms.",
+      actions: [
+        { label: "📖 Đọc bài trên thiết bị", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Mở StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["Quy tắc Hiệu chuẩn Trung tâm là gì?", "Xem bài Soul Fighter", "Xem bài Ideal Calc"],
+    },
+    id: {
+      text: "Dalam artikel StudioOS, Aster membedah arsitektur OS untuk kreator: Aturan Kalibrasi Sentral untuk 12 fitur, scoring ide (0-10), teleprompter di layar, dan Astro Islands dengan TTFT < 350ms.",
+      actions: [
+        { label: "📖 Baca di Perangkat", url: "blog-studioos-architecture", type: "article" },
+        { label: "🚀 Buka StudioOS", url: "https://studio.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/StudioOS", type: "link" },
+      ],
+      suggestions: ["Apa itu Aturan Kalibrasi Sentral?", "Lihat artikel Soul Fighter", "Lihat artikel Ideal Calc"],
+    },
+  },
+
+  BLOG_POST_IDEAL_CALC: {
+    br: {
+      text: "No artigo **'O mito do parceiro ideal: cruzando dados do IBGE para medir a realidade dos relacionamentos'**, o Aster explica como substituiu debates rasos de redes sociais por estatística oficial:\n\n- **Microdados Oficiais**: Cruzamento de 3 fontes primárias do IBGE: Censo Demográfico 2022 (idade/estado civil), PNAD Contínua 2023 (estratificação de renda) e POF (altura/biometria).\n- **Matrizes Condicionais**: Evitou a falácia de multiplicar probabilidades como se fossem eventos independentes, correlacionando renda e biometria com faixas etárias reais.\n- **Processamento no Cliente (< 8ms)**: Tabelas compactadas em arrays binários otimizados, recalculando 12 filtros simultâneos no navegador a 60 FPS com zero custo de servidor.\n- **Revelação Matemática**: Demonstra como checklists considerados 'básicos' na internet representam menos de 0,08% da população brasileira.",
+      actions: [
+        { label: "📖 Ler Artigo no Dispositivo", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Abrir Calculadora", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Quais bases do IBGE foram usadas?", "Ver post do Soul Fighter", "Ver post do StudioOS"],
+    },
+    pt: {
+      text: "No artigo **'O mito do parceiro ideal: cruzando dados do IBGE para medir a realidade dos relacionamentos'**, o Aster documenta a ciência de dados por trás da calculadora:\n\n- **Microdados Primários**: Censo 2022, PNAD Contínua e POF do IBGE.\n- **Probabilidade Condicional**: Matrizes estratificadas evitando a falácia da independência estocástica.\n- **100% no Cliente**: Cálculo em TypeScript puro em menos de 8ms no navegador.\n- **Diagnóstico Real**: Mostra que exigências virais atingem menos de 0,08% dos homens no país.",
+      actions: [
+        { label: "📖 Ler Artigo no Dispositivo", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Abrir Calculadora", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Como foram cruzados os dados?", "Ver post do Soul Fighter", "Ver post do StudioOS"],
+    },
+    en: {
+      text: "In the article **'The Myth of the Ideal Partner: Using Census Data to Benchmark Relationship Expectations'**, Aster explains how he traded social media noise for statistical reality:\n\n- **Official Public Datasets**: Cross-referenced three primary IBGE sources: 2022 Census (age/marital status), PNAD Contínua (income percentiles), and POF (biometrics/height).\n- **Conditional Probability Matrices**: Avoided the naive multiplication fallacy by weighting correlated demographic factors like age, region, and income.\n- **Client-Side Engine (< 8ms)**: Compact binary search arrays updating joint probabilities across 12 filters instantly in the browser at zero server cost.\n- **Empirical Reality Check**: Demonstrates how viral online checklists often represent less than 0.08% of the Brazilian population.",
+      actions: [
+        { label: "📖 Read Article on Device", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Open Calculator", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub Repo", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Which IBGE datasets were used?", "Tell me about the Soul Fighter post", "Tell me about the StudioOS post"],
+    },
+    es: {
+      text: "En el artículo sobre Ideal Calculator, Aster expone la ciencia de datos demográficos cruzando microdatos del Censo IBGE 2022, PNAD y POF con matrices condicionales en TypeScript cliente (< 8ms).",
+      actions: [
+        { label: "📖 Leer en el Dispositivo", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Abrir Calculadora", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["¿Qué datos del IBGE se usaron?", "Ver artículo de Soul Fighter", "Ver artículo de StudioOS"],
+    },
+    fr: {
+      text: "Dans l'article sur Ideal Calculator, Aster croise les données du recensement IBGE 2022 et de la PNAD via des matrices conditionnelles en pur TypeScript client (< 8ms).",
+      actions: [
+        { label: "📖 Lire l'article", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Ouvrir la Calculatrice", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Quelles données du recensement ?", "Voir article Soul Fighter", "Voir article StudioOS"],
+    },
+    de: {
+      text: "Im Ideal Calculator Artikel analysiert Aster IBGE-Zensusdaten 2022 und PNAD über bedingte Wahrscheinlichkeitsmatrizen in reinem Client-TypeScript (< 8ms).",
+      actions: [
+        { label: "📖 Artikel auf Gerät lesen", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Rechner öffnen", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Welche Zensusdaten wurden genutzt?", "Soul Fighter Artikel ansehen", "StudioOS Artikel ansehen"],
+    },
+    it: {
+      text: "Nell'articolo su Ideal Calculator, Aster analizza i microdati del censimento IBGE 2022 e PNAD tramite matrici di probabilità condizionale in TypeScript client (< 8ms).",
+      actions: [
+        { label: "📖 Leggi sul dispositivo", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Apri Calcolatrice", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Quali dati IBGE sono stati usati?", "Vedi articolo Soul Fighter", "Vedi articolo StudioOS"],
+    },
+    nl: {
+      text: "In het artikel over Ideal Calculator analyseert Aster IBGE-censusdata 2022 en PNAD via voorwaardelijke waarschijnlijkheidsmatrices in client-side TypeScript (< 8ms).",
+      actions: [
+        { label: "📖 Lees artikel op apparaat", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Open Calculator", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Welke data werd gebruikt?", "Bekijk Soul Fighter artikel", "Bekijk StudioOS artikel"],
+    },
+    ru: {
+      text: "В статье об Ideal Calculator Aster анализирует микроданные переписи IBGE 2022 и PNAD с использованием условных матриц вероятности в браузере на чистом TypeScript (< 8 мс).",
+      actions: [
+        { label: "📖 Читать статью", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Открыть калькулятор", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Какие данные использовались?", "Статья о Soul Fighter", "Статья о StudioOS"],
+    },
+    ar: {
+      text: "في مقال Ideal Calculator، يشرح Aster دمج بيانات التعداد السكاني IBGE 2022 وPNAD باستخدام مصفوفات الاحتمال الشرطي في المتصفح عبر TypeScript (< 8ms).",
+      actions: [
+        { label: "📖 قراءة المقال على الجهاز", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 فتح الحاسبة", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["ما هي بيانات التعداد المستخدمة؟", "مقال Soul Fighter", "مقال StudioOS"],
+    },
+    jp: {
+      text: "Ideal Calculatorの記事では、IBGE国勢調査2022およびPNADのマイクロデータをブラウザ上のTypeScriptで条件付き確率行列として高速計算（< 8ms）する仕組みを解説。",
+      actions: [
+        { label: "📖 端末上で記事を読む", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 計算機を開く", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub リポジトリ", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["どの統計データが使われた？", "Soul Fighterの記事を見る", "StudioOSの記事を見る"],
+    },
+    cn: {
+      text: "在 Ideal Calculator 文章中，Aster 详述了如何用数学击碎网络择偶幻想：交叉比对 2022 年 IBGE 人口普查、PNAD 收入分位数与 POF 身高数据，并在纯前端 TypeScript 中以条件概率矩阵在 8ms 内实时计算。",
+      actions: [
+        { label: "📖 在设备上阅读全文", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 打开计算器", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub 仓库", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["使用了哪些人口普查数据？", "查看 Soul Fighter 文章", "查看 StudioOS 文章"],
+    },
+    kr: {
+      text: "Ideal Calculator 글에서 Aster는 2022년 IBGE 인구 센서스 및 PNAD 데이터를 브라우저 순수 TypeScript 조건부 확률 매트릭스로 8ms 미만에 교차 검증한 과정을 설명합니다.",
+      actions: [
+        { label: "📖 디바이스에서 글 읽기", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 계산기 열기", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["어떤 센서스 데이터가 쓰였나요?", "Soul Fighter 글 보기", "StudioOS 글 보기"],
+    },
+    vn: {
+      text: "Trong bài viết Ideal Calculator, Aster giải thích cách đối soát dữ liệu điều tra dân số IBGE 2022 và PNAD qua ma trận xác suất có điều kiện trên TypeScript client (< 8ms).",
+      actions: [
+        { label: "📖 Đọc bài trên thiết bị", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Mở Máy tính", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Dữ liệu IBGE nào được sử dụng?", "Xem bài Soul Fighter", "Xem bài StudioOS"],
+    },
+    id: {
+      text: "Dalam artikel Ideal Calculator, Aster menjelaskan pengolahan data sensus IBGE 2022 dan PNAD dengan matriks probabilitas bersyarat di TypeScript sisi klien (< 8ms).",
+      actions: [
+        { label: "📖 Baca di Perangkat", url: "blog-ideal-calculator", type: "article" },
+        { label: "🧮 Buka Kalkulator", url: "https://idealcalc.asterdev.me/", type: "link" },
+        { label: "📂 GitHub", url: "https://github.com/zAstergun/ideal-calculator", type: "link" },
+      ],
+      suggestions: ["Data IBGE apa yang digunakan?", "Lihat artikel Soul Fighter", "Lihat artikel StudioOS"],
     },
   },
 

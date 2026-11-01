@@ -2218,6 +2218,28 @@ export default function App() {
     window.history.replaceState({}, '', `${window.location.pathname}?app=${newPost.id}`);
   }, []);
 
+  const handleOpenPostFromBot = useCallback(
+    (postId: string) => {
+      const post = getBlogPostById(postId, language);
+      if (post) {
+        switchBlogPost(post);
+      }
+    },
+    [language, switchBlogPost]
+  );
+
+  const handleOpenFolderFromBot = useCallback(
+    (folderId: string) => {
+      closePhoneDetail();
+      closeTabletDetail();
+      const folder = HOME_ITEMS.find((i) => i.id === folderId);
+      if (folder && isFolder(folder)) {
+        setOpenFolder(folder);
+      }
+    },
+    [closePhoneDetail, closeTabletDetail, HOME_ITEMS]
+  );
+
   // ─── Keyboard Navigation ──────────────────────────────────
 
   const handleKeyDown = useCallback(
@@ -2454,6 +2476,8 @@ export default function App() {
             isDark={isDark}
             language={language}
             ui={ui}
+            onOpenPost={handleOpenPostFromBot}
+            onOpenFolder={handleOpenFolderFromBot}
           />
         ) : !isDesktop && phoneDetail.appUrl ? (
           <LiveAppFrame
@@ -2648,6 +2672,8 @@ export default function App() {
                       isDark={isDark}
                       language={language}
                       ui={ui}
+                      onOpenPost={handleOpenPostFromBot}
+                      onOpenFolder={handleOpenFolderFromBot}
                     />
                   ) : tabletDetail.appUrl ? (
                     <LiveAppFrame

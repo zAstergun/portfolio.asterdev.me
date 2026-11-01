@@ -154,4 +154,37 @@ describe("Heuristic Intent Classifier", () => {
       expect(resolveBotLanguage(lang)).toBe(lang);
     }
   });
+
+  // ─── Blog Posts Intent Recognition ─────────────────────────
+
+  it("classifies general blog questions and returns 3 articles", () => {
+    const res = classifyIntent("quais sao as postagens do blog?", "br");
+    expect(res.intent).toBe("BLOG_HACKATHONS");
+    expect(res.response).toContain("Soul Fighter");
+    expect(res.response).toContain("StudioOS");
+    expect(res.response).toContain("Ideal Calculator");
+    expect(res.actions?.length).toBe(3);
+    expect(res.actions?.[0].type).toBe("article");
+  });
+
+  it("classifies Soul Fighter blog post inquiries", () => {
+    const res = classifyIntent("o que tem no post do soul fighter?", "br");
+    expect(res.intent).toBe("BLOG_POST_SOUL_FIGHTER");
+    expect(res.response).toContain("Web Audio API");
+    expect(res.actions?.some((a) => a.url === "blog-soulfighter-microinteractions")).toBe(true);
+  });
+
+  it("classifies StudioOS blog post inquiries", () => {
+    const res = classifyIntent("fale sobre o artigo do studioos", "br");
+    expect(res.intent).toBe("BLOG_POST_STUDIO_OS");
+    expect(res.response).toContain("Regra de Calibração Central");
+    expect(res.actions?.some((a) => a.url === "blog-studioos-architecture")).toBe(true);
+  });
+
+  it("classifies Ideal Calculator blog post inquiries", () => {
+    const res = classifyIntent("artigo do ideal calculator", "br");
+    expect(res.intent).toBe("BLOG_POST_IDEAL_CALC");
+    expect(res.response).toContain("IBGE");
+    expect(res.actions?.some((a) => a.url === "blog-ideal-calculator")).toBe(true);
+  });
 });

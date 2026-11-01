@@ -17,6 +17,9 @@ export type IntentId =
   | "PROJECT_MOBILE_DEMO"
   | "PROJECT_STUDIO_OS"
   | "BLOG_HACKATHONS"
+  | "BLOG_POST_SOUL_FIGHTER"
+  | "BLOG_POST_STUDIO_OS"
+  | "BLOG_POST_IDEAL_CALC"
   | "EDUCATION"
   | "RESUME_CV"
   | "CONTACT_SOCIAL"
@@ -28,7 +31,7 @@ export type IntentId =
 export interface ActionButton {
   label: string;
   url?: string;
-  type?: "link" | "download";
+  type?: "link" | "download" | "article" | "folder";
 }
 
 export interface ClassifierResult {
@@ -274,6 +277,7 @@ const INTENT_DEFINITIONS: IntentDefinition[] = [
   },
   {
     id: "PROJECT_IDEAL_CALC",
+    negativeKeywords: ["post", "artigo", "artigos", "blog", "leitura", "publicacao"],
     patterns: [
       /ideal calc|idealcalc/,
       /calculadora (ideal|estatistica)/,
@@ -303,6 +307,7 @@ const INTENT_DEFINITIONS: IntentDefinition[] = [
   },
   {
     id: "PROJECT_SOUL_FIGHTER",
+    negativeKeywords: ["post", "artigo", "artigos", "blog", "leitura", "publicacao", "reconstrucao", "commit"],
     patterns: [
       /soul fighter|soulfighter/,
       /jogo da memoria|juego de memoria|jeu de memoire|gedachtnisspiel|gioco di memoria/,
@@ -366,6 +371,7 @@ const INTENT_DEFINITIONS: IntentDefinition[] = [
   },
   {
     id: "PROJECT_STUDIO_OS",
+    negativeKeywords: ["post", "artigo", "artigos", "blog", "leitura", "publicacao"],
     patterns: [
       /studio\s*os|studioos/,
       /studio\.asterdev\.me/,
@@ -563,10 +569,75 @@ const INTENT_DEFINITIONS: IntentDefinition[] = [
     ],
   },
   {
+    id: "BLOG_POST_SOUL_FIGHTER",
+    patterns: [
+      /(post|artigo|leitura|artigos|publicacao|texto).*(soul\s*fighter|soulfighter)/,
+      /(soul\s*fighter|soulfighter).*(post|artigo|leitura|artigos|publicacao|aprendi|refazendo|reconstruir|commit|web\s*audio|gpu)/,
+      /tres anos (depois|apos) do primeiro commit/,
+      /three years after the first commit/,
+    ],
+    keywords: [
+      { term: "post soul fighter", weight: 12 },
+      { term: "artigo soul fighter", weight: 12 },
+      { term: "artigo do soul fighter", weight: 12 },
+      { term: "post do soul fighter", weight: 12 },
+      { term: "soul fighter post", weight: 12 },
+      { term: "soul fighter article", weight: 12 },
+      { term: "web audio api", weight: 9 },
+      { term: "latencia de audio", weight: 9 },
+    ],
+  },
+  {
+    id: "BLOG_POST_STUDIO_OS",
+    patterns: [
+      /(post|artigo|leitura|artigos|publicacao|texto).*(studio\s*os|studioos)/,
+      /(studio\s*os|studioos).*(post|artigo|leitura|artigos|publicacao|arquitetura|esteira|calibracao|astro\s*islands)/,
+      /arquitetura do studioos/,
+      /studioos architecture/,
+    ],
+    keywords: [
+      { term: "post studioos", weight: 12 },
+      { term: "artigo studioos", weight: 12 },
+      { term: "artigo do studioos", weight: 12 },
+      { term: "post do studioos", weight: 12 },
+      { term: "studioos post", weight: 12 },
+      { term: "studioos article", weight: 12 },
+      { term: "regra de calibracao", weight: 10 },
+      { term: "calibracao central", weight: 10 },
+      { term: "astro islands", weight: 9 },
+    ],
+  },
+  {
+    id: "BLOG_POST_IDEAL_CALC",
+    patterns: [
+      /(post|artigo|leitura|artigos|publicacao|texto).*(ideal\s*calc|idealcalc|calculadora|calculator|ibge|censo|par\s*ideal|parceiro\s*ideal)/,
+      /(ideal\s*calc|idealcalc|calculadora|calculator|ibge|censo|par\s*ideal|parceiro\s*ideal).*(post|artigo|leitura|artigos|publicacao|dados|estatistica|probabilidade)/,
+      /mito do (parceiro|par) ideal/,
+      /myth of the ideal partner/,
+    ],
+    keywords: [
+      { term: "post ideal calculator", weight: 12 },
+      { term: "post do ideal calculator", weight: 12 },
+      { term: "artigo ideal calculator", weight: 12 },
+      { term: "artigo do ideal calculator", weight: 12 },
+      { term: "artigo ideal calc", weight: 12 },
+      { term: "post ideal calc", weight: 12 },
+      { term: "artigo da calculadora", weight: 12 },
+      { term: "artigo calculadora", weight: 12 },
+      { term: "post calculadora", weight: 12 },
+      { term: "artigo do ibge", weight: 12 },
+      { term: "censo demografico", weight: 8 },
+      { term: "probabilidade condicional", weight: 8 },
+    ],
+  },
+  {
     id: "BLOG_HACKATHONS",
     patterns: [
       /hackathon|hackathons/,
-      /blog|devlog|artigos|articles/,
+      /blog|devlog|artigos|articles|postagens/,
+      /quais (sao )?(os )?(posts|artigos|textos)/,
+      /what (are )?(the )?(posts|articles)/,
+      /cuales son los (articulos|posts)/,
       /хакатон/u,
       /هاكاثون/u,
       /ハッカソン/u,
@@ -574,10 +645,15 @@ const INTENT_DEFINITIONS: IntentDefinition[] = [
       /해커톤/u,
     ],
     keywords: [
-      { term: "hackathon", weight: 8 },
-      { term: "hackathons", weight: 8 },
-      { term: "blog", weight: 7 },
+      { term: "postagens", weight: 9 },
+      { term: "posts", weight: 8 },
+      { term: "artigos", weight: 8 },
+      { term: "articles", weight: 8 },
+      { term: "blog", weight: 8 },
       { term: "devlog", weight: 6 },
+      { term: "hackathon", weight: 6 },
+      { term: "hackathons", weight: 6 },
+      { term: "leitura", weight: 6 },
       { term: "хакатон", weight: 8 },
       { term: "هاكاثون", weight: 8 },
       { term: "ハッカソン", weight: 8 },
@@ -708,7 +784,7 @@ export function classifyIntent(
       for (const neg of def.negativeKeywords) {
         const normNeg = normalizeText(neg);
         if (tokenSet.has(normNeg) || normalized.includes(normNeg)) {
-          score -= 4;
+          score -= 10;
         }
       }
     }
