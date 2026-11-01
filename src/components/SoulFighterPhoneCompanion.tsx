@@ -4,6 +4,7 @@ import {
   ArrowRight,
   RocketLaunch,
   GraduationCap,
+  Certificate,
   Sparkle,
   Cpu,
   SpeakerHigh,
@@ -147,6 +148,8 @@ export function SoulFighterPhoneCompanion({
           <RocketLaunch weight="fill" className="text-white drop-shadow-sm w-10 h-10" />
         ) : item.icon === "graduation" || item.icon === "🎓" ? (
           <GraduationCap weight="fill" className="text-white drop-shadow-sm w-10 h-10" />
+        ) : item.icon === "certificate" || item.icon === "scroll" || item.icon === "📜" ? (
+          <Certificate weight="fill" className="text-white drop-shadow-sm w-10 h-10" />
         ) : (
           <span className="drop-shadow-sm select-none text-4xl">{item.icon}</span>
         )}

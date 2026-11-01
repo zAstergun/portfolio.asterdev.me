@@ -27,6 +27,7 @@ import {
   ArrowRight,
   RocketLaunch,
   GraduationCap,
+  Certificate,
   X,
   ArrowCounterClockwise,
   ArrowsOut,
@@ -294,6 +295,8 @@ const GridIcon = memo(function GridIcon({
           <RocketLaunch weight="fill" className="w-8 h-8 @tablet:w-14 @tablet:h-14 text-white drop-shadow-sm" />
         ) : item.icon === "graduation" || item.icon === "🎓" ? (
           <GraduationCap weight="fill" className="w-8 h-8 @tablet:w-14 @tablet:h-14 text-white drop-shadow-sm" />
+        ) : item.icon === "certificate" || item.icon === "scroll" || item.icon === "📜" ? (
+          <Certificate weight="fill" className="w-8 h-8 @tablet:w-14 @tablet:h-14 text-white drop-shadow-sm" />
         ) : (
           <span className="drop-shadow-sm select-none">{item.icon}</span>
         )}
@@ -340,6 +343,8 @@ function renderPhosphorLinkIcon(icon?: string) {
       return <Users weight="bold" className="w-5 h-5 shrink-0" />;
     case "external-link":
       return <ArrowSquareOut weight="bold" className="w-5 h-5 shrink-0" />;
+    case "certificate":
+      return <Certificate weight="bold" className="w-5 h-5 shrink-0 text-amber-500" />;
     case "play":
       return <Play weight="fill" className="w-5 h-5 shrink-0" />;
     default:
@@ -347,18 +352,21 @@ function renderPhosphorLinkIcon(icon?: string) {
   }
 }
 
-function getCategoryTag(item: DetailableItem): string {
+function getCategoryTag(item: DetailableItem, ui?: any): string {
   if (item.id.startsWith("blog-")) {
-    return "Artigos";
+    return (ui?.posts || "Artigos").toUpperCase();
+  }
+  if (item.id.startsWith("cert-")) {
+    return (ui?.tagCert || "Certificação").toUpperCase();
   }
   const map: Record<string, string> = {
     "sobre-mim": "Perfil",
     "chatbot": "Assistente",
     "asterbot": "Assistente",
-    "blog": "Artigos",
-    "blog-placeholder": "Artigos",
-    "certificacoes": "Conquistas",
-    "cert-placeholder": "Conquistas",
+    "blog": ui?.posts || "Artigos",
+    "blog-placeholder": ui?.posts || "Artigos",
+    "certificacoes": ui?.tagCert || "Conquistas",
+    "cert-placeholder": ui?.tagCert || "Conquistas",
     "curriculo": "Documento",
     "github": "Código",
     "traducao": "Idiomas",
@@ -400,7 +408,7 @@ function DetailPanel({
   const panelBg = isDark ? 'bg-stone-900' : 'bg-aster-beige';
   const panelText = isDark ? 'text-stone-100' : 'text-aster-dark';
   const panelFaint = isDark ? 'text-stone-500' : 'text-aster-dark/40';
-  const categoryTag = getCategoryTag(item);
+  const categoryTag = getCategoryTag(item, ui);
 
   const containerClass = isDesktop
     ? `detail-panel-desktop absolute inset-0 z-20 flex flex-col ${panelBg} overflow-hidden ${animClass} transition-colors duration-500`
@@ -516,13 +524,15 @@ function DetailPanel({
             />
           ) : (
             <div
-              className="w-5 h-5 @tablet:w-7 @tablet:h-7 rounded-md flex items-center justify-center text-xs text-white"
+              className="w-5 h-5 @tablet:w-7 @tablet:h-7 rounded-md flex items-center justify-center text-xs text-white shrink-0 overflow-hidden"
               style={{ background: `linear-gradient(135deg, ${item.gradient[0]}, ${item.gradient[1]})` }}
             >
               {item.icon === "rocket" || item.icon === "🚀" ? (
                 <RocketLaunch weight="fill" className="w-3.5 h-3.5 text-white" />
               ) : item.icon === "graduation" || item.icon === "🎓" ? (
                 <GraduationCap weight="fill" className="w-3.5 h-3.5 text-white" />
+              ) : item.icon === "certificate" || item.icon === "scroll" || item.icon === "📜" ? (
+                <Certificate weight="fill" className="w-3.5 h-3.5 text-white" />
               ) : (
                 <span>{item.icon}</span>
               )}
@@ -590,6 +600,8 @@ function DetailPanel({
                 <RocketLaunch weight="fill" className={`text-white drop-shadow-sm ${isDesktop ? "w-14 h-14" : "w-10 h-10"}`} />
               ) : item.icon === "graduation" || item.icon === "🎓" ? (
                 <GraduationCap weight="fill" className={`text-white drop-shadow-sm ${isDesktop ? "w-14 h-14" : "w-10 h-10"}`} />
+              ) : item.icon === "certificate" || item.icon === "scroll" || item.icon === "📜" ? (
+                <Certificate weight="fill" className={`text-white drop-shadow-sm ${isDesktop ? "w-14 h-14" : "w-10 h-10"}`} />
               ) : (
                 <span className={`drop-shadow-sm select-none ${isDesktop ? "text-5xl" : "text-4xl"}`}>
                   {item.icon}
@@ -1406,7 +1418,7 @@ function LiveAppFrame({
                 />
               ) : (
                 <div
-                  className="w-6 h-6 rounded-md flex items-center justify-center text-xs text-white shrink-0 shadow-sm"
+                  className="w-6 h-6 rounded-md flex items-center justify-center text-xs text-white shrink-0 shadow-sm overflow-hidden"
                   style={{
                     background: `linear-gradient(135deg, ${item.gradient[0]}, ${item.gradient[1]})`,
                   }}
@@ -1415,6 +1427,8 @@ function LiveAppFrame({
                     <RocketLaunch weight="fill" className="w-3.5 h-3.5 text-white" />
                   ) : item.icon === "graduation" || item.icon === "🎓" ? (
                     <GraduationCap weight="fill" className="w-3.5 h-3.5 text-white" />
+                  ) : item.icon === "certificate" || item.icon === "scroll" || item.icon === "📜" ? (
+                    <Certificate weight="fill" className="w-3.5 h-3.5 text-white" />
                   ) : (
                     <span>{item.icon}</span>
                   )}

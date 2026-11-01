@@ -1,4 +1,5 @@
 import { getBlogPosts } from "./blogData";
+import { getCertifications } from "./certificationsData";
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -180,7 +181,7 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
       gradient: ["#6c63ff", "#a29bfe"],
       summary: itemsText.sobreMimSummary,
       links: [
-        { title: "LinkedIn", url: "#", icon: "linkedin" },
+        { title: "LinkedIn", url: "https://www.linkedin.com/in/douglas-l-santos/", icon: "linkedin" },
         { title: "GitHub", url: "https://github.com/zAstergun", icon: "github" },
         { title: "Email", url: "mailto:hello@asterdev.me", icon: "mail" },
       ],
@@ -218,19 +219,7 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
       icon: "/icons/apps/certificacoes.svg",
       gradient: ["#f5af19", "#f12711"],
       lang,
-      children: [
-        {
-          type: "project",
-          id: "cert-placeholder",
-          name: itemsText.certProjName,
-          icon: "graduation",
-          gradient: ["#e6d082", "#987c22"],
-          summary: itemsText.certProjSummary,
-          links: [],
-          tags: [itemsText.tagCert],
-          lang,
-        },
-      ],
+      children: getCertifications(lang),
     },
 
     // ─── Row 2: Currículo · GitHub · Tradução ───
@@ -242,6 +231,7 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
       gradient: ["#fd79a8", "#e84393"],
       summary: itemsText.cvSummary,
       links: [
+        { title: "LinkedIn", url: "https://www.linkedin.com/in/douglas-l-santos/", icon: "linkedin" },
         { title: "Download [PDF]", url: "/Currículo_Aster_Frontend.pdf", icon: "file-pdf" },
         { title: "Download [DOCX]", url: "/Currículo_Aster_Frontend.docx", icon: "file-word" },
         { title: "Download [Markdown]", url: "/Currículo_Aster_Frontend.md", icon: "file-text" },
