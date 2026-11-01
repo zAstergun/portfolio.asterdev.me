@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "Dies ist mein Engineering- und Collaboration-Hub. Mehr als ein Datei-Repository, zentralisiert dieser Raum meine Arbeit in verschiedenen technischen Ökosystemen.\n\n--- PERSÖNLICHES PROFIL ---\nFokus auf das Experimentieren mit neuen Stacks (React, Astro, Tailwind).\n\n--- ORGANISATIONEN UND GEMEINSCHAFTEN ---\n• Centro Universitário União das Américas - UniAmérica (Technische Leitung): Ich koordiniere die Repositories für Erweiterungsprojekte (PEX).\n• [Name einer anderen Organisation]: Reservierter Platz für zukünftige Partnerschaften.",
     "langName": "Sprache",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Interaktiver Statistik-Rechner, der 12 demografische Filter mit offiziellen IBGE-Mikrodaten abgleicht.",
     "calcLinkOpen": "App öffnen",
@@ -54,6 +54,12 @@
     "chatbotSummary": "Konversationsassistent mit heuristischem Absichtsklassifikator. Stellen Sie Fragen über mich und meine Projekte.",
     "studioName": "StudioOS",
     "studioSummary": "Umfassendes Betriebssystem für Content Creator. Vereint 12 intelligente Tools abgestimmt auf die Markenstimme des Kanals (Ideen-Ranking, Klickstarke Titel, Hooks, Teleprompter, Thumbnail-Briefing, KI-Humanizer und Beitragsbewertung). Entwickelt mit Astro 7.3, React 19, Tailwind CSS v4, Supabase und Cloudflare Workers.",
-    "studioLinkOpen": "StudioOS öffnen"
+    "studioLinkOpen": "StudioOS öffnen",
+    "duoName": "Duo Tools",
+    "duoSummary": "Chrome-Erweiterung (Manifest V3) für Duolingo-Automatisierung: XP-Farming über direkte API, Super-Modus durch JS-Chunk-Patching, automatischer Übungslöser und In-Page-Widget.",
+    "duoLinkOpen": "Auf GitHub ansehen",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Moderner hybrider Video-Downloader für Chromium-Browser. Kombiniert eine Chrome Side Panel-Erweiterung mit einer nativen Companion-App auf Basis von yt-dlp und FFmpeg (bis zu 4K60 HDR, HLS-Streams, MP3-Extraktion).",
+    "downloaderLinkOpen": "Auf GitHub ansehen"
   }
 }

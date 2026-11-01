@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "Это мой Центр Инженерии и Сотрудничества. Это больше, чем просто файловый репозиторий.\n\n--- ЛИЧНЫЙ ПРОФИЛЬ ---\nСосредоточен на экспериментах с новыми стеками (React, Astro, Tailwind).\n\n--- ОРГАНИЗАЦИИ И СООБЩЕСТВА ---\n• Centro Universitário União das Américas - UniAmérica (Техническое руководство): Я координирую репозитории проектов расширения (PEX).\n• [Название другой организации]: Пространство зарезервировано для будущих партнерских отношений.",
     "langName": "Язык",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Интерактивный статистический калькулятор, сопоставляющий 12 демографических фильтров с официальными микроданными IBGE.",
     "calcLinkOpen": "Открыть приложение",
@@ -54,6 +54,12 @@
     "chatbotSummary": "Диалоговый ассистент с эвристическим классификатором намерений. Задавайте вопросы обо мне и моих проектах.",
     "studioName": "StudioOS",
     "studioSummary": "Операционная система для создателей контента. Объединяет 12 смарт-инструментов, настроенных под стиль канала (рейтинг идей, кликабельные заголовки, хуки удержания, полноэкранный телесуфлер, бриф миниатюр и аудит публикаций). Разработано на Astro 7.3, React 19, Tailwind CSS v4, Supabase и Cloudflare Workers.",
-    "studioLinkOpen": "Открыть StudioOS"
+    "studioLinkOpen": "Открыть StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Расширение для Chrome (Manifest V3) для автоматизации в Duolingo: фарм опыта через API, активация Super Mode через патчинг JS-чанков, авторешение упражнений и плавающий виджет.",
+    "duoLinkOpen": "Открыть на GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Гибридный загрузчик видео для браузеров Chromium. Объединяет расширение Side Panel Chrome с нативным приложением Companion на базе yt-dlp и FFmpeg (4K60 HDR, потоки HLS .m3u8, конвертация в MP3).",
+    "downloaderLinkOpen": "Открыть на GitHub"
   }
 }

@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "Ini adalah Hub Rekayasa dan Kolaborasi saya. Lebih dari sekadar repositori file, ruang ini memusatkan pekerjaan saya di berbagai ekosistem teknis, di mana saya menerapkan pola arsitektur dan kepemimpinan proyek.\n\n--- PROFIL PRIBADI ---\nFokus pada eksperimen dengan tumpukan baru (React, Astro, Tailwind), alat utilitas, dan pengembangan inti dari portofolio ini.\n\n--- ORGANISASI DAN KOMUNITAS ---\n• Centro Universitário União das Américas - UniAmérica (Kepemimpinan Teknis): Saya mengoordinasikan repositori proyek ekstensi (PEX).\n• [Nama Org Lain]: Ruang yang disiapkan untuk kemitraan masa depan dan kontribusi pada proyek Open Source.",
     "langName": "Bahasa",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Kalkulator statistik interaktif yang menyilangkan 12 filter demografis dengan data mikro resmi IBGE.",
     "calcLinkOpen": "Buka Aplikasi",
@@ -54,6 +54,12 @@
     "chatbotSummary": "Asisten percakapan dengan Pengklasifikasi Niat Heuristik. Ajukan pertanyaan tentang saya dan proyek saya.",
     "studioName": "StudioOS",
     "studioSummary": "Sistem Operasi komprehensif untuk kreator konten profesional. Menyatukan 12 alat pintar yang disesuaikan dengan saluran Anda (Peringkat Ide, Pembuat Judul, Hook Retensi, Naskah & Teleprompter, Brief Thumbnail, dan Skor Postingan). Dibangun dengan Astro 7.3, React 19, Tailwind CSS v4, Supabase, dan Cloudflare Workers.",
-    "studioLinkOpen": "Buka StudioOS"
+    "studioLinkOpen": "Buka StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Ekstensi Chrome (Manifest V3) untuk otomatisasi Duolingo: XP farming via API langsung, aktivasi Mode Super melalui chunk patching JS, auto-solve soal latihan, dan widget mengambang.",
+    "duoLinkOpen": "Lihat di GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Pengunduh video hibrida untuk browser Chromium. Menggabungkan ekstensi Side Panel Chrome dengan Companion App natif berbasis yt-dlp dan FFmpeg (4K60 HDR, streaming HLS, ekstraksi MP3).",
+    "downloaderLinkOpen": "Lihat di GitHub"
   }
 }

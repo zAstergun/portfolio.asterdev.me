@@ -6,6 +6,7 @@ import { IdealCalcShowcase } from "./components/IdealCalcShowcase";
 import { IdealCalcPhoneCompanion } from "./components/IdealCalcPhoneCompanion";
 import { StudioOSShowcase } from "./components/StudioOSShowcase";
 import { StudioOSPhoneCompanion } from "./components/StudioOSPhoneCompanion";
+import { PreviewVisual } from "./components/PreviewVisual";
 import {
   GithubLogo,
   LinkedinLogo,
@@ -343,48 +344,6 @@ function renderPhosphorLinkIcon(icon?: string) {
   }
 }
 
-function PreviewVisual({
-  src,
-  alt,
-  isDesktop,
-}: {
-  src: string;
-  alt: string;
-  isDesktop: boolean;
-  isClosing?: boolean;
-}) {
-  const [shouldRender, setShouldRender] = useState(false);
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    // Lazy mount after entry transition finishes
-    const timer = setTimeout(() => setShouldRender(true), 300);
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <div
-      className={`relative overflow-hidden w-full flex justify-center items-center bg-aster-dark/[0.04] ${
-        isDesktop
-          ? "rounded-2xl mt-8"
-          : "rounded-2xl border border-aster-dark/10 mt-8 mx-0"
-      }`}
-      style={{ transform: "translateZ(0)" }} // Force isolated hardware-accelerated layer
-    >
-      {shouldRender && (
-        <img
-          src={src}
-          alt={alt}
-          onLoad={() => setLoaded(true)}
-          className={`w-full h-auto max-h-[500px] object-contain transition-opacity duration-500 ${
-            loaded ? "opacity-100" : "opacity-0 absolute inset-0"
-          }`}
-        />
-      )}
-    </div>
-  );
-}
-
 function getCategoryTag(item: DetailableItem): string {
   const map: Record<string, string> = {
     "sobre-mim": "Perfil",
@@ -667,6 +626,8 @@ function DetailPanel({
                   alt={`Preview de ${item.name}`}
                   isDesktop={isDesktop}
                   isClosing={isClosing}
+                  isDark={isDark}
+                  language={language}
                 />
               </div>
             )}

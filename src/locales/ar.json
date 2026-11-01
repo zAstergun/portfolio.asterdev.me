@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "هذا هو مركز الهندسة والتعاون الخاص بي.\n\n--- الملف الشخصي ---\nالتركيز على تجربة حزم جديدة (React, Astro, Tailwind).\n\n--- المنظمات والمجتمعات ---\n• Centro Universitário União das Américas - UniAmérica (القيادة الفنية): أقوم بتنسيق مستودعات مشاريع التمديد (PEX).\n• [اسم منظمة أخرى]: مساحة محجوزة للشراكات المستقبلية.",
     "langName": "لغة",
-    "frontName": "واجهة أمامية",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "حاسبة إحصائية تفاعلية تقاطع 12 فلترًا ديموغرافيًا مع بيانات IBGE الرسمية.",
     "calcLinkOpen": "فتح التطبيق",
@@ -54,6 +54,12 @@
     "chatbotSummary": "مساعد محادثة مدعوم بمصنف نوايا ارتقائي. اطرح أسئلة عني وعن مشاريعي.",
     "studioName": "StudioOS",
     "studioSummary": "نظام التشغيل المتكامل لصناع المحتوى المحترفين. يوحّد 12 أداة ذكية متوافقة مع هوية القناة (تقييم الأفكار، توليد العناوين والخطافات، ملقن نصوص بملء الشاشة، تصميم الصور المصغرة وتقييم المنشورات). مبني بواسطة Astro 7.3 وReact 19 وTailwind CSS v4 وSupabase وCloudflare Workers.",
-    "studioLinkOpen": "فتح StudioOS"
+    "studioLinkOpen": "فتح StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "إضافة كروم (Manifest V3) لأتمتة دوولينجو بذكاء: تجميع XP عبر واجهة برمجة التطبيقات، تفعيل وضع Super، حل التمارين تلقائياً وويدجت مدمج في الصفحة.",
+    "duoLinkOpen": "عرض على GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "أداة تنزيل فيديو هجينة لمتصفحات Chromium تجمع بين إضافة في الشريط الجانبي وتطبيق محلي مدعوم بـ yt-dlp و FFmpeg لتنزيل مقاطع بدقة تصل إلى 4K واستخراج الصوت MP3.",
+    "downloaderLinkOpen": "عرض على GitHub"
   }
 }

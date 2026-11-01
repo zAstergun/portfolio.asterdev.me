@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "Este é o meu Hub de Engenharia e Colaboração. Mais do que um repositório de arquivos, este espaço centraliza minha atuação em diferentes ecossistemas técnicos, onde aplico padrões de arquitetura e liderança de projetos.\n\n---  PERFIL PESSOAL ---\nFoco em experimentação de novas stacks (React, Astro, Tailwind), ferramentas utilitárias e o desenvolvimento core deste portfólio.\n\n---  ORGANIZAÇÕES E COMUNIDADES ---\n• Centro Universitário União das Américas - UniAmérica (Liderança Técnica): Atuo na coordenação dos repositórios de projetos de extensão (PEX). Minha missão é garantir a padronização das Wikis de documentação, revisar Pull Requests e mentorar outros estudantes na organização do código.\n• [Nome de Outra Org]: Espaço reservado para futuras parcerias e contribuições em projetos Open Source.",
     "langName": "Tradução",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Calculadora estatística interativa que cruza 12 filtros demográficos com microdados oficiais do IBGE (Censo 2022, PNAD 2023) para revelar a probabilidade real de encontrar o parceiro ideal no Brasil. Cálculo em tempo real, card viral compartilhável e auditoria completa de dados.",
     "calcLinkOpen": "Abrir App",
@@ -54,6 +54,12 @@
     "btnSourceCode": "Código Fonte",
     "studioName": "StudioOS",
     "studioSummary": "Sistema Operacional completo para criadores de conteúdo e canais digitais. Centraliza 12 ferramentas inteligentes calibradas ao tom de voz do canal (Rank de Ideia, Gerador de Títulos, Hooks de Retenção, Roteiro & Teleprompter, Briefing de Thumbnails, Humanizador e Score de Post). Construído com Astro 7.3, React 19, Tailwind CSS v4, Supabase Auth/Postgres e Cloudflare Workers.",
-    "studioLinkOpen": "Acessar StudioOS"
+    "studioLinkOpen": "Acessar StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Extensão para Chrome (Manifest V3) desenvolvida para automação inteligente no Duolingo. Possui motor de Farm de XP via API direta, ativação do Modo Super via interceptação de chunks JS, resolvedor automático de exercícios em loop, progressão de lições e widget flutuante in-page.",
+    "duoLinkOpen": "Ver no GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Solução moderna e híbrida para download de vídeos e transmissões em navegadores Chromium. Integra uma extensão com Side Panel persistente a um Companion App nativo com yt-dlp e FFmpeg, capturando vídeos em até 4K60 HDR, streams HLS (.m3u8) autenticados e extração de áudio MP3.",
+    "downloaderLinkOpen": "Ver no GitHub"
   }
 }

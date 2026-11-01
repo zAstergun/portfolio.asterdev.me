@@ -141,6 +141,12 @@ export type TranslationDict = {
     studioName?: string;
     studioSummary?: string;
     studioLinkOpen?: string;
+    duoName?: string;
+    duoSummary?: string;
+    duoLinkOpen?: string;
+    downloaderName?: string;
+    downloaderSummary?: string;
+    downloaderLinkOpen?: string;
     darkName: string;
     mobileName: string;
     demoName: string;
@@ -366,6 +372,40 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
           ],
           tags: ["Vanilla JS", "SPA"],
           previewMedia: "/previews/pex.webp",
+          lang,
+        },
+        {
+          type: "project",
+          id: "duo-tools",
+          name: itemsText.duoName || "Duo Tools",
+          icon: "/icons/duo_tools.png",
+          gradient: ["#1e232a", "#121316"],
+          summary:
+            itemsText.duoSummary ||
+            "Extensão Chrome (Manifest V3) com automação inteligente no Duolingo: Farm de XP via API direta, ativação do Modo Super, resolvedor contínuo de exercícios e widget flutuante in-page.",
+          links: [
+            { title: itemsText.duoLinkOpen || "Ver no GitHub", url: "https://github.com/zAstergun/Duo-Tools", icon: "github" },
+            { title: itemsText.btnSourceCode, url: "https://github.com/zAstergun/Duo-Tools", icon: "file-code" },
+          ],
+          tags: ["Chrome Extension", "Manifest V3", "Automation", "JavaScript"],
+          previewMedia: "/previews/duo-tools.png",
+          lang,
+        },
+        {
+          type: "project",
+          id: "aster-video-downloader",
+          name: itemsText.downloaderName || "Aster Video Downloader",
+          icon: "/icons/aster_downloader.png",
+          gradient: ["#2563eb", "#7c3aed"],
+          summary:
+            itemsText.downloaderSummary ||
+            "Solução moderna e híbrida para download de vídeos e transmissões em navegadores Chromium. Integra uma extensão Side Panel com um Companion App nativo (yt-dlp + FFmpeg), suportando até 4K60 HDR, streams HLS (.m3u8) autenticados e extração de MP3.",
+          links: [
+            { title: itemsText.downloaderLinkOpen || "Ver no GitHub", url: "https://github.com/zAstergun/Aster-Video-Downloader", icon: "github" },
+            { title: itemsText.btnSourceCode, url: "https://github.com/zAstergun/Aster-Video-Downloader", icon: "file-code" },
+          ],
+          tags: ["Chrome Extension", "Manifest V3", "yt-dlp", "FFmpeg", "Native Messaging"],
+          previewMedia: "/previews/aster-downloader.png",
           lang,
         },
       ],

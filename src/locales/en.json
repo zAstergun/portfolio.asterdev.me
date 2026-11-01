@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "This is my Engineering and Collaboration Hub. More than a file repository, this space centralizes my work across different technical ecosystems, where I apply architecture patterns and project leadership.\n\n---  PERSONAL PROFILE ---\nFocus on experimenting with new stacks (React, Astro, Tailwind), utility tools, and the core development of this portfolio.\n\n---  ORGANIZATIONS AND COMMUNITIES ---\n• Centro Universitário União das Américas - UniAmérica (Technical Leadership): I coordinate the extension project (PEX) repositories. My mission is to ensure the standardization of documentation Wikis, review Pull Requests, and mentor other students in code organization.\n• [Other Org Name]: Space reserved for future partnerships and contributions to Open Source projects.",
     "langName": "Language",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Interactive statistical calculator that crosses 12 demographic filters with official IBGE microdata (2022 Census, 2023 PNAD) to reveal the real probability of finding the ideal partner in Brazil. Real-time calculation, shareable viral card, and complete data audit.",
     "calcLinkOpen": "Open App",
@@ -54,6 +54,12 @@
     "btnSourceCode": "Source Code",
     "studioName": "StudioOS",
     "studioSummary": "Comprehensive Operating System for serious content creators. Centralizes 12 intelligent tools calibrated to your channel's unique voice (Idea Ranking, High-CTR Titles, Retention Hooks, Scripting & Teleprompter, Thumbnail Briefs, AI Humanizer, and Post Scorecard). Built with Astro 7.3, React 19, Tailwind CSS v4, Supabase Auth/Postgres, and Cloudflare Workers.",
-    "studioLinkOpen": "Launch StudioOS"
+    "studioLinkOpen": "Launch StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Chrome Extension (Manifest V3) engineered for smart automation on Duolingo. Features a direct-API XP farming engine, Super Mode activation via JS chunk patching, continuous auto-solver for exercises, sequential lesson progression, and an in-page floating widget.",
+    "duoLinkOpen": "View on GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Modern hybrid video downloader for Chromium browsers. Pairs a persistent Chrome Side Panel extension with a native yt-dlp + FFmpeg Companion App, supporting up to 4K60 HDR media, authenticated HLS (.m3u8) streams, and native MP3 audio extraction.",
+    "downloaderLinkOpen": "View on GitHub"
   }
 }

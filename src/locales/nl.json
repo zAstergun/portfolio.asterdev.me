@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "Dit is mijn Engineering en Collaboration Hub. Meer dan een bestandsrepository, centraliseert deze ruimte mijn werk in verschillende technische ecosystemen.\n\n--- PERSOONLIJK PROFIEL ---\nFocus op het experimenteren met nieuwe stacks (React, Astro, Tailwind).\n\n--- ORGANISATIES EN GEMEENSCHAPPEN ---\n• Centro Universitário União das Américas - UniAmérica (Technisch Leiderschap): Ik coördineer de repositories voor uitbreidingsprojecten (PEX).\n• [Andere Org Naam]: Ruimte gereserveerd voor toekomstige partnerschappen.",
     "langName": "Taal",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Interactieve statistische rekenmachine die 12 demografische filters kruist met officiële IBGE-microdata.",
     "calcLinkOpen": "App openen",
@@ -54,6 +54,12 @@
     "chatbotSummary": "Conversationele assistent met heuristische intentieclassificatie. Stel vragen over mij en mijn projecten.",
     "studioName": "StudioOS",
     "studioSummary": "Het complete Besturingssysteem voor contentmakers. Centraliseert 12 slimme tools afgestemd op de unieke stem van je kanaal (Idee Ranking, Titels & Hooks, Teleprompter, Thumbnail Briefing, Humanizer en Post Scorecard). Gebouwd met Astro 7.3, React 19, Tailwind CSS v4, Supabase en Cloudflare Workers.",
-    "studioLinkOpen": "Open StudioOS"
+    "studioLinkOpen": "Open StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Chrome-extensie (Manifest V3) voor Duolingo-automatisering: XP-farming via directe API, Super Mode via JS-patching, automatische opgavenoplosser en in-page widget.",
+    "duoLinkOpen": "Bekijk op GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Moderne hybride videodownloader voor Chromium-browsers. Combineert een Chrome Side Panel-extensie met een native yt-dlp + FFmpeg Companion App voor 4K60 HDR, HLS-streams en MP3-extractie.",
+    "downloaderLinkOpen": "Bekijk op GitHub"
   }
 }

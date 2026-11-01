@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "Đây là Trung tâm Kỹ thuật và Cộng tác của tôi. Không chỉ là một kho lưu trữ tệp, không gian này tập trung công việc của tôi trong các hệ sinh thái công nghệ khác nhau, nơi tôi áp dụng các mô hình kiến trúc và lãnh đạo dự án.\n\n--- HỒ SƠ CÁ NHÂN ---\nTập trung vào việc thử nghiệm các ngăn xếp mới (React, Astro, Tailwind), các công cụ tiện ích và phát triển cốt lõi của danh mục đầu tư này.\n\n--- TỔ CHỨC VÀ CỘNG ĐỒNG ---\n• Centro Universitário União das Américas - UniAmérica (Lãnh đạo Kỹ thuật): Tôi điều phối các kho lưu trữ dự án mở rộng (PEX).\n• [Tên Tổ chức khác]: Không gian dành riêng cho các quan hệ đối tác và đóng góp trong tương lai cho các dự án Open Source.",
     "langName": "Ngôn ngữ",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Máy tính thống kê tương tác kết hợp 12 bộ lọc nhân khẩu học với vi dữ liệu chính thức của IBGE.",
     "calcLinkOpen": "Mở Ứng dụng",
@@ -54,6 +54,12 @@
     "chatbotSummary": "Trợ lý đàm thoại với Bộ phân loại ý định heuristic. Đặt câu hỏi về tôi và các dự án của tôi.",
     "studioName": "StudioOS",
     "studioSummary": "Hệ Điều Hành toàn diện dành cho nhà sáng tạo nội dung. Đồng bộ 12 công cụ thông minh theo phong cách kênh (Đánh giá Rank Ý Tưởng, Tạo Tiêu Đề, Hook Giữ Chân, Kịch Bản & Máy Nhắc Chữ, Brief Thumbnail và Chấm Điểm Bài Đăng). Phát triển với Astro 7.3, React 19, Tailwind CSS v4, Supabase và Cloudflare Workers.",
-    "studioLinkOpen": "Mở StudioOS"
+    "studioLinkOpen": "Mở StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Tiện ích mở rộng Chrome (Manifest V3) tự động hóa Duolingo: cày XP qua API, kích hoạt Super Mode qua can thiệp JS, tự động giải bài tập và widget nổi trực tiếp trên trang.",
+    "duoLinkOpen": "Xem trên GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Trình tải video kết hợp cho trình duyệt Chromium. Kết nối tiện ích Side Panel với ứng dụng Companion gốc hỗ trợ yt-dlp và FFmpeg, tải video lên đến 4K60 HDR, luồng HLS và trích xuất âm thanh MP3.",
+    "downloaderLinkOpen": "Xem trên GitHub"
   }
 }

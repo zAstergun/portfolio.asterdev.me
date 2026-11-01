@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "C'est mon Hub d'Ingénierie et de Collaboration. Plus qu'un référentiel de fichiers, cet espace centralise mon travail dans différents écosystèmes techniques, où j'applique des modèles d'architecture et de direction de projets.\n\n--- PROFIL PERSONNEL ---\nFocus sur l'expérimentation de nouvelles stacks (React, Astro, Tailwind), d'outils utilitaires et le développement principal de ce portfolio.\n\n--- ORGANISATIONS ET COMMUNAUTÉS ---\n• Centro Universitário União das Américas - UniAmérica (Leadership Technique): Je coordonne les référentiels de projets d'extension (PEX).\n• [Nom de l'Autre Org]: Espace réservé aux futurs partenariats et contributions à des projets Open Source.",
     "langName": "Langue",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Calculateur statistique interactif croisant 12 filtres démographiques avec les microdonnées officielles de l'IBGE.",
     "calcLinkOpen": "Ouvrir l'App",
@@ -54,6 +54,12 @@
     "chatbotSummary": "Assistant conversationnel avec classificateur d'intentions heuristique. Posez des questions sur moi et mes projets.",
     "studioName": "StudioOS",
     "studioSummary": "Système d'Exploitation complet pour créateurs de contenu. Centralise 12 outils intelligents calibrés sur la voix du canal (Rank d'Idée, Générateurs de Titres, Accroches de Rétention, Téléprompteur plein écran, Briefing de Miniature, Humanisateur et Score de Post). Conçu avec Astro 7.3, React 19, Tailwind CSS v4, Supabase et Cloudflare Workers.",
-    "studioLinkOpen": "Ouvrir StudioOS"
+    "studioLinkOpen": "Ouvrir StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Extension Chrome (Manifest V3) pour automatisation sur Duolingo : farm de points XP via API, mode Super via interception JS, résolution automatique des exercices et widget in-page.",
+    "duoLinkOpen": "Voir sur GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Téléchargeur de vidéos hybride pour navigateurs Chromium. Associe une extension Side Panel Chrome à une Companion App native propulsée par yt-dlp et FFmpeg (4K60 HDR, flux HLS .m3u8, extraction MP3).",
+    "downloaderLinkOpen": "Voir sur GitHub"
   }
 }

@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "这是我的工程和协作中心。这不仅仅是一个文件存储库，这个空间集中了我在不同技术生态系统中的工作，我在其中应用架构模式和项目领导力。\n\n--- 个人资料 ---\n专注于尝试新的技术栈（React、Astro、Tailwind）、实用工具以及此投资组合的核心开发。\n\n--- 组织和社区 ---\n• Centro Universitário União das Américas - UniAmérica（技术领导）: 我负责协调扩展项目（PEX）存储库。我的任务是确保文档Wiki的标准化、审查拉取请求，并在代码组织方面指导其他学生。\n• [其他组织名称]: 为未来在开源项目中的合作伙伴关系和贡献保留的空间。",
     "langName": "语言",
-    "frontName": "前端",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "交互式统计计算器，将12个人口统计过滤器与官方IBGE微观数据（2022年人口普查、2023年PNAD）相结合，揭示在巴西找到理想伴侣的真实概率。",
     "calcLinkOpen": "打开应用",
@@ -54,6 +54,12 @@
     "chatbotSummary": "搭载启发式意图分类器的对话助手。欢迎随时提问关于我和我的项目。",
     "studioName": "StudioOS",
     "studioSummary": "面向专业内容创作者的操作系统。集成12款与频道调性深度联动的智能工具（灵感评级、高CTR标题、留存黄金开头生成、全屏提词器剧本创作、缩略图设计简报与发布前评分）。基于 Astro 7.3、React 19、Tailwind CSS v4、Supabase 和 Cloudflare Workers 构建。",
-    "studioLinkOpen": "打开 StudioOS"
+    "studioLinkOpen": "打开 StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Duolingo 智能自动化 Chrome 扩展（Manifest V3）：支持直接 API 快速刷经验、JS 切片拦截启用 Super 模式、连续自动解题以及页面内嵌快捷浮窗。",
+    "duoLinkOpen": "在 GitHub 查看",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "适用于 Chromium 浏览器的现代混合视频下载器。将 Chrome 侧边栏扩展与基于 yt-dlp 和 FFmpeg 的原生 Companion App 深度整合，支持 4K60 HDR、HLS 直播流及 MP3 音频提取。",
+    "downloaderLinkOpen": "在 GitHub 查看"
   }
 }

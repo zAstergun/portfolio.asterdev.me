@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "Questo è il mio Hub di Ingegneria e Collaborazione. Più che un repository di file, questo spazio centralizza il mio lavoro in diversi ecosistemi tecnici.\n\n--- PROFILO PERSONALE ---\nFocus sulla sperimentazione con nuovi stack (React, Astro, Tailwind).\n\n--- ORGANIZZAZIONI E COMUNITÀ ---\n• Centro Universitário União das Américas - UniAmérica (Leadership Tecnica): Coordino i repository dei progetti di estensione (PEX).\n• [Nome di un'altra Org]: Spazio riservato a future partnership.",
     "langName": "Lingua",
-    "frontName": "Frontend",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "Calcolatore statistico interattivo che incrocia 12 filtri demografici con i microdati ufficiali IBGE.",
     "calcLinkOpen": "Apri App",
@@ -54,6 +54,12 @@
     "chatbotSummary": "Assistente conversazionale con classificatore euristico di intenti. Fai domande su di me e sui miei progetti.",
     "studioName": "StudioOS",
     "studioSummary": "Sistema Operativo completo per creator di contenuti. Centralizza 12 strumenti intelligenti calibrati sul tono di voce del canale (Rank di Idee, Generatori di Titoli, Hook di Ritenzione, Script con Teleprompter, Briefing di Miniature e Punteggio Post). Costruito con Astro 7.3, React 19, Tailwind CSS v4, Supabase e Cloudflare Workers.",
-    "studioLinkOpen": "Apri StudioOS"
+    "studioLinkOpen": "Apri StudioOS",
+    "duoName": "Duo Tools",
+    "duoSummary": "Estensione Chrome (Manifest V3) per l'automazione intelligente su Duolingo: farming di XP via API diretta, attivazione Super Mode tramite chunk patching, risolutore automatico e widget in-page.",
+    "duoLinkOpen": "Vedi su GitHub",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Downloader video ibrido per browser Chromium. Unisce un'estensione nel Side Panel di Chrome a una Companion App nativa alimentata da yt-dlp e FFmpeg (4K60 HDR, streaming HLS .m3u8, estrazione MP3).",
+    "downloaderLinkOpen": "Vedi su GitHub"
   }
 }

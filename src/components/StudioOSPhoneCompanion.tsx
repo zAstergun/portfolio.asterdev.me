@@ -12,6 +12,7 @@ import {
   CheckCircle,
 } from "@phosphor-icons/react";
 import { isImageIcon, type DetailableItem, type Language } from "../data/aster";
+import { PreviewVisual } from "./PreviewVisual";
 
 interface StudioOSPhoneCompanionProps {
   isDark?: boolean;
@@ -279,13 +280,12 @@ export function StudioOSPhoneCompanion({
         >
           {ui?.preview || "Preview"}
         </h3>
-        <div className="rounded-2xl overflow-hidden border border-amber-500/30 shadow-lg bg-[#14120e]">
-          <img
-            src="/previews/studioos.png"
-            alt="StudioOS Preview"
-            className="w-full h-auto object-cover"
-          />
-        </div>
+        <PreviewVisual
+          src="/previews/studioos.png"
+          alt="StudioOS Preview"
+          isDark={isDark}
+          language={language}
+        />
       </div>
     </>
   );

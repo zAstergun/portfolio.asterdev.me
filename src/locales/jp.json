@@ -31,7 +31,7 @@
     "githubName": "GitHub",
     "githubSummary": "これは私のエンジニアリングおよびコラボレーションハブです。単なるファイルリポジトリではなく、このスペースは、アーキテクチャパターンとプロジェクトリーダーシップを適用するさまざまな技術エコシステムでの私の作業を一元化します。\n\n--- 個人プロフィール ---\n新しいスタック（React、Astro、Tailwind）、ユーティリティツール、およびこのポートフォリオのコア開発の実験に焦点を当てています。\n\n--- 組織とコミュニティ ---\n• Centro Universitário União das Américas - UniAmérica（技術リーダーシップ）: 拡張プロジェクト（PEX）リポジトリを調整します。私の使命は、ドキュメントWikiの標準化を保証し、プルリクエストをレビューし、コード編成において他の学生を指導することです。\n• [他の組織名]: 将来のパートナーシップとオープンソースプロジェクトへの貢献のために予約されたスペース。",
     "langName": "言語",
-    "frontName": "フロントエンド",
+    "frontName": "Web",
     "calcName": "Ideal Calc",
     "calcSummary": "12の人口統計フィルターとIBGEの公式マイクロデータ（2022年国勢調査、2023年PNAD）を交差させ、ブラジルで理想のパートナーが見つかる真の確率を明らかにするインタラクティブな統計計算機。",
     "calcLinkOpen": "アプリを開く",
@@ -54,6 +54,12 @@
     "chatbotSummary": "ヒューリスティック意図分類器を搭載した対話型アシスタント。私や私のプロジェクトについて何でも質問してください。",
     "studioName": "StudioOS",
     "studioSummary": "コンテンツクリエイターのための専用OS。チャンネルのトーンに最適化された12のスマートツールを集約（アイデアRank評価、高CTRタイトル、フック生成、全画面テレプロンプター付き台本作成、サムネイル設計、投稿スコア判定）。Astro 7.3、React 19、Tailwind CSS v4、Supabase、Cloudflare Workersで構築。",
-    "studioLinkOpen": "StudioOSを開く"
+    "studioLinkOpen": "StudioOSを開く",
+    "duoName": "Duo Tools",
+    "duoSummary": "Duolingo自動化Chrome拡張機能（Manifest V3）：ダイレクトAPI経由のXPファーム、JSチャンク書き換えによるSuperモード有効化、問題の自動解答ループ、ページ内ウィジェットを搭載。",
+    "duoLinkOpen": "GitHubで見る",
+    "downloaderName": "Aster Video Downloader",
+    "downloaderSummary": "Chromiumブラウザ向けハイブリッド動画ダウンローダー。Chromeサイドパネル拡張機能とyt-dlp・FFmpeg駆動のネイティブCompanionアプリを統合し、最大4K60 HDR動画やHLS配信の保存、MP3抽出に対応。",
+    "downloaderLinkOpen": "GitHubで見る"
   }
 }
