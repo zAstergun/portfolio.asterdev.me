@@ -10,6 +10,7 @@ import { PreviewVisual } from "./components/PreviewVisual";
 import { BlogPostsFeed } from "./components/BlogPostsFeed";
 import { BlogPostReader } from "./components/BlogPostReader";
 import { CurriculumDetail } from "./components/CurriculumDetail";
+import { AboutMeDetail } from "./components/AboutMeDetail";
 import { type BlogPostItem, getBlogPostById } from "./data/blogData";
 import {
   GithubLogo,
@@ -353,12 +354,31 @@ function renderPhosphorLinkIcon(icon?: string) {
   }
 }
 
-function getCategoryTag(item: DetailableItem, ui?: any): string {
+function getCategoryTag(item: DetailableItem, ui?: any, language: Language = "br"): string {
   if (item.id.startsWith("blog-")) {
     return (ui?.posts || "Artigos").toUpperCase();
   }
   if (item.id.startsWith("cert-")) {
     return (ui?.tagCert || "Certificação").toUpperCase();
+  }
+  if (item.id === "sobre-mim") {
+    const profileMap: Record<Language, string> = {
+      br: "Perfil",
+      pt: "Perfil",
+      en: "Profile",
+      es: "Perfil",
+      fr: "Profil",
+      de: "Profil",
+      it: "Profilo",
+      nl: "Profiel",
+      ru: "Профиль",
+      ar: "الملف الشخصي",
+      jp: "プロフィール",
+      kr: "프로필",
+      cn: "个人档案",
+      vn: "Hồ sơ",
+    };
+    return (profileMap[language] || "Perfil").toUpperCase();
   }
   const map: Record<string, string> = {
     "sobre-mim": "Perfil",
@@ -393,6 +413,7 @@ function DetailPanel({
   language = "br",
   ui,
   onSelectPost,
+  onOpenApp,
 }: {
   item: DetailableItem;
   onClose: () => void;
@@ -404,12 +425,13 @@ function DetailPanel({
   language?: Language;
   ui: any;
   onSelectPost?: (post: BlogPostItem) => void;
+  onOpenApp?: (appId: string) => void;
 }) {
   const animClass = isClosing ? "animate-ipadAppClose" : "animate-ipadAppOpen";
   const panelBg = isDark ? 'bg-stone-900' : 'bg-aster-beige';
   const panelText = isDark ? 'text-stone-100' : 'text-aster-dark';
   const panelFaint = isDark ? 'text-stone-500' : 'text-aster-dark/40';
-  const categoryTag = getCategoryTag(item, ui);
+  const categoryTag = getCategoryTag(item, ui, language);
 
   const containerClass = isDesktop
     ? `detail-panel-desktop absolute inset-0 z-20 flex flex-col ${panelBg} overflow-hidden ${animClass} transition-colors duration-500`
@@ -625,7 +647,7 @@ function DetailPanel({
             </h2>
 
             {/* Tags */}
-            {(Boolean(item.appUrl) || (item.tags && item.tags.length > 0)) && (
+            {item.id !== "sobre-mim" && (Boolean(item.appUrl) || (item.tags && item.tags.length > 0)) && (
               <div className="flex flex-wrap gap-1.5 mb-6">
                 {item.appUrl && (
                   <span
@@ -650,13 +672,21 @@ function DetailPanel({
               </div>
             )}
 
-            {/* Curriculum Detail or Standard Resumo */}
+            {/* Curriculum Detail, About Me Detail or Standard Resumo */}
             {item.id === "curriculo" ? (
               <CurriculumDetail
                 isDark={isDark}
                 isDesktop={isDesktop}
                 language={language}
                 links={item.links}
+              />
+            ) : item.id === "sobre-mim" ? (
+              <AboutMeDetail
+                isDark={isDark}
+                isDesktop={isDesktop}
+                language={language}
+                links={item.links}
+                onOpenApp={onOpenApp}
               />
             ) : (
               <>
@@ -2240,6 +2270,25 @@ export default function App() {
     [closePhoneDetail, closeTabletDetail, HOME_ITEMS]
   );
 
+  const handleOpenAppById = useCallback(
+    (appId: string) => {
+      const item = HOME_ITEMS.find((i) => i.id === appId);
+      if (!item) return;
+      if (isFolder(item)) {
+        closePhoneDetail();
+        closeTabletDetail();
+        setOpenFolder(item);
+      } else {
+        setPhoneDetail(item);
+        setTabletDetail(item);
+        setIsPhoneClosing(false);
+        setIsTabletClosing(false);
+        window.history.replaceState({}, '', `${window.location.pathname}?app=${item.id}`);
+      }
+    },
+    [HOME_ITEMS, closePhoneDetail, closeTabletDetail]
+  );
+
   // ─── Keyboard Navigation ──────────────────────────────────
 
   const handleKeyDown = useCallback(
@@ -2517,6 +2566,7 @@ export default function App() {
             language={language}
             ui={ui}
             onSelectPost={switchBlogPost}
+            onOpenApp={handleOpenAppById}
           />
         )
       )}
@@ -2713,6 +2763,7 @@ export default function App() {
                       language={language}
                       ui={ui}
                       onSelectPost={switchBlogPost}
+                      onOpenApp={handleOpenAppById}
                     />
                   )
                 )}
