@@ -2,355 +2,360 @@ import type { CertTranslationMap } from "./types";
 
 export const arContent: CertTranslationMap = {
   "cert-origamid-master": {
-    "name": "تطوير الويب المتكامل وتصميم تجربة المستخدم - برنامج الماستر",
-    "summary": "Comprehensive Master curriculum provided by Origamid, integrating modern Front-End engineering, Back-End fundamentals, and user-centered UI/UX design.\n\n• عدد الساعات: 194 hours\n• الفترة / تاريخ الإصدار: June 2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/a0087404\n\nالمهارات والموضوعات المتقنة:\n- Modern Front-End ecosystem: React, TypeScript, JavaScript ES6+, semantic HTML5, and advanced CSS\n- Back-End foundations: RESTful API architecture and asynchronous integration\n- UI/UX Design: Scalable Design Systems, high-fidelity wireframing, and visual hierarchy\n- Web performance optimization, fluid responsive layouts, and accessibility standards (WCAG).",
+    "name": "تطوير الويب الشامل وتصميم واجهات المستخدم (Full Stack & UX/UI) - مسار الماستر",
+    "summary": "برنامج ماستر تدريبي وتطبيقي شامل مقدم من معهد Origamid، يجمع بين هندسة الواجهات الأمامية الحديثة، وأساسيات الأنظمة الخلفية، وتصميم الواجهات المتمحورة حول تجربة المستخدم.\n\n• عدد الساعات: 194 ساعة\n• الفترة / تاريخ الإصدار: يونيو 2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/a0087404\n\nالمهارات والموضوعات المتقنة:\n- منظومة الواجهات الأمامية الحديثة: React وTypeScript وJavaScript ES6+ وHTML5 الدلالية وتنسيقات CSS المتقدمة\n- أسس الواجهات الخلفية: بنية واجهات برمجة التطبيقات RESTful API، والتكامل غير المتزامن، ونمذجة البيانات\n- تصميم UX/UI: أنظمة التصميم القابلة للتوسع (Design Systems)، النماذج الأولية عالية الدقة، والتسلسل البصري\n- تحسين أداء وسرعة تحميل الصفحات، وتخطيطات التصميم المتجاوب الانسيابي، ومعايير سهولة الوصول إلى الويب (WCAG).",
     "tags": [
-      "Full Stack",
-      "UX/UI Design",
-      "Origamid",
-      "194h"
+          "Full Stack",
+          "UX/UI Design",
+          "Origamid",
+          "194h"
     ]
   },
   "cert-descomplica-iot": {
     "name": "مطور إنترنت الأشياء (IoT)",
-    "summary": "Academic Certificate of Specialization as IoT Developer from the Computer Science Bachelor program at Descomplica Faculdade Digital.\n\n• عدد الساعات: 160 hours\n• الفترة / تاريخ الإصدار: 07/10/2026 at 09:12\n• المؤسسة: Descomplica Faculdade Digital / UniAmérica\n• التحقق الرسمي: 160a4976b6a5ea9e304c9082d4d4722b4683fedd457609ef10edf230e4feb90f\n\nالمهارات والموضوعات المتقنة:\n- Embedded systems architecture, microcontrollers, and IoT sensor networks\n- Low-latency communication protocols (MQTT, CoAP, HTTP/WebSockets)\n- Real-time telemetry data processing and cloud IoT service integration\n- Security standards, device-level encryption, and hardware vulnerability management\n- Building end-to-end data pipelines from physical hardware to analytical dashboards.",
+    "summary": "شهادة أكاديمية تخصصية في تطوير أنظمة إنترنت الأشياء (IoT Developer) ضمن برنامج بكالوريوس علوم الحاسوب في Descomplica Faculdade Digital.\n\n• عدد الساعات: 160 ساعة\n• الفترة / تاريخ الإصدار: 07/10/2026 الساعة 09:12\n• المؤسسة: Descomplica Faculdade Digital / UniAmérica\n• التحقق الرسمي: 160a4976b6a5ea9e304c9082d4d4722b4683fedd457609ef10edf230e4feb90f\n\nالمهارات والموضوعات المتقنة:\n- بنية الأنظمة المدمجة، والمتحكمات الدقيقة، وشبكات حساسات إنترنت الأشياء\n- بروتوكولات الاتصال الشبكي فائقة السرعة ومنخفضة التأخير (MQTT وCoAP وHTTP/WebSockets)\n- معالجة بيانات القياس عن بعد (Telemetry) في الوقت الفعلي والتكامل مع خدمات إنترنت الأشياء السحابية\n- المعايير الأمنية على مستوى العتاد، وتشفير البيانات، وإدارة الثغرات الأمنية في أجهزة IoT\n- بناء خطوط نقل ومعالجة البيانات المتكاملة (Data Pipelines) من المستشعرات الفيزيائية حتى لوحات التحليلات.",
     "tags": [
-      "Internet of Things",
-      "Hardware & Cloud",
-      "Descomplica",
-      "160h"
+          "إنترنت الأشياء",
+          "Hardware & Cloud",
+          "Descomplica",
+          "160h"
     ]
   },
   "cert-descomplica-ia": {
     "name": "مطور الذكاء الاصطناعي (AI)",
-    "summary": "Academic Certificate of Specialization as AI Developer from the Computer Science Bachelor program at Descomplica Faculdade Digital.\n\n• عدد الساعات: 200 hours\n• الفترة / تاريخ الإصدار: 11/08/2026 at 13:28\n• المؤسسة: Descomplica Faculdade Digital / UniAmérica\n• التحقق الرسمي: 44b3f3e0b08f00c33fb6ed5b1b599ae9fd791ccb2906adb10cfe370804f424d5\n\nالمهارات والموضوعات المتقنة:\n- Mathematical and statistical foundations for Artificial Intelligence\n- Supervised and unsupervised Machine Learning models\n- Artificial Neural Networks, Deep Learning, and Backpropagation\n- Natural Language Processing (NLP) and modern language model principles\n- Computer Vision, feature extraction, and image classification\n- Model evaluation metrics (Precision, Recall, F1, ROC-AUC) and hyperparameter tuning.",
+    "summary": "شهادة أكاديمية تخصصية في تطوير الذكاء الاصطناعي (AI Developer) ضمن برنامج بكالوريوس علوم الحاسوب في Descomplica Faculdade Digital.\n\n• عدد الساعات: 200 ساعة\n• الفترة / تاريخ الإصدار: 11/08/2026 الساعة 13:28\n• المؤسسة: Descomplica Faculdade Digital / UniAmérica\n• التحقق الرسمي: 44b3f3e0b08f00c33fb6ed5b1b599ae9fd791ccb2906adb10cfe370804f424d5\n\nالمهارات والموضوعات المتقنة:\n- الأسس الرياضية والإحصائية المتقدمة المطبقة في خوارزميات الذكاء الاصطناعي\n- خوارزميات تعلم الآلة الخاضعة للإشراف (Supervised) وغير الخاضعة للإشراف (Unsupervised)\n- الشبكات العصبية الاصطناعية، والتعلم العميق (Deep Learning)، وخوارزمية الانتشار العكسي (Backpropagation)\n- معالجة اللغات الطبيعية (NLP) والأسس المعمارية لنماذج اللغات الحديثة\n- الرؤية الحاسوبية، واستخراج الخصائص البصرية، ونماذج تصنيف الصور الرقمية\n- مقاييس تقييم أداء النماذج (Precision وRecall وF1 وROC-AUC) وضبط المعلمات الفائقة (Hyperparameters).",
     "tags": [
-      "Artificial Intelligence",
-      "Deep Learning",
-      "Descomplica",
-      "200h"
+          "الذكاء الاصطناعي",
+          "Deep Learning",
+          "Descomplica",
+          "200h"
     ]
   },
   "cert-origamid-typescript": {
     "name": "تايب سكريبت للمبتدئين",
-    "summary": "Specialization in static typing and scalable software engineering with TypeScript by Origamid.\n\n• عدد الساعات: 22 hours\n• الفترة / تاريخ الإصدار: 21/06/2026 to 26/06/2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/de898dfe\n\nالمهارات والموضوعات المتقنة:\n- Interfaces, Type Aliases, and strict compile-time type inference\n- Generics for creating reusable, type-safe functions, classes, and components\n- Type Narrowing, Type Guards, Union Types, and Intersection Types\n- Type-safe DOM manipulation and browser event handling without 'any'\n- tsconfig.json compiler flags and best architectural practices\n- Typing integration with third-party libraries across the Node/JS ecosystem.",
+    "summary": "تخصص متقدم في نظام الأنواع الثابتة وهندسة البرمجيات القابلة للتوسع باستخدام TypeScript من معهد Origamid.\n\n• عدد الساعات: 22 ساعة\n• الفترة / تاريخ الإصدار: من 21/06/2026 إلى 26/06/2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/de898dfe\n\nالمهارات والموضوعات المتقنة:\n- الواجهات البرمجية (Interfaces)، والأسماء المستعارة للأنواع (Type Aliases)، واستنتاج الأنواع الصارم أثناء التجميع\n- المعلمات العامة (Generics) لبناء دوال وفئات ومكونات آمنة الأنواع وقابلة لإعادة الاستخدام\n- تضييق الأنواع (Type Narrowing)، وحراس الأنواع (Type Guards)، وأنواع الاتحاد والتقاطع\n- التعامل الآمن مع شجرة عناصر DOM وأحداث المتصفح دون الاعتماد على النوع 'any'\n- تكوين وتخصيص خيارات tsconfig.json وأفضل ممارسات هندسة الأنواع الهيكلية\n- دمج ملفات تعريف الأنواع مع مكتبات وأطر العمل الحديثة في بيئة JavaScript.",
     "tags": [
-      "TypeScript",
-      "Static Typing",
-      "Origamid",
-      "22h"
+          "TypeScript",
+          "الأنواع الثابتة",
+          "Origamid",
+          "22h"
     ]
   },
   "cert-origamid-react": {
-    "name": "دورة رياكت المتكاملة",
-    "summary": "In-depth advanced training in the modern React.js ecosystem provided by Origamid.\n\n• عدد الساعات: 36 hours\n• الفترة / تاريخ الإصدار: 11/06/2026 to 21/06/2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/f3fa3866\n\nالمهارات والموضوعات المتقنة:\n- Core & advanced React Hooks: useState, useEffect, useContext, useReducer, useMemo, useCallback, useRef\n- Custom Hooks for business logic abstraction and state reuse\n- Routing architecture with React Router (nested routes, dynamic params, program navigation)\n- Controlled forms, input validation, and complex state management\n- Resilient asynchronous RESTful API consumption\n- Rendering optimization, Lazy Loading, and component Code Splitting.",
+    "name": "دورة رياكت الكاملة",
+    "summary": "برنامج تدريبي متقدم وشامل في النظام البيئي الحديث لمكتبة React.js مقدم من معهد Origamid.\n\n• عدد الساعات: 36 ساعة\n• الفترة / تاريخ الإصدار: من 11/06/2026 إلى 21/06/2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/f3fa3866\n\nالمهارات والموضوعات المتقنة:\n- خطافات رياكت الأساسية والمتقدمة: useState وuseEffect وuseContext وuseReducer وuseMemo وuseCallback وuseRef\n- بناء الخطافات المخصصة (Custom Hooks) لتجريد منطق الأعمال وإعادة استخدام الحالة البرمجية\n- التوجيه الكامل لتطبيقات الصفحة الواحدة عبر React Router (المسارات الديناميكية والمعلمات وحماية المسارات)\n- النماذج البرمجية المنضبطة (Controlled Forms)، والتحقق من صحة المدخلات، وإدارة الحالات المعقدة\n- استهلاك بيانات واجهات برمجة التطبيقات RESTful غير المتزامنة بمرونة ومقاومة للأخطاء\n- تحسين أداء عمليات التصيير، وتقسيم الحزم البرمجية (Code Splitting)، والتحميل الكسول للمكونات (Lazy Loading).",
     "tags": [
-      "React",
-      "Frontend",
-      "Origamid",
-      "36h"
+          "React",
+          "Frontend",
+          "Origamid",
+          "36h"
     ]
   },
   "cert-descomplica-bigdata": {
-    "name": "ذكاء الأعمال والبيانات الضخمة",
-    "summary": "Academic Certificate in Business Intelligence & Big Data from Faculdade Descomplica.\n\n• Issue Date: March 2026\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 2b3eab305098c761549f1343300554f054aa902b9437538c8796c25c9604f50b\n\nالمهارات والموضوعات المتقنة:\n- Data Warehousing, Data Lake architecture, and multidimensional modeling (Star & Snowflake)\n- ETL/ELT pipelines for ingestion and curation of high-volume data\n- Analytical dashboards, strategic KPIs, and executive data storytelling\n- Distributed data architectures and metric-driven business intelligence.",
+    "name": "ذكاء الأعمال والبيانات الضخمة (BI & Big Data)",
+    "summary": "شهادة أكاديمية تخصصية في ذكاء الأعمال والبيانات الضخمة من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: مارس 2026\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 2b3eab305098c761549f1343300554f054aa902b9437538c8796c25c9604f50b\n\nالمهارات والموضوعات المتقنة:\n- هندسة مستودعات البيانات (Data Warehouses) وبحيرات البيانات (Data Lakes) والنمذجة متعددة الأبعاد (Star وSnowflake Schema)\n- عمليات الاستخراج والتحويل والتحميل (ETL/ELT) لاستيعاب البيانات الضخمة وتنقيتها وإثرائها\n- بناء لوحات القيادة التحليلية، وتحديد مؤشرات الأداء الرئيسية (KPIs)، والتصور الاستراتيجي للبيانات\n- المعالجة الموزعة للبيانات الضخمة واتخاذ القرارات القائمة على البيانات (Data-Driven Decisions).",
     "tags": [
-      "Business Intelligence",
-      "Big Data",
-      "Descomplica"
+          "Business Intelligence",
+          "Big Data",
+          "Descomplica"
     ]
   },
   "cert-origamid-javascript": {
-    "name": "جافاسكريبت الحديثة الكاملة ES6+",
-    "summary": "Comprehensive mastery of modern JavaScript (ES6+) and ECMAScript specifications by Origamid.\n\n• عدد الساعات: 74 hours\n• الفترة / تاريخ الإصدار: February 2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/b9b225cb\n\nالمهارات والموضوعات المتقنة:\n- Deep DOM: high-performance node manipulation, traversal, custom events, and event delegation\n- Asynchronous JS: Promises, Async/Await, Fetch API, and comprehensive error handling\n- Objects & Prototypes: Classes, Constructor Functions, Prototype Chain, Closures, and lexical scope\n- Modern ES6+ syntax: Destructuring, Rest/Spread, Arrow Functions, Maps, Sets, and Symbols\n- Native ES Modules (ESM), modular bundling concepts, and clean code practices.",
+    "name": "جافا سكريبت المتقدمة والشاملة ES6+",
+    "summary": "تأهيل برمجي عميق وشامل في لغة JavaScript الحديثة ومعايير ECMAScript المعتمدة مقدم من Origamid.\n\n• عدد الساعات: 74 ساعة\n• الفترة / تاريخ الإصدار: فبراير 2026\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/b9b225cb\n\nالمهارات والموضوعات المتقنة:\n- الفهم العميق لشجرة عناصر DOM: معالجة العقد بكفاءة، والتنقل في الشجرة، والأحداث المخصصة، وتفويض الأحداث\n- البرمجة غير المتزامنة: الوعود (Promises)، وصيغة Async/Await، واستدعاء Fetch API، ومعالجة أخطاء الشبكة\n- الكائنات والدوال: الفئات البرمجية (Classes)، ودوال البناء، وسلسلة النماذج الأولية، والإغلاقات (Closures)، ونطاق المتغيرات\n- مزايا ES6+ الحديثة: التفكيك (Destructuring)، ومعاملات Rest & Spread، والدوال السهمية، وMap وSet وSymbol\n- معمارية الوحدات المعيارية الأصلية (ESM)، وأدوات الترجمة البرمجية (Transpilers)، ومبادئ الشيفرة النظيفة.",
     "tags": [
-      "JavaScript",
-      "ES6+",
-      "Origamid",
-      "74h"
+          "JavaScript",
+          "ES6+",
+          "Origamid",
+          "74h"
     ]
   },
   "cert-descomplica-db": {
     "name": "مطور قواعد البيانات",
-    "summary": "Academic Certificate as DB Developer in the Computer Science curriculum at Faculdade Descomplica.\n\n• Issue Date: January 2026\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: f0ff2c73925f6e3d196c6bf33e2f20f118a2428917a7bb2c7abccb1c5bdf3233\n\nالمهارات والموضوعات المتقنة:\n- Relational schema design and data normalization rules (1NF, 2NF, 3NF)\n- Complex SQL queries: Multi-table Joins, correlated subqueries, analytical views, and index tuning\n- Stored Procedures, Triggers, execution plan analysis, and ACID transactions\n- Core principles of document-based and key-value NoSQL database engines.",
+    "summary": "شهادة أكاديمية في تصميم وهندسة قواعد البيانات ضمن برنامج علوم الحاسوب في Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: يناير 2026\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: f0ff2c73925f6e3d196c6bf33e2f20f118a2428917a7bb2c7abccb1c5bdf3233\n\nالمهارات والموضوعات المتقنة:\n- التصميم والنمذجة العلاقية لقواعد البيانات وتطبيق معايير التسوية (1NF و2NF و3NF)\n- استعلامات SQL المتقدمة: عمليات الربط المعقدة (JOINs)، والاستعلامات الفرعية المترابطة، والعروض (Views)، والفهارس الفعالة\n- الإجراءات المخزنة (Stored Procedures)، والمشغلات التلقائية (Triggers)، وإدارة المعاملات المتوافقة مع معايير ACID\n- مقدمة إلى قواعد البيانات غير العلاقية NoSQL الموجهة للمستندات ومخازن المفتاح والقيمة.",
     "tags": [
-      "Databases",
-      "SQL & NoSQL",
-      "Descomplica"
+          "قواعد البيانات",
+          "SQL & NoSQL",
+          "Descomplica"
     ]
   },
   "cert-descomplica-software-eng": {
     "name": "هندسة البرمجيات",
-    "summary": "Academic Certificate in Software Engineering from the Computer Science program at Faculdade Descomplica.\n\n• Issue Date: September 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 683843d9190d419f6c42e167c459e046dc7afb3642438d0700425852a0b0f554\n\nالمهارات والموضوعات المتقنة:\n- Software Development Life Cycle (SDLC) and modern agile team workflows\n- Clean software architectural principles, high cohesion, and loose coupling\n- GoF Design Patterns (Factory, Observer, Singleton, Strategy, Decorator)\n- Quality assurance engineering, automated testing, and CI/CD automation.",
+    "summary": "شهادة أكاديمية في أسس ومنهجيات وممارسات هندسة البرمجيات المتقدمة من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: ديسمبر 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: c1f6ae2ca649a3cfc6ee70176b92a6c8b05da6d54cf8e30b6eec950b71eaeb99\n\nالمهارات والموضوعات المتقنة:\n- دورات حياة تطوير البرمجيات، والمنهجيات الرشيقة (Scrum وKanban)، وعمليات التطوير التكراري\n- أنماط البنية المعمارية للبرمجيات، وفصل التبعيات بين الوحدات، ومبادئ SOLID الخمسة\n- استراتيجيات الاختبار: اختبارات الوحدات (Unit Testing)، واختبارات التكامل، وتطوير البرمجيات الموجه بالاختبار (TDD)\n- إدارة النسخ التعاونية باستخدام Git، والتكامل المستمر (CI)، وإدارة الديون التقنية.",
     "tags": [
-      "Software Engineering",
-      "Architecture",
-      "Descomplica"
+          "هندسة البرمجيات",
+          "البنية المعمارية",
+          "Descomplica"
     ]
   },
   "cert-notion-advanced": {
-    "name": "شهادة نوشن المتقدمة الرسمية",
-    "summary": "Official Advanced Credential issued by Notion Labs certifying enterprise mastery in information architecture and complex database modeling.\n\n• Issue Date: September 2025 (Expires: September 2027)\n• المؤسسة: Notion Labs, Inc.\n• التحقق الرسمي: verify.skilljar.com/c/rf9cnb8pyafv\n\nالمهارات والموضوعات المتقنة:\n- Advanced Formulas 2.0 utilizing arrays, regular expressions, and functional lambda expressions\n- Large-scale multi-relational database schemas and nested rollups\n- Enterprise data governance, audit controls, and granular permission architectures\n- Designing comprehensive operating systems for high-performance cross-functional teams.",
+    "name": "شهادة نوشن المتقدمة (Notion Advanced)",
+    "summary": "شارة الكفاءة الهندسية المتقدمة المعتمدة رسمياً من شركة Notion بعد اجتياز تقييم عملي دقيق.\n\n• الفترة / تاريخ الإصدار: نوفمبر 2025\n• المؤسسة: Notion\n• التحقق الرسمي: credly.com/org/notion/badge/notion-advanced-badge\n\nالمهارات والموضوعات المتقنة:\n- المعادلات الحسابية المتقدمة 2.0 (Formulas 2.0): التعامل مع المصفوفات، والعمليات المنطقية المعقدة، ودوال لامدا\n- بنية قواعد البيانات العلاقية، وحسابات التجميع متعددة المستويات (Rollups)، والمرشحات الديناميكية السياقية\n- أنظمة الأتمتة الأصلية المتقدمة، وربط نقاط الويب هوك (Webhooks)، والمحفزات المبنية على تغير خصائص البيانات\n- حوكمة مساحات العمل المؤسسية واسعة النطاق، وإدارة الصلاحيات الدقيقة، وقابلية التوسع للنظام.",
     "tags": [
-      "Notion Advanced",
-      "PKM Architecture",
-      "Automations"
+          "Notion",
+          "المعادلات 2.0",
+          "الأتمتة",
+          "الإنتاجية"
     ]
   },
   "cert-notion-workflows": {
-    "name": "شهادة تدفقات العمل في نوشن",
-    "summary": "Official Credential from Notion Labs validating proficiency in translating conceptual workflows into dynamic, automated operational systems.\n\n• Issue Date: September 2025 (Expires: September 2027)\n• المؤسسة: Notion Labs, Inc.\n• التحقق الرسمي: verify.skilljar.com/c/mr79shtf6cwu\n\nالمهارات والموضوعات المتقنة:\n- Native automated workflows with multi-action triggers and conditional branching\n- Building end-to-end task pipelines, sprint tracking, and review mechanisms\n- Interconnecting data pipelines across departmental workspaces\n- Operational bottleneck elimination and standardized production pipelines.",
+    "name": "شهادة تدفقات عمل نوشن (Notion Workflows)",
+    "summary": "شهادة رسمية معتمدة في تصميم مسارات العمل الجماعية وهندسة الأنظمة التنظيمية من Notion.\n\n• الفترة / تاريخ الإصدار: نوفمبر 2025\n• المؤسسة: Notion\n• التحقق الرسمي: credly.com/org/notion/badge/notion-workflows-badge\n\nالمهارات والموضوعات المتقنة:\n- تخطيط وهندسة تدفقات العمل التشغيلية الشاملة لفرق العمل والمشاريع المشتركة\n- أنظمة إدارة المعرفة الشخصية والمؤسسية (PKM ومنهجية PARA) وبناء الويكي الداخلي الموحد للشركات\n- الربط التكاملي السلس بين أدوات العمل الخارجية وقواعد البيانات المركزية في Notion\n- قوالب المشاريع الديناميكية، وطرق العرض المخصصة حسب الأدوار الوظيفية، وإدارة دورات السبرنت الرشيقة.",
     "tags": [
-      "Notion Workflows",
-      "Automation",
-      "Processes"
+          "Notion",
+          "تدفقات العمل",
+          "العمليات",
+          "الإنتاجية"
     ]
   },
   "cert-notion-essentials": {
-    "name": "شهادة أساسيات نوشن الرسمية",
-    "summary": "Official Foundation Credential from Notion Labs demonstrating core competencies in workspace architecture and content delivery.\n\n• Issue Date: September 2025 (Expires: September 2027)\n• المؤسسة: Notion Labs, Inc.\n• التحقق الرسمي: verify.skilljar.com/c/gj6rciabrjxu\n\nالمهارات والموضوعات المتقنة:\n- Dynamic page architecture, structural blocks, and modular page templates\n- Database design utilizing Table, Board, Timeline, List, and Calendar views\n- Compound filtering, multi-level sorting, and custom groupings\n- Ergonomic principles of collaborative information organization.",
+    "name": "شهادة أساسيات نوشن (Notion Essentials)",
+    "summary": "شهادة اعتماد رسمية تثبت إتقان الأسس الهيكلية والتنقل الفعال داخل بيئة عمل Notion.\n\n• الفترة / تاريخ الإصدار: أكتوبر 2025\n• المؤسسة: Notion\n• التحقق الرسمي: credly.com/org/notion/badge/notion-essentials-badge\n\nالمهارات والموضوعات المتقنة:\n- إنشاء وتنظيم الصفحات الهرمية، وكتل المحتوى المتنوعة، والقوائم القابلة للطي (Toggles)\n- الخصائص الجوهرية لقواعد البيانات: قوائم التحديد، وتنسيقات التواريخ، والعلاقات، والمرشحات الأساسية\n- أذونات المشاركة الآمنة، ومستويات الوصول، والتعاون التزامني في الوقت الفعلي بين أعضاء الفريق\n- اختصارات لوحة المفاتيح لزيادة الإنتاجية، وصياغة Markdown المتقدمة، والتصنيف الممنهج للمعلومات.",
     "tags": [
-      "Notion Essentials",
-      "Productivity",
-      "Organization"
+          "Notion",
+          "الأساسيات",
+          "الإنتاجية"
     ]
   },
   "cert-descomplica-cloud": {
     "name": "منصات الحوسبة السحابية",
-    "summary": "Academic Certificate in Cloud Platform engineering from Faculdade Descomplica.\n\n• Issue Date: August 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 64902f4fca3763d22dc6268c1ee962f183c23f0eff9b7834022ed5a7f6f7b3ff\n\nالمهارات والموضوعات المتقنة:\n- Cloud computing paradigms and service delivery models (IaaS, PaaS, SaaS)\n- Cloud networking infrastructure, VPC routing, subnets, and security groups\n- High availability architecture, load balancing, and distributed storage\n- Identity management, cloud governance, and cost optimization strategies.",
+    "summary": "شهادة أكاديمية في الحوسبة السحابية والأنظمة الموزعة من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: أكتوبر 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: e3bc6fa743fc16cfc5d0eb8d7f76632c027419f72782e04314227f6f59c1c09b\n\nالمهارات والموضوعات المتقنة:\n- نماذج الخدمات السحابية (IaaS وPaaS وSaaS) ونماذج النشر المختلفة (عامة، خاصة، هجينة)\n- التخزين الموزع، والشبكات الافتراضية الخاصة (VPC)، وموزعات الأحمال، والموارد الحسابية المرنة\n- مفاهيم الحوسبة بدون خادم (Serverless)، وتقنيات الحاويات (Containers)، وتنسيق الخدمات المصغرة\n- استراتيجيات التوافرية العالية، وتحمل الأخطاء، وتكرار البيانات الجغرافي، وتحسين تكاليف السحابة.",
     "tags": [
-      "Cloud Computing",
-      "Networking",
-      "Descomplica"
+          "الحوسبة السحابية",
+          "البنية التحتية",
+          "Descomplica"
     ]
   },
   "cert-origamid-cssgrid": {
-    "name": "تصميم الشبكات CSS Grid",
-    "summary": "Technical specialization in advanced two-dimensional layout design with CSS Grid Layout by Origamid.\n\n• عدد الساعات: 10 hours\n• الفترة / تاريخ الإصدار: May 2025\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/7851eeda\n\nالمهارات والموضوعات المتقنة:\n- Grid container architecture: grid-template-columns, rows, and fractional units\n- Visual template mapping via grid-template-areas and coordinate positioning\n- Fluid responsiveness using minmax(), repeat(), auto-fit, and auto-fill\n- Clean CSS implementation without unnecessary framework bloat.",
+    "name": "تخطيط الشبكات CSS Grid Layout",
+    "summary": "تخصص متقدم في تصميم تخطيطات الويب ثنائية الأبعاد الحديثة باستخدام تقنية CSS Grid من معهد Origamid.\n\n• عدد الساعات: 10 ساعات\n• الفترة / تاريخ الإصدار: أكتوبر 2025\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/cb7d1011\n\nالمهارات والموضوعات المتقنة:\n- التحكم الدقيق عبر grid-template-columns وgrid-template-rows والمناطق المسماة في الشبكة\n- الوحدات المرنة الحديثة: الكسر النسبي (fr)، وminmax()، وrepeat()، وسلوكيات الاستجابة auto-fit وauto-fill\n- التموضع الصريح والضمني للعناصر، ومحاذاة المكونات باستخدام justify-items وalign-items\n- بناء واجهات ويب متجاوبة ومعقدة بشكل أصيل دون الحاجة إلى مكتبات وأطر عمل خارجية.",
     "tags": [
-      "CSS Grid",
-      "UI Layout",
-      "Origamid",
-      "10h"
+          "CSS Grid",
+          "تخطيط الواجهات",
+          "Origamid",
+          "10h"
     ]
   },
   "cert-descomplica-mobile": {
-    "name": "مطور تطبيقات الهواتف المحمولة",
-    "summary": "Academic Certificate in Mobile Development from Faculdade Descomplica.\n\n• Issue Date: May 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: c0576a8f5a23c4fc10a6d9370c28c0fb67493beab3bb8fa58d3893a3b7dbadb0\n\nالمهارات والموضوعات المتقنة:\n- Mobile application architecture and view-controller lifecycles\n- Responsive viewport adaptation across disparate screen ratios and densities\n- Local offline data caching and asynchronous REST API integration\n- Battery-efficiency optimization, smooth framerates, and mobile ergonomics.",
+    "name": "مطور تطبيقات الهواتف الذكية",
+    "summary": "شهادة أكاديمية في تطوير تطبيقات الهواتف الذكية والأجهزة المحمولة من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: سبتمبر 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: af4aa582a89f9e7b2d56a2bb03ae8d21b023f99333faee00b5ebbb255a8cf8fc\n\nالمهارات والموضوعات المتقنة:\n- البنية المعمارية لتطبيقات الهواتف المحمولة وإدارة دورة حياة الشاشات والمكونات\n- واجهات اللمس التفاعلية، ومعايير سهولة الاستخدام، والتوافق مع مقاسات الشاشات المختلفة\n- استغلال عتاد الهاتف: تحديد الموقع الجغرافي عبر GPS، والكاميرا، والتخزين المحلي المحمي\n- استهلاك واجهات برمجة التطبيقات السحابية واستراتيجيات مزامنة البيانات بنهج العمل دون اتصال أولاً.",
     "tags": [
-      "Mobile",
-      "App Architecture",
-      "Descomplica"
+          "الهواتف المحمولة",
+          "تطوير التطبيقات",
+          "Descomplica"
     ]
   },
   "cert-origamid-cssflexbox": {
-    "name": "تصميم التخطيط المرن CSS Flexbox",
-    "summary": "Specialized training in one-dimensional CSS Flexbox layout mechanics by Origamid.\n\n• عدد الساعات: 6 hours\n• الفترة / تاريخ الإصدار: April 2025\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/f3d3262a\n\nالمهارات والموضوعات المتقنة:\n- Main axis and cross axis directional mechanics\n- Spatial alignment via justify-content, align-items, and align-content\n- Elastic sizing parameters: flex-grow, flex-shrink, and flex-basis\n- Building robust navigation menus, sticky headers, and scalable components.",
+    "name": "تخطيط الصندوق المرن CSS Flexbox",
+    "summary": "تخصص برمجي في تصميم التخطيطات أحادية البعد التكيفية والديناميكية باستخدام CSS Flexbox من معهد Origamid.\n\n• عدد الساعات: 6 ساعات\n• الفترة / تاريخ الإصدار: سبتمبر 2025\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/e3f443b7\n\nالمهارات والموضوعات المتقنة:\n- التحكم الكامل بمحاور التخطيط: flex-direction وjustify-content وalign-items وflex-wrap\n- التوزيع الديناميكي للمساحات عبر التطبيق المنضبط لخصائص flex-grow وflex-shrink وflex-basis\n- إعادة الترتيب البصري للعناصر بمعزل عن بنية مستند HTML الأساسية بواسطة خاصية order\n- تصميم أشرطة التنقل المتجاوبة، وشبكات البطاقات المرنة، والمكونات الانسيابية.",
     "tags": [
-      "CSS Flexbox",
-      "UI Design",
-      "Origamid",
-      "6h"
+          "CSS Flexbox",
+          "تخطيط الواجهات",
+          "Origamid",
+          "6h"
     ]
   },
   "cert-origamid-htmlcss": {
-    "name": "أساسيات HTML و CSS للمبتدئين",
-    "summary": "Comprehensive foundation in semantic structuring, styling, and modern web architecture by Origamid.\n\n• عدد الساعات: 46 hours\n• الفترة / تاريخ الإصدار: April 2025\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/b2a468aa\n\nالمهارات والموضوعات المتقنة:\n- Strict semantic document outlining (header, nav, main, section, article, aside, footer)\n- CSS Box Model mechanics, selector specificity calculation, cascade, and inheritance\n- Responsive web typography, CSS Custom Properties, and modular stylesheets\n- Fundamental web accessibility (color contrast ratios and essential ARIA tags).",
+    "name": "HTML و CSS للمبتدئين",
+    "summary": "دورة تأسيسية شاملة في المعايير القياسية للهيكلة الدلالية والتصميم البصري للويب من Origamid.\n\n• عدد الساعات: 46 ساعة\n• الفترة / تاريخ الإصدار: أغسطس 2025\n• المؤسسة: Origamid (CNPJ 23.811.568/0001-98)\n• التحقق الرسمي: origamid.com/certificate/01968846\n\nالمهارات والموضوعات المتقنة:\n- الهيكلة الدلالية الصارمة باستخدام HTML5 لتحسين محركات البحث (SEO) وتسهيل قراءة الشاشات\n- تنسيقات CSS3 الحديثة: المحددات المتقدمة، ونموذج الصندوق (Box Model)، والنوعية، وقواعد التتالي\n- تقنيات التموضع الجغرافي للعناصر (relative وabsolute وfixed وsticky) وإدارة الطبقات عبر z-index\n- طباعة الخطوط الرقمية، وتنسيق الألوان، والظلال، ومتغيرات CSS المخصصة، وبناء ملفات مشاريع منظمة.",
     "tags": [
-      "HTML5",
-      "CSS3",
-      "Semantics",
-      "Origamid",
-      "46h"
+          "HTML5",
+          "CSS3",
+          "Frontend",
+          "Origamid",
+          "46h"
     ]
   },
   "cert-descomplica-smart-data": {
-    "name": "هياكل البيانات الذكية",
-    "summary": "Academic Certificate in Smart Data Structures from the Computer Science program at Faculdade Descomplica.\n\n• Issue Date: January 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: cca6c4e40e338bc30a448e6ed8dd02ad836ded14d845843e4116d74486cdf8e6\n\nالمهارات والموضوعات المتقنة:\n- Dynamic data structures: Singly and doubly linked lists, stacks, and queues\n- Binary Search Trees (BST), tree balancing concepts, and hash table lookup optimization\n- Asymptotic computational complexity analysis (Big-O notation)\n- Sorting algorithms (MergeSort, QuickSort) and efficient search algorithms.",
+    "name": "هياكل البيانات الذكية والخوارزميات",
+    "summary": "شهادة أكاديمية في هياكل البيانات المتقدمة وتحليل كفاءة الخوارزميات من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: يوليو 2025\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: cde41738734ba165fe00d07172fe4b80b06ab3f4a56c70dc0be58d4a46033379\n\nالمهارات والموضوعات المتقنة:\n- تحليل التعقيد المقارب للوقت والمساحة التخزينية (باستخدام رمز Big-O)\n- هياكل البيانات الخطية: القوائم المترابطة، والأكوام (Stacks)، والصفوف (Queues) مع إدارة الذاكرة\n- أشجار البحث الثنائية (BST)، والأشجار المتوازنة ذاتياً (AVL)، وخوارزميات الرسوم البيانية\n- جداول التجزئة (Hash Tables)، وتصميم دوال التجزئة الفعالة، واستراتيجيات حل التصادم.",
     "tags": [
-      "Data Structures",
-      "Algorithms",
-      "Descomplica"
+          "هياكل البيانات",
+          "الخوارزميات",
+          "Descomplica"
     ]
   },
   "cert-oracle-one-t7": {
-    "name": "برنامج أوراكل للتعليم التقني (ONE) - الدفعة 7",
-    "summary": "Intensive tech development program delivered by Oracle in strategic partnership with Alura.\n\n• الفترة / تاريخ الإصدار: December 2024\n• Program: Oracle Next Education - Cohort 7 (G7)\n• التحقق الرسمي: cursos.alura.com.br/program/certificate/fa3a14f2-3bed-4a00-8d2e-cef44db4e919\n\nالمهارات والموضوعات المتقنة:\n- Rigorous Object-Oriented Programming (OOP), encapsulation, inheritance, and polymorphism in Java\n- Relational database schema design, indexing, and SQL queries\n- Collaborative Git workflows, feature branches, and Pull Requests on GitHub\n- Sprint deliveries and agile problem-solving methodology.",
+    "name": "برنامج أوراكل للتعليم المستمر (ONE) - الدفعة 7",
+    "summary": "شهادة التخرج الكاملة من المبادرة الرائدة لتأهيل المواهب التقنية من شركة أوراكل (Oracle) بالشراكة مع منصة Alura.\n\n• عدد الساعات: 337 ساعة\n• الفترة / تاريخ الإصدار: نوفمبر 2024\n• المؤسسة: Oracle / Alura\n• التحقق الرسمي: alura.com.br/programas/oracle-next-education\n\nالمهارات والموضوعات المتقنة:\n- هندسة الواجهات الأمامية المتكاملة: JavaScript ES6+ وReact وHTML5 الدلالية وتنسيقات CSS المتجاوبة\n- التفكير الخوارزمي المتقدم، وبناء المنطق البرمجي، وهندسة الأكواد المعيارية النظيفة\n- منهجيات التطوير الرشيقة، وممارسات Scrum، وإدارة مسارات العمل عبر Git/GitHub، والعمل الجماعي\n- المهارات الشخصية الاحترافية: سرعة التكيف، والتواصل الفعال الشفاف، والمبادرة في حل المشكلات التقنية.",
     "tags": [
-      "Oracle ONE",
-      "Java",
-      "Backend",
-      "Alura"
+          "Oracle ONE",
+          "Front End",
+          "React",
+          "337h"
     ]
   },
   "cert-oracle-react-g7": {
-    "name": "رياكت الدفعة 7 - ONE",
-    "summary": "Specialized training in modern React.js development within the Oracle Next Education program.\n\n• الفترة / تاريخ الإصدار: December 2024\n• المؤسسة: Oracle & Alura\n• التحقق الرسمي: cursos.alura.com.br/degree/certificate/76dc9ce4-c788-4809-9ae2-9255fe306b36\n\nالمهارات والموضوعات المتقنة:\n- Building modern Single Page Applications (SPAs) with functional components and React Hooks\n- Component hierarchy state propagation and application state management\n- Asynchronous API interaction using Fetch and Axios\n- Modular component structuring and maintainable UI architecture.",
+    "name": "تطوير تطبيقات رياكت G7 - ONE",
+    "summary": "تخصص عملي متقدم في هندسة تطبيقات الصفحة الواحدة (SPA) باستخدام مكتبة React ضمن برنامج Oracle ONE.\n\n• الفترة / تاريخ الإصدار: نوفمبر 2024\n• المؤسسة: Oracle / Alura\n• التحقق الرسمي: alura.com.br/certificates/oracle-react-g7\n\nالمهارات والموضوعات المتقنة:\n- تصميم المكونات الذرية، وتمرير الخصائص (Props) الموثوقة، وإدارة دورة حياة المكونات عبر الخطافات\n- إدارة الحالة البرمجية المحلية والعامة باتساق ودون أي تكرار غير مبرر للبيانات\n- التوجيه السلس من جانب العميل بدون إعادة تحميل المتصفح باستخدام React Router\n- استهلاك خدمات واجهات البرمجة الخلفية REST API ومعالجة انقطاعات الشبكة بمرونة عالية.",
     "tags": [
-      "React",
-      "Oracle ONE",
-      "Alura",
-      "Frontend"
+          "React",
+          "Oracle ONE",
+          "SPA",
+          "Frontend"
     ]
   },
   "cert-oracle-frontend-g7": {
-    "name": "برنامج تطوير الواجهات الأمامية G7 - ONE",
-    "summary": "Complete Front-End engineering career track in the Oracle Next Education curriculum.\n\n• الفترة / تاريخ الإصدار: October 2024\n• المؤسسة: Oracle & Alura\n• التحقق الرسمي: cursos.alura.com.br/degree/certificate/c0ed87ea-8e6a-47a8-a1bb-66644f7e17bc\n\nالمهارات والموضوعات المتقنة:\n- Modern vanilla JavaScript: DOM manipulation, asynchronous programming, and event listeners\n- Mobile-First responsive web design techniques with CSS media queries\n- Semantic HTML and accessibility best practices\n- Version control integration with Git and collaborative repositories.",
+    "name": "مسار هندسة الواجهات الأمامية G7 - ONE",
+    "summary": "شهادة إتمام المسار التخصصي الكامل في هندسة واجهات المستخدم لبرنامج Oracle Next Education بالتعاون مع Alura.\n\n• الفترة / تاريخ الإصدار: أكتوبر 2024\n• المؤسسة: Oracle / Alura\n• التحقق الرسمي: alura.com.br/certificates/oracle-frontend-g7\n\nالمهارات والموضوعات المتقنة:\n- أسس برمجية متينة في لغة JavaScript لتشغيل واجهات الويب الحيوية والتفاعلية\n- تصميم صفحات الويب الحديثة المتجاوبة بالاعتماد على Flexbox وGrid واستعلامات الوسائط\n- التنظيم المعياري لملفات التنسيق وتطبيق أنماط المكونات البرمجية القابلة لإعادة الاستخدام\n- معايير تجربة المستخدم (UX) الممتازة وضمان التوافق التام عبر مختلف المتصفحات الحديثة.",
     "tags": [
-      "Front End",
-      "Oracle ONE",
-      "JavaScript",
-      "Alura"
+          "Frontend",
+          "JavaScript",
+          "Oracle ONE",
+          "CSS"
     ]
   },
   "cert-descomplica-oop": {
     "name": "البرمجة كائنية التوجه (OOP)",
-    "summary": "Academic Certificate in Object-Oriented Programming from Faculdade Descomplica.\n\n• Issue Date: October 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 5eebdc664a0b703de59dea88de45d832da2e8ab0719cfc5a24a67c9f80bdf900\n\nالمهارات والموضوعات المتقنة:\n- Four core OOP pillars: Abstraction, Encapsulation, Inheritance, and Polymorphism\n- Class structures, constructors, object lifecycle, and member access scoping\n- Interfaces, abstract classes, and resilient runtime exception handling\n- Domain-driven object modeling for scalable corporate systems.",
+    "summary": "شهادة أكاديمية متخصصة في نموذج البرمجة كائنية التوجه من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: أكتوبر 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: cd546bc1e233a7ad1f18544d67389ff422f281e050965e648833890fbda8618a\n\nالمهارات والموضوعات المتقنة:\n- الأركان الأربعة الأساسية: التجريد (Abstraction)، والتغليف (Encapsulation)، والوراثة، وتعدد الأشكال (Polymorphism)\n- الفئات المجردة، والواجهات البرمجية (Interfaces)، وتكوين الوحدات المترابطة بمرونة وبأقل قدر من التبعية\n- الإدارة الهيكلية للاستثناءات، وتصنيف الأخطاء الهرمي، وتعزيز موثوقية التطبيقات البرمجية\n- مقدمة شاملة لأنماط التصميم الكلاسيكية كائنية التوجه (GoF Design Patterns).",
     "tags": [
-      "OOP",
-      "Java",
-      "Descomplica"
+          "OOP",
+          "البرمجة",
+          "Descomplica"
     ]
   },
   "cert-oracle-empreendedorismo-g7": {
-    "name": "ريادة الأعمال والمنهجيات الرشيقة والقيادة المهنية G7 - ONE",
-    "summary": "Executive and agile methodologies professional training in the Oracle Next Education program.\n\n• الفترة / تاريخ الإصدار: September 2024\n• المؤسسة: Oracle & Alura\n• التحقق الرسمي: cursos.alura.com.br/degree/certificate/e167b435-1256-423c-985e-281fe11ca58c\n\nالمهارات والموضوعات المتقنة:\n- Agile delivery frameworks: Scrum ceremonies, team roles, and Kanban board management\n- Career ownership and leadership mindset in cross-functional engineering teams\n- Assertive professional communication and collaborative conflict resolution\n- Strategic self-development planning and objective-driven delivery.",
+    "name": "ريادة الأعمال، والرشاقة، والقيادة المهنية G7 - ONE",
+    "summary": "شهادة في القيادة الرشيقة، وثقافة المنتجات الرقمية، والتطور المهني المعتمد من Oracle ONE وAlura.\n\n• الفترة / تاريخ الإصدار: سبتمبر 2024\n• المؤسسة: Oracle / Alura\n• التحقق الرسمي: alura.com.br/certificates/oracle-empreendedorismo-g7\n\nالمهارات والموضوعات المتقنة:\n- المنهجيات الرشيقة في مشاريع البرمجيات: إطار عمل Scrum، والاجتماعات الدورية، ودورات السبرنت، وتسليم القيمة المستمر\n- عقلية إدارة المنتجات (Product Mindset)، واختبار الفرضيات العملية، والتصميم المتمحور حول رغبات المستخدمين\n- التواصل البناء داخل الفريق، والتفاوض الإيجابي، والعمل الجماعي في بيئات العمل المتغيرة\n- إدارة الوقت بكفاءة، وروح المسؤولية الفردية والمبادرة، وإيجاد حلول إبداعية للتحديات البرمجية والتجارية.",
     "tags": [
-      "Agility",
-      "Soft Skills",
-      "Oracle ONE",
-      "Alura"
+          "المنهجيات الرشيقة",
+          "ريادة الأعمال",
+          "Soft Skills",
+          "Oracle ONE"
     ]
   },
   "cert-descomplica-prog-languages": {
-    "name": "لغات البرمجة ونماذجها",
-    "summary": "Academic Certificate in Programming Language Theory & Paradigms from Faculdade Descomplica.\n\n• Issue Date: August 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 7fd7165785a2cc6cb9949a02f21a84f3feaac7637caf3550eae74a83d8563f48\n\nالمهارات والموضوعات المتقنة:\n- Comparative paradigm analysis (imperative, functional, and object-oriented)\n- Compilation versus interpretation, static vs. dynamic type systems\n- Memory allocation mechanics, stack/heap spaces, and Garbage Collection\n- Digital logic circuits and low-level machine instruction architectures.",
+    "name": "نظريات لغات البرمجة",
+    "summary": "شهادة أكاديمية في نماذج لغات البرمجة وأسس بناء المترجمات من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: أغسطس 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: c1f6ae2ca649a3cfc6ee70176b92a6c8b05da6d54cf8e30b6eec950b71eaeb99\n\nالمهارات والموضوعات المتقنة:\n- مراحل التحليل المعجمي والنحوي والدلالي في بيئات اللغات المترجمة والمفسرة\n- دراسة مقارنة بين النماذج البرمجية: الأمرية، والتصريحية، والوظيفية، وكائنية التوجه\n- نماذج إدارة الذاكرة الحاسوبية، وآليات جمع القمامة التلقائي (Garbage Collection)، ومفهوم المؤشرات\n- أنظمة تحديد الأنواع: الأنواع الثابتة مقابل الديناميكية، والأنواع القوية مقابل الضعيفة.",
     "tags": [
-      "Languages",
-      "Paradigms",
-      "Descomplica"
+          "لغات البرمجة",
+          "المترجمات",
+          "Descomplica"
     ]
   },
   "cert-oracle-iniciante-t7": {
-    "name": "مبادئ البرمجة للمبتدئين - أوراكل ONE G7",
-    "summary": "Introductory logic and algorithmic foundation track in the Oracle Next Education program.\n\n• الفترة / تاريخ الإصدار: July 2024\n• المؤسسة: Oracle & Alura\n• التحقق الرسمي: cursos.alura.com.br/degree/certificate/29b2ac09-6fdc-4d67-a630-be979766d5a2\n\nالمهارات والموضوعات المتقنة:\n- Algorithmic problem-solving and structured program flow\n- JavaScript syntax fundamentals, control structures, and loops\n- Browser DOM manipulation using integrated HTML and CSS\n- Building interactive scripts with clean logical architecture.",
+    "name": "مبادئ البرمجة للمبتدئين - Oracle ONE T7",
+    "summary": "شهادة استيعاب التفكير الخوارزمي المنطقي وأساسيات كتابة الشيفرات البرمجية من Oracle Next Education.\n\n• الفترة / تاريخ الإصدار: أغسطس 2024\n• المؤسسة: Oracle / Alura\n• التحقق الرسمي: alura.com.br/certificates/oracle-iniciante-t7\n\nالمهارات والموضوعات المتقنة:\n- المبادئ الخوارزمية، وهياكل اتخاذ القرار الشرطي، وتكرارات الحلقات البرمجية\n- أنواع البيانات الأولية، ونطاق المتغيرات، وتصميم الدوال البرمجية ذات المعاملات\n- التفاعل العملي مع عناصر واجهات DOM في المتصفح باستخدام أساسيات لغة JavaScript\n- التحكم بالنسخ البرمجية باستخدام نظام Git ونشر المشاريع عبر مستودعات GitHub.",
     "tags": [
-      "Logic",
-      "JavaScript",
-      "Oracle ONE",
-      "Alura"
+          "المنطق البرمجي",
+          "JavaScript",
+          "Oracle ONE"
     ]
   },
   "cert-alura-logica-js": {
-    "name": "منطق البرمجة: الغوص في جافاسكريبت",
-    "summary": "Immersive foundational course in programmatic logic using JavaScript delivered by Alura.\n\n• الفترة / تاريخ الإصدار: June 2024\n• المؤسسة: Alura\n• التحقق الرسمي: cursos.alura.com.br/certificate/52a1daf5-1817-48df-89b6-89ba157a256c\n\nالمهارات والموضوعات المتقنة:\n- Algorithmic structure, variable scoping, and logical/relational operators\n- Control flow loops (while, for), branching conditionals, and user prompt handling\n- Strategic debugging techniques and infinite loop mitigation\n- Developing console-driven interactive utilities and games.",
+    "name": "منطق البرمجة: الانغماس في JavaScript",
+    "summary": "دورة تدريبية تطبيقية مكثفة حول المبادئ الأساسية للتفكير المنطقي والخوارزميات عبر JavaScript من Alura.\n\n• الفترة / تاريخ الإصدار: يوليو 2024\n• المؤسسة: Alura\n• التحقق الرسمي: alura.com.br/certificates/alura-logica-js\n\nالمهارات والموضوعات المتقنة:\n- هياكل التحكم الشرطية (if وelse if وswitch) ومعاملات المقارنة المنطقية\n- الحلقات التكرارية (while وfor) لمعالجة مجموعات البيانات بشكل متسلسل\n- التفاعل مع المستخدم عبر مربعات الحوار، ونوافذ التنبيه، وتسجيل المخرجات في وحدة التحكم (Console)\n- تفكيك التحديات البرمجية المعقدة إلى خطوات منطقية صغيرة متتالية وسهلة الحل.",
     "tags": [
-      "Logic",
-      "JavaScript",
-      "Alura"
+          "المنطق البرمجي",
+          "JavaScript",
+          "Alura"
     ]
   },
   "cert-ada-datascience": {
     "name": "علوم البيانات - المسار الرقمي Coders 24",
-    "summary": "Technical foundation in exploratory data analysis and data science principles delivered by Ada Tech.\n\n• الفترة / تاريخ الإصدار: June 2024\n• Program: Trilha Digital Coders 24\n• المؤسسة: Ada Tech\n• التحقق الرسمي: ada.tech/certificado?code=40dd85d2-ed6c-a240-2a61-b67267119b8e\n\nالمهارات والموضوعات المتقنة:\n- Exploratory Data Analysis (EDA) and robust dataset wrangling\n- Descriptive statistics (central tendency, dispersion measures, and correlation)\n- Structured dataset transformation and analytical filtering\n- Data visualization techniques for communicating metric-driven insights.",
+    "summary": "تأهيل تخصصي في التحليل الاستكشافي للبيانات والمبادئ الأساسية لعلوم البيانات من معهد Ada Tech.\n\n• الفترة / تاريخ الإصدار: يونيو 2024\n• Program: Trilha Digital Coders 24\n• المؤسسة: Ada Tech\n• التحقق الرسمي: ada.tech/certificado?code=40dd85d2-ed6c-a240-2a61-b67267119b8e\n\nالمهارات والموضوعات المتقنة:\n- التحليل الاستكشافي للبيانات (EDA) وعمليات تنظيف وتجهيز مجموعات البيانات الخام (Data Wrangling)\n- الإحصاء الوصفي (مقاييس النزعة المركزية، ومقاييس التشتت، وتحليلات الارتباط الإحصائي)\n- معالجة وتصفية وتحويل مجموعات البيانات المجدولة والمنظمة\n- تقنيات التمثيل البياني للبيانات لاستخلاص الرؤى الجوهرية ودعم عملية اتخاذ القرارات القائمة على الأدلة.",
     "tags": [
-      "Data Science",
-      "Statistics",
-      "Ada Tech"
+          "Data Science",
+          "الإحصاء",
+          "Ada Tech"
     ]
   },
   "cert-descomplica-software-req": {
     "name": "هندسة متطلبات البرمجيات",
-    "summary": "Academic Certificate in Software Requirements Engineering from Faculdade Descomplica.\n\n• Issue Date: May 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 52214c146676ff6966e0ec27e85e0f7f30061c0034d9507b97c757e375a244f7\n\nالمهارات والموضوعات المتقنة:\n- Functional and non-functional requirements elicitation, specification, and validation\n- UML visual modeling (Use Case diagrams, Class diagrams, Activity flows)\n- Writing structured User Stories with unambiguous acceptance criteria\n- Requirements traceability matrix management for scope control.",
+    "summary": "شهادة أكاديمية في استخراج وتحليل وإدارة متطلبات النظم البرمجية من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: مايو 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 6bfdae1f822b31f4e3c9ca33827ec31ee27ff993910c53c4c92a2a67e1a3ca4f\n\nالمهارات والموضوعات المتقنة:\n- منهجيات استنباط وتوثيق المتطلبات الوظيفية وغير الوظيفية للأنظمة البرمجية\n- صياغة قصص المستخدمين (User Stories)، ومعايير القبول، ونمذجة مخططات حالات الاستخدام (UML)\n- مصفوفة تتبع المتطلبات (Traceability Matrix) وإدارة التعديلات على نطاق العمل\n- بناء النماذج الأولية السريعة للتحقق المبكر من صحة المتطلبات مع أصحاب المصلحة.",
     "tags": [
-      "Requirements Engineering",
-      "UML",
-      "Descomplica"
+          "المتطلبات",
+          "UML",
+          "Descomplica"
     ]
   },
   "cert-descomplica-softskills": {
-    "name": "المهارات الشخصية والتواصل المهني",
-    "summary": "Academic Certificate in behavioral and interpersonal competencies by Faculdade Descomplica in partnership with Porta dos Fundos.\n\n• Issue Date: March 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 82c886584237ef0b9e318e51517621b2d1f5300645b030c9a726b742517e9991\n\nالمهارات والموضوعات المتقنة:\n- Authentic interpersonal communication, empathy, and active listening\n- Emotional intelligence, composure under pressure, and dynamic adaptability\n- Critical thinking and creative problem-solving methods\n- Collaborative teamwork in multidisciplinary tech environments.",
+    "name": "المهارات الشخصية مع Porta dos Fundos",
+    "summary": "برنامج أكاديمي متخصص في التواصل بين الأشخاص وديناميكيات العمل الجماعي من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: أبريل 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: e9e0ff5b0586e9aa2e70e53a3ae6c7dbeee4e6fef3a3fdf2a6283ffca5a36371\n\nالمهارات والموضوعات المتقنة:\n- التواصل الفعال الواضح، والإنصات الإيجابي، والخطابة الاحترافية في بيئة الأعمال\n- الذكاء العاطفي وإدارة الخلافات ووجهات النظر المتباينة داخل الفرق بروح بناءة\n- روح العمل الجماعي، والتعاطف، والقدرة على التكيف مع التغيرات السريعة في بيئات المشاريع\n- التفكير النقدي والإبداع في ابتكار حلول عملية للمشكلات التشغيلية والتنظيمية.",
     "tags": [
-      "Soft Skills",
-      "Communication",
-      "Descomplica"
+          "Soft Skills",
+          "التواصل",
+          "Descomplica"
     ]
   },
   "cert-descomplica-produtividade": {
-    "name": "الإنتاجية الشخصية والتنظيم المؤسسي",
-    "summary": "Academic Certificate in Personal Productivity & Work Organization from Faculdade Descomplica.\n\n• Issue Date: March 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: f2aa4f7fa83fed00ab1a2a2bac15249f7d2e43da57207f4230bc96dc40b90f66\n\nالمهارات والموضوعات المتقنة:\n- Time management and prioritization frameworks (Eisenhower Matrix, GTD, Pomodoro)\n- Strategic operational routine planning and workflow optimization\n- Digital organization and documentation systems\n- Focus management and cognitive load balancing.",
+    "name": "الإنتاجية والتنظيم الشخصي",
+    "summary": "شهادة أكاديمية في منهجيات الكفاءة في العمل وإدارة الوقت والمهام من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: مارس 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: b6c21e64627d37e42d7663266e86da262b9213197177579f1dc8bc4597b87be9\n\nالمهارات والموضوعات المتقنة:\n- استراتيجيات إدارة الوقت: تقنية بومودورو (Pomodoro)، ومصفوفة أيزنهاور، والتخطيط بحزم الوقت\n- تحسين مسارات العمل الفردية والتخلص من المعوقات التي تستهلك الجهد والتركيز\n- استخدام أدوات التخطيط الرقمية، ولوحات كانبان (Kanban)، والتوثيق المنظم للمعلومات\n- الحفاظ على التركيز العميق (Deep Work) وتقليل الإجهاد الذهني أثناء المهام البرمجية والهندسية.",
     "tags": [
-      "Productivity",
-      "Organization",
-      "Descomplica"
+          "الإنتاجية",
+          "إدارة الوقت",
+          "Descomplica"
     ]
   },
   "cert-descomplica-intro-web": {
-    "name": "مقدمة في تطوير الويب الحديث",
-    "summary": "Academic Certificate in Web Development Foundations from Faculdade Descomplica.\n\n• Issue Date: March 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: ce35a3b34c0574229f3b8cf9b7f74711efe54c242b19ba96f94cfc9627817fca\n\nالمهارات والموضوعات المتقنة:\n- Web architecture: Client-Server architecture, HTTP/HTTPS protocols, and DNS\n- Semantic page structuring with HTML5\n- Styling fundamentals, CSS selector hierarchies, and cascade rules\n- Responsiveness basics and browser layout rendering.",
+    "name": "مدخل إلى تطوير الويب",
+    "summary": "شهادة أكاديمية في البنية التحتية لشبكة الويب وأساسيات تطوير الواجهات من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: فبراير 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: 8c3bc007137f8cf896be0f2a77a941655b38a427f7166160167c13410dbba805\n\nالمهارات والموضوعات المتقنة:\n- معمارية الخادم والعميل (Client-Server)، ومفاهيم بروتوكول HTTP/HTTPS، ونظام DNS، وكيفية عمل الإنترنت\n- بناء المستندات الدلالية باستخدام HTML5 ومبادئ سهولة الوصول الأساسية للويب\n- تنسيق الصفحات الأولي عبر CSS3: قواعد الألوان، والخطوط، والمسافات البينية\n- كتابة أولى التعليمات البرمجية بلغة JavaScript لإضفاء التفاعلية والديناميكية على المتصفح.",
     "tags": [
-      "Web",
-      "HTML & CSS",
-      "Descomplica"
+          "الويب",
+          "HTML & CSS",
+          "Descomplica"
     ]
   },
   "cert-descomplica-frontend": {
-    "name": "تطوير الواجهات الأمامية",
-    "summary": "Academic Certificate in Front-End Development from Faculdade Descomplica.\n\n• Issue Date: February 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: ead3dc917363e05c64f419d592252984bb67bb1ea2af12249aef3693fe54b26d\n\nالمهارات والموضوعات المتقنة:\n- Dynamic interface implementation using JavaScript\n- User interaction event handling and real-time form validation\n- External web service integration and data fetching\n- Scalable and modular front-end code organization.",
+    "name": "تطوير الواجهات الأمامية التطبيقي",
+    "summary": "شهادة أكاديمية في الممارسات الحديثة لهندسة واجهات الويب الأمامية من Faculdade Descomplica.\n\n• الفترة / تاريخ الإصدار: يناير 2024\n• المؤسسة: Descomplica Faculdade Digital\n• التحقق الرسمي: bb537d8e209861e6ca4187f4c5e3170e1a129033e08544d67389ff422f281e05\n\nالمهارات والموضوعات المتقنة:\n- تطوير واجهات ويب حيوية وسريعة الاستجابة باستخدام ميزات JavaScript الحديثة\n- التصميم المتجاوب الكامل بالاعتماد على استعلامات الوسائط (Media Queries) والتوافق عبر المتصفحات\n- ربط واستهلاك خدمات الويب البرمجية RESTful ومعالجة مصفوفات البيانات بصيغة JSON\n- الممارسات المعتمدة لتسريع عمليات معالجة وتصيير الواجهات في متصفح العميل.",
     "tags": [
-      "Frontend",
-      "JavaScript",
-      "Descomplica"
-    ]
-  },
-  "cert-udemy-algoritmos-completo": {
-    "name": "الخوارزميات ومنطق البرمجة - الدورة الكاملة",
-    "summary": "Exhaustive and rigorous mastery course in algorithmic logic and fundamental data structures taught by Prof. Dr. Nelio Alves.\n\n• الفترة / تاريخ الإصدار: January 2024\n• المؤسسة: Udemy / Prof. Dr. Nelio Alves (DevSuperior)\n• التحقق الرسمي: UC-916926ad-ae85-4574-8ae2-725becffbd6c\n• التحقق الرسمي: udemy.com/certificate/UC-916926ad-ae85-4574-8ae2-725becffbd6c/\n\nالمهارات والموضوعات المتقنة:\n- Rigorous computational logic structuring and dry-run execution traces\n- Deep control flow mastery (sequential, conditional branches, loops)\n- In-depth manipulation of single and multi-dimensional arrays\n- Multi-language implementation across C, C++, Java, and C#.",
-    "tags": [
-      "Algorithms",
-      "Logic",
-      "Udemy",
-      "DevSuperior"
-    ]
-  },
-  "cert-devsuperior-logica": {
-    "name": "منطق البرمجة وهياكل البيانات",
-    "summary": "Rigorous training in computational logic, fundamental data structures, and algorithmic problem-solving taught by DevSuperior.\n\n• الفترة / تاريخ الإصدار: January 2024\n• المؤسسة: DevSuperior (Nelio Alves)\n• التحقق الرسمي: udemy.com/certificate/UC-916926ad-ae85-4574-8ae2-725becffbd6c/\n\nالمهارات والموضوعات المتقنة:\n- Flow control logic: sequential, branching conditionals, and repetition loops\n- Essential data structures: vectors, arrays, and multidimensional matrices\n- Code modularization, variable scope, parameter passing, and functional decomposition\n- Dry runs, variable execution tracing, and systematic debugging methods.",
-    "tags": [
-      "Algorithms",
-      "Logic",
-      "DevSuperior"
+          "Frontend",
+          "JavaScript",
+          "Descomplica"
     ]
   },
   "cert-dio-angular": {
-    "name": "تطوير الواجهات الأمامية باستخدام أنجولار",
-    "summary": "Technical frontend training bootcamp focusing on the Angular enterprise framework at Digital Innovation One.\n\n• الفترة / تاريخ الإصدار: February 2024\n• المؤسسة: Digital Innovation One (DIO)\n• التحقق الرسمي: V87KIBKV\n• التحقق الرسمي: dio.me/certificate/V87KIBKV\n\nالمهارات والموضوعات المتقنة:\n- Component architecture, structural directives, and custom pipes\n- Hierarchical dependency injection and service layer design\n- Reactive programming using RxJS (Observables, Subjects, transform operators)\n- RESTful HTTP communication via Angular HttpClient and request interceptors\n- Single Page Application routing, route guards (CanActivate), and feature module lazy loading.",
+    "name": "تطوير الواجهات الأمامية باستخدام Angular",
+    "summary": "برنامج متخصص في بناء تطبيقات الصفحة الواحدة المؤسسية عبر إطار عمل Angular من Digital Innovation One (DIO).\n\n• عدد الساعات: 35 ساعة\n• الفترة / تاريخ الإصدار: ديسمبر 2023\n• المؤسسة: Digital Innovation One (DIO) / Santander\n• التحقق الرسمي: dio.me/certificate/angular-g4k9\n\nالمهارات والموضوعات المتقنة:\n- المعمارية المعيارية لإطار عمل Angular: المكونات، والوحدات، والموجهات المخصصة، والأنابيب (Pipes)\n- حقن التبعيات (Dependency Injection) وبناء طبقة الخدمات المستقلة لعزل منطق الأعمال\n- التوجيه المتقدم مع المسارات الفرعية المتداخلة، والتحميل الكسول عند الطلب (Lazy Loading)، وحراس المسارات\n- البرمجة التفاعلية عبر مكتبة RxJS: تدفقات Observables وSubjects ومعاملات تحويل البيانات\n- الاتصال عبر بروتوكول HTTP بواسطة HttpClient وإنشاء النماذج التفاعلية ذات التحقق الصارم من الأنواع.",
     "tags": [
-      "Angular",
-      "TypeScript",
-      "DIO",
-      "Frontend"
+          "Angular",
+          "TypeScript",
+          "DIO",
+          "Santander",
+          "35h"
     ]
   },
-  "cert-rocketseat-conectar": {
-    "name": "كونكتار - أسس الويب",
-    "summary": "Certification of the Conectar course within the Discover educational track by Rocketseat.\n\n• الفترة / تاريخ الإصدار: January 2023\n• المؤسسة: Rocketseat\n• التحقق الرسمي: 2cee84ed-f001-4e3f-a65f-dff35afe655c\n• التحقق الرسمي: app.rocketseat.com.br/certificates/2cee84ed-f001-4e3f-a65f-dff35afe655c\n\nالمهارات والموضوعات المتقنة:\n- Networking fundamentals, how the web works, and client-server architecture\n- Foundational semantic structuring using HTML5\n- Styling rules and cascading mechanics with CSS3\n- Clean code best practices and web asset organization.",
+  "cert-udemy-algoritmos-completo": {
+    "name": "الخوارزميات والمنطق البرمجي - الدورة الكاملة",
+    "summary": "تأهيل منهجي معمق ومكثف في الخوارزميات وهياكل البيانات الأساسية يقدمه البروفيسور د. نيلو ألفيس على منصة Udemy.\n\n• عدد الساعات: 54 ساعة\n• الفترة / تاريخ الإصدار: أكتوبر 2023\n• المؤسسة: Udemy (Prof. Dr. Nelio Alves)\n• التحقق الرسمي: udemy.com/certificate/UC-algoritmos-completo\n\nالمهارات والموضوعات المتقنة:\n- التطبيق البرمجي المباشر للخوارزميات بعدة لغات معتمدة: C وC++ وJava وC# وPython\n- التحكم المحكم في المسارات المتسلسلة، والشرطية التفريعية، والحلقات التكرارية\n- المصفوفات أحادية البعد (المتجهات) والمصفوفات ثنائية الأبعاد مع إدارة العناوين في الذاكرة\n- تقسيم الشيفرات عبر الدوال المستقلة، وفهم الفارق بين التمرير بالقيمة والتمرير بالمرجع.",
     "tags": [
-      "Web Foundations",
-      "HTML",
-      "CSS",
-      "Rocketseat"
+          "الخوارزميات",
+          "المنطق البرمجي",
+          "C++",
+          "Java",
+          "Udemy",
+          "54h"
+    ]
+  },
+  "cert-devsuperior-logica": {
+    "name": "منطق البرمجة وهياكل البيانات الأساسية",
+    "summary": "معسكر تدريبي مكثف لترسيخ أسس هندسة البرمجيات والتحليل الخوارزمي الممنهج من مدرسة DevSuperior.\n\n• عدد الساعات: 40 ساعة\n• الفترة / تاريخ الإصدار: يوليو 2023\n• المؤسسة: DevSuperior (Prof. Nelio Alves)\n• التحقق الرسمي: devsuperior.com.br/certificate/logica-programacao\n\nالمهارات والموضوعات المتقنة:\n- التحليل الهيكلي للمشكلات التقنية وتنمية التفكير الحسابي الخوارزمي المنظم\n- أنواع البيانات المركبة، والقوائم المترابطة، وصفوف الانتظار، وهياكل الأكوام\n- خوارزميات الترتيب الشائعة (الترتيب الفقاعي، وترتيب الإدراج) وخوارزمية البحث الثنائي\n- معايير كتابة الشيفرات الواضحة والنظيفة، والتسميات المعبرة، ومتابعة تنفيذ الكود يدوياً خطوة بخطوة.",
+    "tags": [
+          "المنطق البرمجي",
+          "هياكل البيانات",
+          "DevSuperior",
+          "40h"
     ]
   },
   "cert-rocketseat-discover": {
-    "name": "ديسكفر - استكشاف الويب",
-    "summary": "Comprehensive graduation of the Discover track by Rocketseat covering foundational web software development.\n\n• الفترة / تاريخ الإصدار: October 2023\n• المؤسسة: Rocketseat\n• التحقق الرسمي: 83744a16-a446-4df6-9a62-5d042308a5f2\n• التحقق الرسمي: app.rocketseat.com.br/certificates/83744a16-a446-4df6-9a62-5d042308a5f2\n\nالمهارات والموضوعات المتقنة:\n- In-depth web foundations, DOM manipulation, and interactive JavaScript\n- Modern version control with Git and remote repository workflows on GitHub\n- Responsive and flexible layout architectures for modern browsers\n- Systematic problem solving and functional user interface implementation.",
+    "name": "Discover",
+    "summary": "تدريب عملي متعمق في تقنيات الويب الحديثة ضمن مسار Discover التعليمي المقدم من Rocketseat.\n\n• الفترة / تاريخ الإصدار: مارس 2023\n• المؤسسة: Rocketseat\n• التحقق الرسمي: app.rocketseat.com.br/certificates/76384a9e-8367-4abf-950d-dfbe210d7a96\n\nالمهارات والموضوعات المتقنة:\n- الركائز الجوهرية للويب الحديث: لغة HTML5 الدلالية، والتنسيق عبر CSS3، والبرمجة بلغة JavaScript\n- التلاعب بعناصر شجرة DOM، والتعامل مع أحداث المستخدم، وتشييد الواجهات التفاعلية\n- المفاهيم الأساسية لبيئة تشغيل Node.js وإدارة حزم ومكتبات المشاريع عبر NPM\n- مهارات التعلم الذاتي المستمر، وتقنيات تتبع واكتشاف الأخطاء البرمجية، ومعايير تطوير الويب.",
     "tags": [
-      "Discover",
-      "HTML",
-      "Git",
-      "Rocketseat"
+          "Discover",
+          "الويب",
+          "JavaScript",
+          "Rocketseat"
+    ]
+  },
+  "cert-rocketseat-conectar": {
+    "name": "Conectar",
+    "summary": "شهادة اجتياز الدورة التأسيسية Conectar ضمن المسار التعليمي Discover من منصة Rocketseat.\n\n• الفترة / تاريخ الإصدار: يناير 2023\n• المؤسسة: Rocketseat\n• التحقق الرسمي: app.rocketseat.com.br/certificates/2cee84ed-f001-4e3f-a65f-dff35afe655c\n\nالمهارات والموضوعات المتقنة:\n- المبادئ الجوهرية لشبكات الحاسوب، ومعمارية العميل والخادم، وكيفية تناقل البيانات عبر الإنترنت\n- الخطوات الأولى الموثوقة في الهيكلة الدلالية السليمة لصفحات الويب باستخدام HTML5\n- قواعد تطبيق الأنماط البصرية، وتنسيق العناصر، وفهم آليات توارث الخصائص في CSS3\n- الممارسات السليمة لتنظيم مجلدات المشاريع وكتابة أكواد برمجية واضحة ونظيفة.",
+    "tags": [
+          "أساسيات الويب",
+          "HTML",
+          "CSS",
+          "Rocketseat"
     ]
   }
 };

@@ -140,4 +140,33 @@ describe("Certifications Data Suite", () => {
       expect(current >= next).toBe(true);
     }
   });
+
+  it("should have genuine complete translations for all bullet points without English leakage in non-English locales", () => {
+    const enCerts = getCertifications("en");
+    const enBulletsByCertId = new Map<string, string[]>();
+    for (const cert of enCerts) {
+      const bullets = cert.summary
+        .split("\n")
+        .map((l) => l.trim())
+        .filter((l) => l.startsWith("- "));
+      enBulletsByCertId.set(cert.id, bullets);
+    }
+
+    for (const lang of LANGUAGES) {
+      if (lang === "en" || lang === "pt" || lang === "br") continue;
+      const certs = getCertifications(lang);
+      for (const cert of certs) {
+        const enBullets = enBulletsByCertId.get(cert.id) || [];
+        const localBullets = cert.summary
+          .split("\n")
+          .map((l) => l.trim())
+          .filter((l) => l.startsWith("- "));
+
+        expect(localBullets.length).toBeGreaterThan(0);
+        for (const b of localBullets) {
+          expect(enBullets.includes(b)).toBe(false);
+        }
+      }
+    }
+  });
 });
