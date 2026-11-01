@@ -7,6 +7,9 @@ import { IdealCalcPhoneCompanion } from "./components/IdealCalcPhoneCompanion";
 import { StudioOSShowcase } from "./components/StudioOSShowcase";
 import { StudioOSPhoneCompanion } from "./components/StudioOSPhoneCompanion";
 import { PreviewVisual } from "./components/PreviewVisual";
+import { BlogPostsFeed } from "./components/BlogPostsFeed";
+import { BlogPostReader } from "./components/BlogPostReader";
+import { type BlogPostItem, getBlogPostById } from "./data/blogData";
 import {
   GithubLogo,
   LinkedinLogo,
@@ -345,6 +348,9 @@ function renderPhosphorLinkIcon(icon?: string) {
 }
 
 function getCategoryTag(item: DetailableItem): string {
+  if (item.id.startsWith("blog-")) {
+    return "Artigos";
+  }
   const map: Record<string, string> = {
     "sobre-mim": "Perfil",
     "chatbot": "Assistente",
@@ -377,6 +383,7 @@ function DetailPanel({
   isDark,
   language = "br",
   ui,
+  onSelectPost,
 }: {
   item: DetailableItem;
   onClose: () => void;
@@ -387,6 +394,7 @@ function DetailPanel({
   isDark?: boolean;
   language?: Language;
   ui: any;
+  onSelectPost?: (post: BlogPostItem) => void;
 }) {
   const animClass = isClosing ? "animate-ipadAppClose" : "animate-ipadAppOpen";
   const panelBg = isDark ? 'bg-stone-900' : 'bg-aster-beige';
@@ -397,6 +405,80 @@ function DetailPanel({
   const containerClass = isDesktop
     ? `detail-panel-desktop absolute inset-0 z-20 flex flex-col ${panelBg} overflow-hidden ${animClass} transition-colors duration-500`
     : `detail-panel absolute inset-0 z-30 ${panelBg} flex flex-col ${animClass} transition-colors duration-500`;
+
+  const isBlogPost = item.id.startsWith("blog-") || item.id === "blog-placeholder";
+  const blogPost = isBlogPost ? getBlogPostById(item.id, language) : undefined;
+
+  if (isBlogPost && blogPost) {
+    return (
+      <div
+        className={containerClass}
+        style={{
+          willChange: 'transform, opacity',
+          transformOrigin: origin ? `${origin.x} ${origin.y}` : '50% 50%',
+        }}
+        key={item.id}
+        onAnimationEnd={(e) => {
+          if (e.target !== e.currentTarget) return;
+          onAnimationEnd?.();
+        }}
+      >
+        <div className="flex-1 min-h-0 overflow-hidden flex flex-col">
+          <BlogPostReader
+            post={blogPost}
+            isDesktop={isDesktop}
+            onClose={onClose}
+            onSelectPost={onSelectPost}
+            isDark={isDark}
+            language={language}
+            ui={ui}
+          />
+        </div>
+
+        {/* Divisória minimalista */}
+        <div className={`w-full ${isDesktop ? 'px-12 pt-1' : 'px-6 pt-1 pb-1'} shrink-0 transition-colors duration-500 ${panelBg}`}>
+          <div className={`w-full h-[1px] transition-colors duration-500 ${isDark ? 'bg-stone-700' : 'bg-aster-dark/[0.08]'}`} />
+        </div>
+
+        {/* iPad physical circular home button (desktop tablet) */}
+        {isDesktop && (
+          <div className={`relative flex justify-center py-4 shrink-0 transition-colors duration-500 ${panelBg}`}>
+            <div
+              className={`absolute inset-0 pointer-events-none transition-colors duration-500 ${
+                isDark
+                  ? "bg-gradient-to-t from-black/80 to-transparent"
+                  : "bg-gradient-to-t from-black/10 to-transparent"
+              }`}
+            />
+            <button
+              type="button"
+              onClick={onClose}
+              className={`home-btn relative z-10 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ${
+                isDark
+                  ? "bg-stone-900/50 border border-stone-700 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)] hover:bg-stone-800"
+                  : "bg-black/[0.02] border border-aster-dark/10 shadow-[inset_0_3px_6px_rgba(0,0,0,0.08)] hover:bg-black/[0.04]"
+              }`}
+              aria-label={ui?.homeButton || "Botão Home"}
+            />
+          </div>
+        )}
+
+        {/* Bottom bar pill (phone only) */}
+        {!isDesktop && (
+          <div className={`shrink-0 flex justify-center pb-2.5 pt-1 transition-colors duration-500 ${panelBg}`}>
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Voltar ao início"
+              className="group py-1 px-4 cursor-pointer"
+            >
+              <div className={`w-28 h-1 rounded-full transition-colors duration-500 group-hover:bg-aster-accent/60 ${isDark ? 'bg-white/20' : 'bg-aster-dark/20'}`} />
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div
@@ -1855,6 +1937,11 @@ export default function App() {
     document.documentElement.lang = language;
   }, [phoneDetail, tabletDetail, language]);
 
+  // Sync dark mode class on document element
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDark);
+  }, [isDark]);
+
   // Update URL when language changes
   const changeLanguage = useCallback(async (newLang: Language) => {
     setLanguage(newLang);
@@ -2083,6 +2170,12 @@ export default function App() {
     [changeLanguage]
   );
 
+  const switchBlogPost = useCallback((newPost: BlogPostItem) => {
+    setPhoneDetail(newPost);
+    setTabletDetail(newPost);
+    window.history.replaceState({}, '', `${window.location.pathname}?app=${newPost.id}`);
+  }, []);
+
   // ─── Keyboard Navigation ──────────────────────────────────
 
   const handleKeyDown = useCallback(
@@ -2130,7 +2223,7 @@ export default function App() {
       }
 
       const total = currentItems.length;
-      const cols = activeCols;
+      const cols = openFolder?.id === "blog" ? 1 : activeCols;
 
       // Navigate in *visual* space, then map back to logical index
       const moveVisual = (logicalIdx: number, delta: number) => {
@@ -2219,7 +2312,7 @@ export default function App() {
       )}
 
       <div
-        className={`home-view flex-1 flex flex-col ${
+        className={`home-view flex-1 min-h-0 flex flex-col overflow-hidden ${
           phoneDetail && !isPhoneClosing ? "away" : ""
         }`}
       >
@@ -2240,29 +2333,40 @@ export default function App() {
         </div>
       )}
 
-      {/* Grid */}
-      <div className="flex-1 px-4 @tablet:px-8 py-3 @tablet:py-6 overflow-y-auto">
-        <div className="grid grid-cols-3 @[640px]:grid-cols-4 gap-3 @[640px]:gap-5 justify-items-center">
-          {currentItems.map((item, index) => {
-            const displayItem = getDarkModeItem(item, isDark);
-            return (
-              <GridIcon
-                key={item.id}
-                item={displayItem}
-                isFocused={safeFocusedIndex === index}
-                onClick={(e) => activateItem(item, index, e)}
-                onHover={() => setFocusedIndex(index)}
-                isDark={isDark}
-                extraClassName={
-                  item.id === 'dark-mode' && !openFolder
-                    ? '@[640px]:order-last'
-                    : undefined
-                }
-              />
-            );
-          })}
+      {/* Grid or Blog Feed */}
+      {openFolder?.id === "blog" ? (
+        <BlogPostsFeed
+          posts={currentItems as BlogPostItem[]}
+          focusedIndex={safeFocusedIndex}
+          onSelectPost={(post, index, e) => activateItem(post, index, e)}
+          onHoverPost={(index) => setFocusedIndex(index)}
+          isDark={isDark}
+          language={language}
+        />
+      ) : (
+        <div className="flex-1 px-4 @tablet:px-8 py-3 @tablet:py-6 overflow-y-auto">
+          <div className="grid grid-cols-3 @[640px]:grid-cols-4 gap-3 @[640px]:gap-5 justify-items-center">
+            {currentItems.map((item, index) => {
+              const displayItem = getDarkModeItem(item, isDark);
+              return (
+                <GridIcon
+                  key={item.id}
+                  item={displayItem}
+                  isFocused={safeFocusedIndex === index}
+                  onClick={(e) => activateItem(item, index, e)}
+                  onHover={() => setFocusedIndex(index)}
+                  isDark={isDark}
+                  extraClassName={
+                    item.id === 'dark-mode' && !openFolder
+                      ? '@[640px]:order-last'
+                      : undefined
+                  }
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Key hints (desktop only) */}
       <KeyHint isDesktop={isDesktop} isDark={isDark} ui={ui} />
@@ -2346,6 +2450,7 @@ export default function App() {
             isDark={isDark}
             language={language}
             ui={ui}
+            onSelectPost={switchBlogPost}
           />
         )
       )}
@@ -2539,6 +2644,7 @@ export default function App() {
                       isDark={isDark}
                       language={language}
                       ui={ui}
+                      onSelectPost={switchBlogPost}
                     />
                   )
                 )}

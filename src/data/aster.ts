@@ -1,3 +1,5 @@
+import { getBlogPosts } from "./blogData";
+
 // ─── Types ───────────────────────────────────────────────────
 
 export const LANGUAGES = ["br", "en", "es", "jp", "cn", "kr", "vn", "id", "fr", "de", "it", "nl", "ru", "ar", "pt"] as const;
@@ -207,19 +209,7 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
       icon: "/icons/apps/blog.svg",
       gradient: ["#11998e", "#38ef7d"],
       lang,
-      children: [
-        {
-          type: "project",
-          id: "blog-placeholder",
-          name: itemsText.blogProjName,
-          icon: "rocket",
-          gradient: ["#4facfe", "#00f2fe"],
-          summary: itemsText.blogProjSummary,
-          links: [],
-          tags: ["DevLog", itemsText.tagComp],
-          lang,
-        },
-      ],
+      children: getBlogPosts(lang),
     },
     {
       type: "folder",
