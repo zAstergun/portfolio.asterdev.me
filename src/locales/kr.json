@@ -19,7 +19,7 @@
   },
   "items": {
     "sobreMimName": "내 소개",
-    "sobreMimSummary": "저는 Aster입니다. 고성능 인터페이스와 깔끔한 아키텍처를 만드는 데 중점을 둔 프론트엔드 개발자입니다. 현재 컴퓨터 과학 5학기에 재학 중이며, 코드 작성과 학술 기술 커뮤니티 리더십에 시간을 할애하고 있습니다.\n\n프로그래밍에 대한 관심은 이론이 아닌 실무 시스템을 해부하는 것에서 시작되었습니다. 게임 서버 구성과 리버스 엔지니어링이 그 시작이었습니다. 오늘날 저는 이 분석적 호기심을 안전하고 강력한 웹 애플리케이션을 구축하는 데 집중하고 있습니다.\n\n리포지토리 밖에서는 만다린을 공부하고 e스포츠를 분석하며 정신을 예리하게 유지합니다. 이러한 기술적 요구 수준을 유지하기 위해 철인 3종 경기를 목표로 엄격하게 훈련합니다.",
+    "sobreMimSummary": "저는 Aster입니다. 고성능 인터페이스와 깔끔한 아키텍처를 만드는 데 중점을 둔 프론트엔드 개발자입니다. 현재 컴퓨터 과학 6학기에 재학 중이며, 코드 작성과 학술 기술 커뮤니티 리더십에 시간을 할애하고 있습니다.\n\n프로그래밍에 대한 관심은 이론이 아닌 실무 시스템을 해부하는 것에서 시작되었습니다. 게임 서버 구성과 리버스 엔지니어링이 그 시작이었습니다. 오늘날 저는 이 분석적 호기심을 안전하고 강력한 웹 애플리케이션을 구축하는 데 집중하고 있습니다.\n\n리포지토리 밖에서는 만다린을 공부하고 e스포츠를 분석하며 정신을 예리하게 유지합니다. 이러한 기술적 요구 수준을 유지하기 위해 철인 3종 경기를 목표로 엄격하게 훈련합니다.",
     "blogName": "블로그",
     "blogProjName": "해커톤 및 프로젝트",
     "blogProjSummary": "여기에서는 저의 학습, 해커톤 참여, 코딩 챌린지 및 그룹 프로젝트를 기록합니다.",
@@ -27,7 +27,7 @@
     "certProjName": "곧 공개",
     "certProjSummary": "향후 공식 인증 및 기술 학위를 위해 예약된 공간입니다.",
     "cvName": "이력서",
-    "cvSummary": "--- 전문 요약 ---\n성능, 확장성 및 시스템 아키텍처에 중점을 둔 프론트엔드 개발자.\n\n--- 기술 스택 ---\n프론트엔드: React.js, Next.js, TS, Tailwind CSS.\n백엔드 및 인프라: Node.js, SQL, Vercel, Git/GitHub.\n\n--- 특징 ---\n워크플로우 구조화 및 PKM 전문가.",
+    "cvSummary": "성능, 확장성 및 시스템 아키텍처에 중점을 둔 프론트엔드 개발자 & 소프트웨어 엔지니어입니다. 현재 UniAmérica / Descomplica 컴퓨터공학과 6학기에 재학 중이며, AI 보조 엔지니어링(Claude, Codex)을 적극 활용합니다.\n\n학력 및 커뮤니티:\n• 컴퓨터공학과 학사 – UniAmérica / Descomplica (6학기 재학 중, 2027년 졸업 예정)\n• 테크 리드: 학술 개발자 커뮤니티 설립, 멘토링 및 GitHub 프로젝트 거버넌스 총괄.\n\n기술 스택:\n• AI & 어시스턴트 엔지니어링: Claude, Codex, Prompt & Context Engineering, Agents\n• 프론트엔드: React 19, Next.js, TypeScript, Tailwind CSS, Vue.js, Astro\n• 백엔드 & 클라우드: Node.js, SQL, Cloudflare, Vercel, Supabase, Git/GitHub Actions\n• 모바일 & 시스템: Flutter, Dart, C++\n• PKM: Notion Certified (Advanced, Workflows, Essentials), Obsidian\n\n수료증 및 언어:\n• 37개 공식 수료증 포트폴리오에서 공인 검증 가능\n• 언어: 포르투갈어 (모국어), 영어 (고급 실무), 중국어 및 일본어",
     "githubName": "GitHub",
     "githubSummary": "이곳은 저의 엔지니어링 및 협업 허브입니다. 단순한 파일 리포지토리 그 이상인 이 공간은 아키텍처 패턴과 프로젝트 리더십을 적용하는 다양한 기술 생태계에서의 작업을 중앙 집중화합니다.\n\n--- 개인 프로필 ---\n새로운 스택(React, Astro, Tailwind), 유틸리티 도구 및 이 포트폴리오의 핵심 개발 실험에 중점을 둡니다.\n\n--- 조직 및 커뮤니티 ---\n• Centro Universitário União das Américas - UniAmérica(기술 리더십): 확장 프로젝트(PEX) 리포지토리를 조정합니다. 저의 임무는 문서 Wiki의 표준화를 보장하고, Pull Request를 검토하며, 코드 구성에서 다른 학생들을 멘토링하는 것입니다.\n• [다른 조직 이름]: 오픈 소스 프로젝트의 향후 파트너십 및 기여를 위해 예약된 공간입니다.",
     "langName": "언어",

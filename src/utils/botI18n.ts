@@ -352,82 +352,82 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
 
   ABOUT_ASTER: {
     br: {
-      text: "O Aster é Desenvolvedor Frontend focado em interfaces fluidas, de alta performance e arquiteturas limpas. Está atualmente no 5º semestre de Ciência da Computação na UniAmérica, onde lidera uma comunidade acadêmica voltada a projetos colaborativos e mentoria.\n\nSua mentalidade de engenharia une curiosidade de baixo nível (veio da engenharia reversa e servidores de jogos), disciplina física (treina para completar um triathlon Ironman) e estudo contínuo de idiomas (Mandarim e Japonês).",
+      text: "O Aster é Desenvolvedor Frontend focado em interfaces fluidas, de alta performance e arquiteturas limpas. Está atualmente no 6º semestre de Ciência da Computação na UniAmérica, onde lidera uma comunidade acadêmica voltada a projetos colaborativos e mentoria.\n\nSua mentalidade de engenharia une curiosidade de baixo nível (veio da engenharia reversa e servidores de jogos), disciplina física (treina para completar um triathlon Ironman) e estudo contínuo de idiomas (Mandarim e Japonês).",
       suggestions: ["Como começou na programação?", "Treino para o Ironman?", "Quais são os projetos?", "Qual a formação acadêmica?"],
     },
     pt: {
-      text: "O Aster é Desenvolvedor Frontend focado em interfaces fluidas, de alto desempenho e arquiteturas limpas. Encontra-se no 5º semestre de Ciência da Computação na UniAmérica, liderando uma comunidade académica focada em projetos colaborativos e mentoria.\n\nA sua abordagem de engenharia alia curiosidade de baixo nível (engenharia reversa e servidores de jogos), disciplina física (treina para o triathlon Ironman) e estudo contínuo de línguas (Mandarim e Japonês).",
+      text: "O Aster é Desenvolvedor Frontend focado em interfaces fluidas, de alto desempenho e arquiteturas limpas. Encontra-se no 6º semestre de Ciência da Computação na UniAmérica, liderando uma comunidade académica focada em projetos colaborativos e mentoria.\n\nA sua abordagem de engenharia alia curiosidade de baixo nível (engenharia reversa e servidores de jogos), disciplina física (treina para o triathlon Ironman) e estudo contínuo de línguas (Mandarim e Japonês).",
       suggestions: ["Como começou na programação?", "Treino para o Ironman?", "Quais são os projetos?", "Formação académica"],
     },
     en: {
-      text: "Aster is a Frontend Developer focused on fluid interfaces, high performance, and clean architectures. He is currently in his 5th semester of Computer Science at UniAmérica, where he leads an academic community for collaborative projects and mentorship.\n\nHis engineering mindset combines low-level curiosity (rooted in reverse engineering and online game servers), physical discipline (training for an Ironman triathlon), and continuous language learning (Mandarin and Japanese).",
+      text: "Aster is a Frontend Developer focused on fluid interfaces, high performance, and clean architectures. He is currently in his 6th semester of Computer Science at UniAmérica, where he leads an academic community for collaborative projects and mentorship.\n\nHis engineering mindset combines low-level curiosity (rooted in reverse engineering and online game servers), physical discipline (training for an Ironman triathlon), and continuous language learning (Mandarin and Japanese).",
       suggestions: ["How did he start coding?", "Ironman training?", "What are his projects?", "Education & Community?"],
     },
     es: {
-      text: "Aster es Desarrollador Frontend enfocado en interfaces fluidas, alto rendimiento y arquitecturas limpias. Cursa el 5º semestre de Ciencias de la Computación en UniAmérica, liderando una comunidad académica para proyectos colaborativos y mentoría.\n\nSu mentalidad une curiosidad de bajo nivel (orígenes en ingeniería inversa y servidores de juegos), disciplina física (entrenamiento Ironman) y estudio de idiomas (mandarín y japonés).",
+      text: "Aster es Desarrollador Frontend enfocado en interfaces fluidas, alto rendimiento y arquitecturas limpias. Cursa el 6º semestre de Ciencias de la Computación en UniAmérica, liderando una comunidad académica para proyectos colaborativos y mentoría.\n\nSu mentalidad une curiosidad de bajo nivel (orígenes en ingeniería inversa y servidores de juegos), disciplina física (entrenamiento Ironman) y estudio de idiomas (mandarín y japonés).",
       suggestions: ["¿Cómo empezó a programar?", "¿Entrenamiento Ironman?", "¿Cuáles son sus proyectos?", "¿Formación académica?"],
     },
     fr: {
-      text: "Aster est développeur Frontend axé sur les interfaces fluides, la haute performance et les architectures propres. En 5e semestre d'informatique à UniAmérica, il dirige une communauté académique de projets collaboratifs.\n\nSon esprit d'ingénieur associe curiosité bas niveau (rétro-ingénierie et serveurs de jeux), discipline athlétique (entraînement Ironman) et apprentissage des langues (mandarin et japonais).",
+      text: "Aster est développeur Frontend axé sur les interfaces fluides, la haute performance et les architectures propres. En 6e semestre d'informatique à UniAmérica, il dirige une communauté académique de projets collaboratifs.\n\nSon esprit d'ingénieur associe curiosité bas niveau (rétro-ingénierie et serveurs de jeux), discipline athlétique (entraînement Ironman) et apprentissage des langues (mandarin et japonais).",
       suggestions: ["Comment a-t-il commencé ?", "Entraînement Ironman ?", "Quels sont ses projets ?", "Formation académique"],
     },
     de: {
-      text: "Aster ist ein Frontend-Entwickler, der sich auf flüssige, hochperformante Schnittstellen und saubere Architekturen spezialisiert hat. Er studiert im 5. Semester Informatik an der UniAmérica und leitet eine akademische Entwickler-Community.\n\nSeine Denkweise verbindet Low-Level-Neugier (Reverse Engineering), eiserne Ausdauerdisziplin (Ironman-Training) und Sprachenlernen (Mandarin und Japanisch).",
+      text: "Aster ist ein Frontend-Entwickler, der sich auf flüssige, hochperformante Schnittstellen und saubere Architekturen spezialisiert hat. Er studiert im 6. Semester Informatik an der UniAmérica und leitet eine akademische Entwickler-Community.\n\nSeine Denkweise verbindet Low-Level-Neugier (Reverse Engineering), eiserne Ausdauerdisziplin (Ironman-Training) und Sprachenlernen (Mandarin und Japanisch).",
       suggestions: ["Wie hat er angefangen?", "Ironman-Training?", "Welche Projekte gibt es?", "Ausbildung & Uni"],
     },
     it: {
-      text: "Aster è uno sviluppatore Frontend incentrato su interfacce fluide, alte prestazioni e architetture pulite. Frequenta il 5º semestre di Informatica presso UniAmérica, dove coordina una community accademica di progetti open source.\n\nIl suo approccio fonde curiosità a basso livello (reverse engineering), disciplina atletica (Ironman triathlon) e studio continuo di lingue (mandarino e giapponese).",
+      text: "Aster è uno sviluppatore Frontend incentrato su interfacce fluide, alte prestazioni e architetture pulite. Frequenta il 6º semestre di Informatica presso UniAmérica, dove coordina una community accademica di progetti open source.\n\nIl suo approccio fonde curiosità a basso livello (reverse engineering), disciplina atletica (Ironman triathlon) e studio continuo di lingue (mandarino e giapponese).",
       suggestions: ["Come ha iniziato a programmare?", "Allenamento Ironman?", "Quali sono i suoi progetti?", "Formazione accademica"],
     },
     nl: {
-      text: "Aster is een Frontend Developer gericht op snelle interfaces en schone architecturen. Hij zit in het 5e semester van Informatica aan UniAmérica en leidt een academische studentengemeenschap.\n\nZijn mentaliteit combineert low-level nieuwsgierigheid (reverse engineering), sportieve discipline (Ironman triathlon) en het leren van talen (Mandarijn en Japans).",
+      text: "Aster is een Frontend Developer gericht op snelle interfaces en schone architecturen. Hij zit in het 6e semester van Informatica aan UniAmérica en leidt een academische studentengemeenschap.\n\nZijn mentaliteit combineert low-level nieuwsgierigheid (reverse engineering), sportieve discipline (Ironman triathlon) en het leren van talen (Mandarijn en Japans).",
       suggestions: ["Hoe begon hij met coderen?", "Ironman training?", "Welke projecten heeft hij?", "Opleiding & Uni"],
     },
     ru: {
-      text: "Aster — фронтенд-разработчик, создающий быстрые интерфейсы и надежные архитектуры. Он учится на 5-м семестре компьютерных наук в UniAmérica, где руководит студенческим IT-сообществом.\n\nЕго инженерный подход объединяет низкоуровневый интерес (реверс-инжиниринг и игровые серверы), железную дисциплину (подготовка к триатлону Ironman) и изучение языков (китайский и японский).",
+      text: "Aster — фронтенд-разработчик, создающий быстрые интерфейсы и надежные архитектуры. Он учится на 6-м семестре компьютерных наук в UniAmérica, где руководит студенческим IT-сообществом.\n\nЕго инженерный подход объединяет низкоуровневый интерес (реверс-инжиниринг и игровые серверы), железную дисциплину (подготовка к триатлону Ironman) и изучение языков (китайский и японский).",
       suggestions: ["С чего он начинал?", "Тренировки к Ironman?", "Какие проекты есть?", "Образование и вуз"],
     },
     ar: {
-      text: "Aster هو مطور واجهات أمامية يركز على الواجهات عالية الأداء والبنى النظيفة. يدرس في الفصل الخامس من علوم الحاسوب في UniAmérica ويقود مجتمعاً طلابياً للمشاريع التعاونية.\n\nتجمع عقليته بين الفضول التقني منخفض المستوى (الهندسة العكسية وخوادم الألعاب)، والانضباط البدني العالي (التدريب للترايثلون Ironman)، ودراسة اللغات (الصينية واليابانية).",
+      text: "Aster هو مطور واجهات أمامية يركز على الواجهات عالية الأداء والبنى النظيفة. يدرس في الفصل السادس من علوم الحاسوب في UniAmérica ويقود مجتمعاً طلابياً للمشاريع التعاونية.\n\nتجمع عقليته بين الفضول التقني منخفض المستوى (الهندسة العكسية وخوادم الألعاب)، والانضباط البدني العالي (التدريب للترايثلون Ironman)، ودراسة اللغات (الصينية واليابانية).",
       suggestions: ["كيف بدأ البرمجة؟", "تدريب الـ Ironman؟", "ما هي مشاريعه؟", "التعليم والجامعة"],
     },
     jp: {
-      text: "Asterは、高パフォーマンスで洗練されたインターフェース構築に情熱を注ぐフロントエンド開発者です。UniAmérica大学でコンピュータサイエンスの第5セメスターに在籍し、技術コミュニティを主導しています。\n\n彼の原点はオンラインゲームサーバーの構築とリバースエンジニアリングにあり、アイアンマン・トライアスロンへの挑戦や語学学習（中国語・日本語）を通じて培った高い規律を持ち合わせています。",
+      text: "Asterは、高パフォーマンスで洗練されたインターフェース構築に情熱を注ぐフロントエンド開発者です。UniAmérica大学でコンピュータサイエンスの第6セメスターに在籍し、技術コミュニティを主導しています。\n\n彼の原点はオンラインゲームサーバーの構築とリバースエンジニアリングにあり、アイアンマン・トライアスロンへの挑戦や語学学習（中国語・日本語）を通じて培った高い規律を持ち合わせています。",
       suggestions: ["どうやって開発を始めた？", "アイアンマンのトレーニング？", "代表プロジェクトは？", "大学やコミュニティについて"],
     },
     cn: {
-      text: "Aster 是一位专注于构建高流畅度、高性能界面与清晰架构的前端工程师。目前就读于 UniAmérica 计算机科学专业第五学期，同时担任学术技术社区的负责人。\n\n他的技术底蕴源自逆向工程与游戏私服架构研究，并在生活中保持高强度自律（正在全力备战 Ironman 铁人三项），同时持续精进中文与日语。",
+      text: "Aster 是一位专注于构建高流畅度、高性能界面与清晰架构的前端工程师。目前就读于 UniAmérica 计算机科学专业第六学期，同时担任学术技术社区的负责人。\n\n他的技术底蕴源自逆向工程与游戏私服架构研究，并在生活中保持高强度自律（正在全力备战 Ironman 铁人三项），同时持续精进中文与日语。",
       suggestions: ["他是如何开启编程之路的？", "铁人三项训练？", "有哪些代表项目？", "学术背景与大学"],
     },
     kr: {
-      text: "Aster는 높은 성능과 깔끔한 아키텍처에 집중하는 프론트엔드 엔지니어입니다. 현재 UniAmérica 컴퓨터공학과 5학기 재학 중이며 학술 기술 커뮤니티를 이끌고 있습니다.\n\n그의 엔지니어링 마인드는 로우레벨 리버스 엔지니어링 경험에서 시작되었으며, 아이언맨 철인 3종 경기 훈련과 어학 학습(중국어 및 일본어)을 통한 강력한 훈련 규율을 지니고 있습니다.",
+      text: "Aster는 높은 성능과 깔끔한 아키텍처에 집중하는 프론트엔드 엔지니어입니다. 현재 UniAmérica 컴퓨터공학과 6학기 재학 중이며 학술 기술 커뮤니티를 이끌고 있습니다.\n\n그의 엔지니어링 마인드는 로우레벨 리버스 엔지니어링 경험에서 시작되었으며, 아이언맨 철인 3종 경기 훈련과 어학 학습(중국어 및 일본어)을 통한 강력한 훈련 규율을 지니고 있습니다.",
       suggestions: ["프로그래밍을 어떻게 시작했나요?", "아이언맨 훈련은?", "프로젝트 목록 보기", "학력 및 대학 활동"],
     },
     vn: {
-      text: "Aster là Kỹ sư Frontend chuyên xây dựng giao diện tối ưu hiệu năng và kiến trúc sạch. Anh hiện học học kỳ 5 ngành Khoa học Máy tính tại UniAmérica và dẫn dắt cộng đồng sinh viên nghiên cứu mã nguồn mở.\n\nTư duy kỹ thuật của anh khởi đầu từ kỹ thuật dịch ngược (reverse engineering), kết hợp kỷ luật thép (luyện tập giải đấu Ironman) và học ngoại ngữ (tiếng Trung và tiếng Nhật).",
+      text: "Aster là Kỹ sư Frontend chuyên xây dựng giao diện tối ưu hiệu năng và kiến trúc sạch. Anh hiện học học kỳ 6 ngành Khoa học Máy tính tại UniAmérica và dẫn dắt cộng đồng sinh viên nghiên cứu mã nguồn mở.\n\nTư duy kỹ thuật của anh khởi đầu từ kỹ thuật dịch ngược (reverse engineering), kết hợp kỷ luật thép (luyện tập giải đấu Ironman) và học ngoại ngữ (tiếng Trung và tiếng Nhật).",
       suggestions: ["Bắt đầu lập trình ra sao?", "Luyện tập Ironman?", "Các dự án nổi bật?", "Học vấn & Đại học"],
     },
     id: {
-      text: "Aster adalah Pengembang Frontend yang berfokus pada antarmuka performa tinggi dan arsitektur bersih. Saat ini semester 5 Ilmu Komputer di UniAmérica, memimpin komunitas akademik proyek kolaboratif.\n\nMindset rekayasanya menggabungkan pemahaman low-level (berasal dari reverse engineering server game), disiplin fisik intensif (latihan Ironman triathlon), serta pembelajaran bahasa (Mandarin dan Jepang).",
+      text: "Aster adalah Pengembang Frontend yang berfokus pada antarmuka performa tinggi dan arsitektur bersih. Saat ini semester 6 Ilmu Komputer di UniAmérica, memimpin komunitas akademik proyek kolaboratif.\n\nMindset rekayasanya menggabungkan pemahaman low-level (berasal dari reverse engineering server game), disiplin fisik intensif (latihan Ironman triathlon), serta pembelajaran bahasa (Mandarin dan Jepang).",
       suggestions: ["Bagaimana awal mula coding?", "Latihan Ironman?", "Apa saja proyeknya?", "Pendidikan & Kampus"],
     },
   },
 
   TECH_STACK: {
     br: {
-      text: "A stack técnica do Aster é construída com foco em modernidade, velocidade e tipagem sólida:\n\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript (ES6+), Tailwind CSS\n• Mobile & Sistemas: Flutter, Dart, React Native, C++\n• Backend & Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Produtividade & PKM: Notion e Obsidian (fluxos de documentação)\n• Idiomas: Português (nativo), Inglês (avançado), Mandarim e Japonês (em aprendizado)",
+      text: "A stack técnica do Aster é construída com foco em modernidade, velocidade e tipagem sólida:\n\n• IA & Engenharia: Claude, Codex, Engenharia de Contexto, Agentes\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript (ES6+), Tailwind CSS\n• Mobile & Sistemas: Flutter, Dart, React Native, C++\n• Backend & Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Produtividade & PKM: Notion e Obsidian (fluxos de documentação)\n• Idiomas: Português (nativo), Inglês (avançado), Mandarim e Japonês (em aprendizado)",
       suggestions: ["Quais projetos usam essa stack?", "Baixar Currículo", "Ver Ideal Calc"],
     },
     pt: {
-      text: "A stack técnica do Aster é construída com foco em modernidade, velocidade e tipagem sólida:\n\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript (ES6+), Tailwind CSS\n• Mobile & Sistemas: Flutter, Dart, React Native, C++\n• Backend & Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Produtividade & PKM: Notion e Obsidian\n• Línguas: Português (nativo), Inglês (avançado), Mandarim e Japonês (em aprendizagem)",
+      text: "A stack técnica do Aster é construída com foco em modernidade, velocidade e tipagem sólida:\n\n• IA & Engenharia: Claude, Codex, Engenharia de Contexto, Agentes\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript (ES6+), Tailwind CSS\n• Mobile & Sistemas: Flutter, Dart, React Native, C++\n• Backend & Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Produtividade & PKM: Notion e Obsidian\n• Línguas: Português (nativo), Inglês (avançado), Mandarim e Japonês (em aprendizagem)",
       suggestions: ["Que projetos usam esta stack?", "Descarregar Currículo", "Ver Ideal Calc"],
     },
     en: {
-      text: "Aster's tech stack is centered on modernity, speed, and strict type safety:\n\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript (ES6+), Tailwind CSS\n• Mobile & Systems: Flutter, Dart, React Native, C++\n• Backend & Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Productivity & PKM: Notion and Obsidian\n• Human Languages: Portuguese (Native), English (Advanced), Mandarin & Japanese (Learning)",
+      text: "Aster's tech stack is centered on modernity, speed, and strict type safety:\n\n• AI & Augmented Engineering: Claude, Codex, Context Engineering, Agents\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript (ES6+), Tailwind CSS\n• Mobile & Systems: Flutter, Dart, React Native, C++\n• Backend & Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Productivity & PKM: Notion and Obsidian\n• Human Languages: Portuguese (Native), English (Advanced), Mandarin & Japanese (Learning)",
       suggestions: ["Which projects use this stack?", "Download Resume", "Check Ideal Calc"],
     },
     es: {
-      text: "El stack técnico de Aster está enfocado en modernidad, velocidad y tipado robusto:\n\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript, Tailwind CSS\n• Mobile y Sistemas: Flutter, Dart, React Native, C++\n• Backend e Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Productividad: Notion y Obsidian (PKM)\n• Idiomas: Portugués (nativo), Inglés (avanzado), Mandarín y Japonés (en aprendizaje)",
+      text: "El stack técnico de Aster está enfocado en modernidad, velocidad y tipado robusto:\n\n• IA e Ingeniería: Claude, Codex, Ingeniería de Contexto, Agentes\n• Frontend: React, Next.js, Vue.js, Astro, TypeScript, JavaScript, Tailwind CSS\n• Mobile y Sistemas: Flutter, Dart, React Native, C++\n• Backend e Infra: Node.js, SQL, Vercel, Cloudflare, Git/GitHub\n• Productividad: Notion y Obsidian (PKM)\n• Idiomas: Portugués (nativo), Inglés (avanzado), Mandarín y Japonés (en aprendizaje)",
       suggestions: ["¿Qué proyectos usan este stack?", "Descargar Currículum", "Ver Ideal Calc"],
     },
     fr: {
@@ -1249,15 +1249,15 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
 
   EDUCATION: {
     br: {
-      text: "O Aster está no 5º semestre de Ciência da Computação na UniAmérica. Ele atua na liderança técnica da comunidade acadêmica: coordena repositórios de projetos de extensão, padroniza documentações e mentora outros estudantes.",
+      text: "O Aster está no 6º semestre de Ciência da Computação na UniAmérica. Ele atua na liderança técnica da comunidade acadêmica: coordena repositórios de projetos de extensão, padroniza documentações e mentora outros estudantes.",
       suggestions: ["Quais são os projetos dele?", "Baixar Currículo", "Como entrar em contato?"],
     },
     pt: {
-      text: "O Aster está no 5º semestre de Ciência da Computação na UniAmérica. Lidera a comunidade académica, coordenando projetos de extensão e mentoria.",
+      text: "O Aster está no 6º semestre de Ciência da Computação na UniAmérica. Lidera a comunidade académica, coordenando projetos de extensão e mentoria.",
       suggestions: ["Quais são os projetos dele?", "Descarregar Currículo", "Como entrar em contacto?"],
     },
     en: {
-      text: "Aster is in his 5th semester of Computer Science at UniAmérica. He leads the student developer community: coordinating extension project repos, standardizing documentation, and mentoring fellow peers.",
+      text: "Aster is in his 6th semester of Computer Science at UniAmérica. He leads the student developer community: coordinating extension project repos, standardizing documentation, and mentoring fellow peers.",
       suggestions: ["What are his projects?", "Download Resume", "Contact info"],
     },
     es: {
@@ -1265,23 +1265,23 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["¿Cuáles son sus proyectos?", "Descargar Currículum", "Contacto"],
     },
     fr: {
-      text: "Aster est en 5e semestre d'informatique à UniAmérica. Il encadre la communauté étudiante, harmonise les documentations et accompagne ses pairs.",
+      text: "Aster est en 6e semestre d'informatique à UniAmérica. Il encadre la communauté étudiante, harmonise les documentations et accompagne ses pairs.",
       suggestions: ["Quels sont ses projets ?", "Télécharger le CV", "Contact"],
     },
     de: {
-      text: "Aster studiert im 5. Semester Informatik an der UniAmérica und leitet die Studenten-Community zur Betreuung von Projekten und Dokumentationen.",
+      text: "Aster studiert im 6. Semester Informatik an der UniAmérica und leitet die Studenten-Community zur Betreuung von Projekten und Dokumentationen.",
       suggestions: ["Welche Projekte hat er?", "Lebenslauf herunterladen", "Kontakt"],
     },
     it: {
-      text: "Aster frequenta il 5º semestre di Informatica all'UniAmérica e guida la community studentesca nella gestione di progetti e documentazione.",
+      text: "Aster frequenta il 6º semestre di Informatica all'UniAmérica e guida la community studentesca nella gestione di progetti e documentazione.",
       suggestions: ["Quali sono i suoi progetti?", "Scarica il Curriculum", "Contatti"],
     },
     nl: {
-      text: "Aster zit in het 5e semester van Informatica aan UniAmérica. Hij leidt de studentenontwikkelaars en coördineert universitaire projecten.",
+      text: "Aster zit in het 6e semester van Informatica aan UniAmérica. Hij leidt de studentenontwikkelaars en coördineert universitaire projecten.",
       suggestions: ["Welke projecten heeft hij?", "Download CV", "Contact"],
     },
     ru: {
-      text: "Aster учится на 5-м семестре Computer Science в UniAmérica и возглавляет академическое сообщество, координируя проекты и наставляя студентов.",
+      text: "Aster учится на 6-м семестре Computer Science в UniAmérica и возглавляет академическое сообщество, координируя проекты и наставляя студентов.",
       suggestions: ["Какие проекты есть?", "Скачать резюме", "Контакты"],
     },
     ar: {
@@ -1289,23 +1289,23 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["ما هي مشاريعه؟", "تحميل السيرة الذاتية", "معلومات التواصل"],
     },
     jp: {
-      text: "AsterはUniAmérica大学でコンピュータサイエンスを専攻中（第5セメスター）。学生エンジニアコミュニティを率い、リポジトリ管理や後輩のメンターを担当しています。",
+      text: "AsterはUniAmérica大学でコンピュータサイエンスを専攻中（第6セメスター）。学生エンジニアコミュニティを率い、リポジトリ管理や後輩のメンターを担当しています。",
       suggestions: ["代表プロジェクトは？", "履歴書をダウンロード", "連絡方法を見る"],
     },
     cn: {
-      text: "Aster 目前就读于 UniAmérica 计算机科学专业第 5 学期，积极主导技术社区建设，负责统筹实训项目仓库、制定代码规范并指导同行学生。",
+      text: "Aster 目前就读于 UniAmérica 计算机科学专业第 6 学期，积极主导技术社区建设，负责统筹实训项目仓库、制定代码规范并指导同行学生。",
       suggestions: ["他的代表项目？", "下载简历", "联系方式"],
     },
     kr: {
-      text: "Aster는 UniAmérica 컴퓨터공학과 5학기에 재학 중이며, 학부 개발자 커뮤니티를 이끌며 프로젝트 표준화와 멘토링을 주도하고 있습니다.",
+      text: "Aster는 UniAmérica 컴퓨터공학과 6학기에 재학 중이며, 학부 개발자 커뮤니티를 이끌며 프로젝트 표준화와 멘토링을 주도하고 있습니다.",
       suggestions: ["그의 프로젝트 보기", "이력서 다운로드", "연락처 보기"],
     },
     vn: {
-      text: "Aster đang học kỳ 5 Khoa học Máy tính tại UniAmérica, đồng thời là trưởng nhóm cộng đồng sinh viên công nghệ hỗ trợ hướng dẫn và chuẩn hóa tài liệu.",
+      text: "Aster đang học kỳ 6 Khoa học Máy tính tại UniAmérica, đồng thời là trưởng nhóm cộng đồng sinh viên công nghệ hỗ trợ hướng dẫn và chuẩn hóa tài liệu.",
       suggestions: ["Các dự án của anh ấy?", "Tải sơ yếu lý lịch", "Thông tin liên hệ"],
     },
     id: {
-      text: "Aster saat ini semester 5 Ilmu Komputer di UniAmérica, memimpin komunitas mahasiswa dalam standarisasi dokumentasi dan mentoring proyek.",
+      text: "Aster saat ini semester 6 Ilmu Komputer di UniAmérica, memimpin komunitas mahasiswa dalam standarisasi dokumentasi dan mentoring proyek.",
       suggestions: ["Apa saja proyeknya?", "Unduh Resume", "Kontak"],
     },
   },
@@ -1450,7 +1450,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
 
   CONTACT_SOCIAL: {
     br: {
-      text: "Você pode se conectar com o Aster pelos seguintes canais oficiais:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: Disponível no app 'Sobre Mim' do celular",
+      text: "Você pode se conectar com o Aster pelos seguintes canais oficiais:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Enviar Email ✉️", url: "mailto:hello@asterdev.me" },
@@ -1458,7 +1458,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Baixar Currículo", "Quais são os projetos?", "Quem é o Aster?"],
     },
     pt: {
-      text: "Pode contactar o Aster através dos canais oficiais:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: Disponível na aplicação 'Sobre Mim'",
+      text: "Pode contactar o Aster através dos canais oficiais:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Enviar Email ✉️", url: "mailto:hello@asterdev.me" },
@@ -1466,7 +1466,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Descarregar Currículo", "Quais são os projetos?", "Quem é o Aster?"],
     },
     en: {
-      text: "You can reach Aster through these official channels:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: Available in the 'About Me' app",
+      text: "You can reach Aster through these official channels:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Send Email ✉️", url: "mailto:hello@asterdev.me" },
@@ -1474,7 +1474,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Download Resume", "What are his projects?", "Who is Aster?"],
     },
     es: {
-      text: "Puedes comunicarte con Aster a través de sus canales oficiales:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: Disponible en la app 'Sobre Mí'",
+      text: "Puedes comunicarte con Aster a través de sus canales oficiales:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Enviar Email ✉️", url: "mailto:hello@asterdev.me" },
@@ -1482,7 +1482,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Descargar Currículum", "¿Cuáles son sus proyectos?", "¿Quién es Aster?"],
     },
     fr: {
-      text: "Vous pouvez contacter Aster via les canaux officiels suivants :\n\n• GitHub : github.com/zAstergun\n• Email : hello@asterdev.me\n• LinkedIn : Disponible dans l'application 'Sobre Mim'",
+      text: "Vous pouvez contacter Aster via les canaux officiels suivants :\n\n• GitHub : github.com/zAstergun\n• Email : hello@asterdev.me",
       actions: [
         { label: "GitHub : zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Envoyer un e-mail ✉️", url: "mailto:hello@asterdev.me" },
@@ -1490,7 +1490,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Télécharger le CV", "Quels sont ses projets ?", "Qui est Aster ?"],
     },
     de: {
-      text: "Du kannst Aster über folgende offizielle Kanäle erreichen:\n\n• GitHub: github.com/zAstergun\n• E-Mail: hello@asterdev.me\n• LinkedIn: In der App 'Über mich' verfügbar",
+      text: "Du kannst Aster über folgende offizielle Kanäle erreichen:\n\n• GitHub: github.com/zAstergun\n• E-Mail: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "E-Mail senden ✉️", url: "mailto:hello@asterdev.me" },
@@ -1498,7 +1498,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Lebenslauf herunterladen", "Welche Projekte gibt es?", "Wer ist Aster?"],
     },
     it: {
-      text: "Puoi contattare Aster attraverso i seguenti canali:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: Disponibile nell'app 'Su di me'",
+      text: "Puoi contattare Aster attraverso i seguenti canali:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Invia Email ✉️", url: "mailto:hello@asterdev.me" },
@@ -1506,7 +1506,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Scarica il Curriculum", "Quali sono i suoi progetti?", "Chi è Aster?"],
     },
     nl: {
-      text: "Je kunt contact opnemen met Aster via:\n\n• GitHub: github.com/zAstergun\n• E-mail: hello@asterdev.me\n• LinkedIn: Beschikbaar in de app 'Over Mij'",
+      text: "Je kunt contact opnemen met Aster via:\n\n• GitHub: github.com/zAstergun\n• E-mail: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Stuur E-mail ✉️", url: "mailto:hello@asterdev.me" },
@@ -1514,7 +1514,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Download CV", "Welke projecten zijn er?", "Wie is Aster?"],
     },
     ru: {
-      text: "Вы можете связаться с Aster по следующим каналам:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: доступен в приложении «Обо мне»",
+      text: "Вы можете связаться с Aster по следующим каналам:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Написать на Email ✉️", url: "mailto:hello@asterdev.me" },
@@ -1522,7 +1522,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Скачать резюме", "Какие есть проекты?", "Кто такой Aster?"],
     },
     ar: {
-      text: "يمكنك التواصل مع Aster عبر القنوات الرسمية التالية:\n\n• GitHub: github.com/zAstergun\n• البريد الإلكتروني: hello@asterdev.me\n• LinkedIn: متوفر في تطبيق 'حولي'",
+      text: "يمكنك التواصل مع Aster عبر القنوات الرسمية التالية:\n\n• GitHub: github.com/zAstergun\n• البريد الإلكتروني: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "إرسال بريد إلكتروني ✉️", url: "mailto:hello@asterdev.me" },
@@ -1530,7 +1530,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["تحميل السيرة الذاتية", "ما هي مشاريعه؟", "من هو Aster؟"],
     },
     jp: {
-      text: "Asterへの公式連絡先一覧です:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: スマホ内の「自己紹介」アプリよりリンク",
+      text: "Asterへの公式連絡先一覧です:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "メールを送信 ✉️", url: "mailto:hello@asterdev.me" },
@@ -1538,7 +1538,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["履歴書をダウンロード", "プロジェクトを見る", "Asterとは誰ですか？"],
     },
     cn: {
-      text: "您可以通过以下官方渠道与 Aster 取得联系：\n\n• GitHub: github.com/zAstergun\n• 电子邮箱: hello@asterdev.me\n• LinkedIn: 可在手机内的“关于我”应用中直接查看",
+      text: "您可以通过以下官方渠道与 Aster 取得联系：\n\n• GitHub: github.com/zAstergun\n• 电子邮箱: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "发送邮件 ✉️", url: "mailto:hello@asterdev.me" },
@@ -1546,7 +1546,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["下载简历", "查看代表项目", "Aster 是谁？"],
     },
     kr: {
-      text: "Aster와 소통할 수 있는 공식 채널입니다:\n\n• GitHub: github.com/zAstergun\n• 이메일: hello@asterdev.me\n• LinkedIn: 모바일 화면의 '소개' 앱에서 확인 가능",
+      text: "Aster와 소통할 수 있는 공식 채널입니다:\n\n• GitHub: github.com/zAstergun\n• 이메일: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "이메일 보내기 ✉️", url: "mailto:hello@asterdev.me" },
@@ -1554,7 +1554,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["이력서 다운로드", "프로젝트 목록 보기", "Aster는 누구인가요?"],
     },
     vn: {
-      text: "Bạn có thể liên hệ với Aster qua các kênh chính thức sau:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: Có trong ứng dụng 'Giới thiệu'",
+      text: "Bạn có thể liên hệ với Aster qua các kênh chính thức sau:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Gửi Email ✉️", url: "mailto:hello@asterdev.me" },
@@ -1562,7 +1562,7 @@ export const BOT_RESPONSES: Record<IntentId, Record<BotLanguage, LocalizedIntent
       suggestions: ["Tải sơ yếu lý lịch", "Các dự án nổi bật?", "Aster là ai?"],
     },
     id: {
-      text: "Anda dapat menghubungi Aster melalui saluran resmi berikut:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me\n• LinkedIn: Tersedia di aplikasi 'Tentang Saya'",
+      text: "Anda dapat menghubungi Aster melalui saluran resmi berikut:\n\n• GitHub: github.com/zAstergun\n• Email: hello@asterdev.me",
       actions: [
         { label: "GitHub: zAstergun ↗", url: "https://github.com/zAstergun" },
         { label: "Kirim Email ✉️", url: "mailto:hello@asterdev.me" },

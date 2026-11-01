@@ -9,6 +9,7 @@ import { StudioOSPhoneCompanion } from "./components/StudioOSPhoneCompanion";
 import { PreviewVisual } from "./components/PreviewVisual";
 import { BlogPostsFeed } from "./components/BlogPostsFeed";
 import { BlogPostReader } from "./components/BlogPostReader";
+import { CurriculumDetail } from "./components/CurriculumDetail";
 import { type BlogPostItem, getBlogPostById } from "./data/blogData";
 import {
   GithubLogo,
@@ -624,89 +625,116 @@ function DetailPanel({
             </h2>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-1.5 mb-6">
-              {item.appUrl && (
-                <span
-                  className={`tag-chip flex items-center gap-1.5 font-bold transition-colors duration-500 ${
-                    isDark
-                      ? "bg-emerald-500/15 text-emerald-400 border border-emerald-500/30"
-                      : "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                  }`}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  Live App
-                </span>
-              )}
-              {item.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className={`tag-chip transition-colors duration-500 ${isDark ? 'bg-stone-700 text-stone-400' : 'bg-aster-dark/[0.07] text-aster-dark/60'}`}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+            {(Boolean(item.appUrl) || (item.tags && item.tags.length > 0)) && (
+              <div className="flex flex-wrap gap-1.5 mb-6">
+                {item.appUrl && (
+                  <span
+                    className={`tag-chip flex items-center gap-1.5 font-bold transition-colors duration-500 ${
+                      isDark
+                        ? "bg-emerald-500/15 text-emerald-400 border border-emerald-500/30"
+                        : "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                    }`}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    Live App
+                  </span>
+                )}
+                {item.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className={`tag-chip transition-colors duration-500 ${isDark ? 'bg-stone-700 text-stone-400' : 'bg-aster-dark/[0.07] text-aster-dark/60'}`}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
 
-            {/* Resumo Section */}
-            <h3 className={`text-xs @tablet:text-sm font-bold uppercase tracking-widest mb-2 transition-colors duration-500 ${panelFaint}`}>
-              {ui?.summary || "Resumo"}
-            </h3>
-            <p
-              className={`leading-relaxed transition-colors duration-500 mb-6 ${isDark ? 'text-stone-300' : 'text-aster-dark/80'} ${
-                isDesktop ? "text-base max-w-2xl" : "text-xs @tablet:text-sm"
-              } whitespace-pre-wrap`}
-            >
-              {item.summary}
-            </p>
-
-            {/* Links Section */}
-            {item.links.length > 0 && (
-              <div className="mb-6">
-                <h3 className={`text-xs font-bold uppercase tracking-widest mb-3 transition-colors duration-500 ${panelFaint}`}>
-                  Links
+            {/* Curriculum Detail or Standard Resumo */}
+            {item.id === "curriculo" ? (
+              <CurriculumDetail
+                isDark={isDark}
+                isDesktop={isDesktop}
+                language={language}
+                links={item.links}
+              />
+            ) : (
+              <>
+                {/* Resumo Section */}
+                <h3 className={`text-xs @tablet:text-sm font-bold uppercase tracking-widest mb-2 transition-colors duration-500 ${panelFaint}`}>
+                  {ui?.summary || "Resumo"}
                 </h3>
-                <div
-                  className={`grid gap-2.5 ${
-                    isDesktop ? "grid-cols-2 max-w-2xl" : "grid-cols-1"
-                  }`}
+                <p
+                  className={`leading-relaxed transition-colors duration-500 mb-6 ${isDark ? 'text-stone-300' : 'text-aster-dark/80'} ${
+                    isDesktop ? "text-base max-w-2xl" : "text-xs @tablet:text-sm"
+                  } whitespace-pre-wrap`}
                 >
-                  {item.links.map((link) => (
-                    <a
-                      key={link.title}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center gap-3 px-4 py-3 rounded-xl border transition-colors duration-500 group ${
-                        isDark
-                          ? "bg-stone-700/60 border-stone-600 hover:bg-stone-700"
-                          : "bg-aster-beige-dark/60 border-aster-dark/[0.08] hover:bg-aster-beige-dark"
+                  {item.summary}
+                </p>
+
+                {/* Links Section */}
+                {item.links.length > 0 && (
+                  <div className="mb-6">
+                    <h3 className={`text-xs font-bold uppercase tracking-widest mb-3 transition-colors duration-500 ${panelFaint}`}>
+                      Links
+                    </h3>
+                    <div
+                      className={`grid gap-2.5 ${
+                        isDesktop ? "grid-cols-2 max-w-2xl" : "grid-cols-1"
                       }`}
                     >
-                      <span className="text-base flex items-center justify-center">
-                        {isImageIcon(link.icon || "") ? (
-                          <img src={link.icon} alt={link.title} className="w-5 h-5 object-contain" />
-                        ) : (
-                          renderPhosphorLinkIcon(link.icon)
-                        )}
-                      </span>
-                      <span
-                        className={`text-xs @tablet:text-sm font-medium group-hover:text-aster-accent transition-colors duration-500 ${
-                          isDark ? "text-stone-300" : "text-aster-dark/80"
-                        }`}
-                      >
-                        {link.title}
-                      </span>
-                      <span
-                        className={`ml-auto group-hover:text-aster-accent transition-colors duration-500 text-xs ${
-                          isDark ? "text-stone-600" : "text-aster-dark/30"
-                        }`}
-                      >
-                        <ArrowRight weight="bold" className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
-                      </span>
-                    </a>
-                  ))}
-                </div>
-              </div>
+                      {item.links.map((link) => {
+                        const isDisabled = link.url === "#" || !link.url;
+                        return (
+                          <a
+                            key={link.title}
+                            href={isDisabled ? undefined : link.url}
+                            target={isDisabled ? undefined : "_blank"}
+                            rel={isDisabled ? undefined : "noopener noreferrer"}
+                            onClick={isDisabled ? (e) => e.preventDefault() : undefined}
+                            aria-disabled={isDisabled}
+                            className={`flex items-center gap-3 px-4 py-3 rounded-xl border transition-colors duration-500 group ${
+                              isDisabled
+                                ? isDark
+                                  ? "bg-stone-800/40 border-stone-800/80 cursor-not-allowed opacity-50"
+                                  : "bg-aster-beige-dark/40 border-aster-dark/[0.05] cursor-not-allowed opacity-50"
+                                : isDark
+                                  ? "bg-stone-700/60 border-stone-600 hover:bg-stone-700"
+                                  : "bg-aster-beige-dark/60 border-aster-dark/[0.08] hover:bg-aster-beige-dark"
+                            }`}
+                          >
+                            <span className="text-base flex items-center justify-center">
+                              {isImageIcon(link.icon || "") ? (
+                                <img src={link.icon} alt={link.title} className="w-5 h-5 object-contain" />
+                              ) : (
+                                renderPhosphorLinkIcon(link.icon)
+                              )}
+                            </span>
+                            <span
+                              className={`text-xs @tablet:text-sm font-medium ${
+                                isDisabled ? "" : "group-hover:text-aster-accent"
+                              } transition-colors duration-500 ${
+                                isDark ? "text-stone-300" : "text-aster-dark/80"
+                              }`}
+                            >
+                              {link.title}
+                            </span>
+                            {!isDisabled && (
+                              <span
+                                className={`ml-auto group-hover:text-aster-accent transition-colors duration-500 text-xs ${
+                                  isDark ? "text-stone-600" : "text-aster-dark/30"
+                                }`}
+                              >
+                                <ArrowRight weight="bold" className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                              </span>
+                            )}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </>
             )}
 
             {/* Preview Visual */}

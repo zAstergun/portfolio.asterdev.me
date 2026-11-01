@@ -19,7 +19,7 @@
   },
   "items": {
     "sobreMimName": "关于我",
-    "sobreMimSummary": "我是Aster，一名前端开发人员，专注于创建高性能界面和清晰架构。目前在读计算机科学第五学期，我在编写代码和领导学术技术社区之间分配时间。\n\n我对编程的兴趣并非始于理论，而是在实践中解剖系统。入门是配置在线游戏服务器和作弊创建的逆向工程。今天，我将这种分析好奇心用于构建安全强大的Web应用程序。\n\n在代码库之外，我学习普通话并分析电子竞技竞争环境以保持头脑敏锐。为了维持这种技术要求，我进行了铁人三项的严格训练。",
+    "sobreMimSummary": "我是Aster，一名前端开发人员，专注于创建高性能界面和清晰架构。目前在读计算机科学第六学期，我在编写代码和领导学术技术社区之间分配时间。\n\n我对编程的兴趣并非始于理论，而是在实践中解剖系统。入门是配置在线游戏服务器和作弊创建的逆向工程。今天，我将这种分析好奇心用于构建安全强大的Web应用程序。\n\n在代码库之外，我学习普通话并分析电子竞技竞争环境以保持头脑敏锐。为了维持这种技术要求，我进行了铁人三项的严格训练。",
     "blogName": "博客",
     "blogProjName": "黑客松与项目",
     "blogProjSummary": "在这里，我将记录我的学习、黑客松参与、编码挑战和小组项目。",
@@ -27,7 +27,7 @@
     "certProjName": "敬请期待",
     "certProjSummary": "为未来的官方认证和技术文凭预留的空间。",
     "cvName": "简历",
-    "cvSummary": "--- 个人简历 ---\n专注于性能、可扩展性和系统架构的前端开发人员。\n\n--- 技术栈 ---\n前端: React.js, Next.js, TS, Tailwind CSS.\n后端与基础设施: Node.js, SQL, Vercel, Git/GitHub.\n\n--- 特点 ---\n工作流结构和PKM（Notion/Obsidian）专家。",
+    "cvSummary": "专注于高性能交互界面、可扩展系统架构与严格 TypeScript 工程化的前端开发工程师。目前就读于 UniAmérica / Descomplica 计算机科学专业第 6 学期，精通 AI 赋能开发流（Claude, Codex）。\n\n教育背景与学术社群：\n• 计算机科学学士 – UniAmérica / Descomplica（第 6 学期，预计 2027 年毕业）\n• 技术主管：创办学术技术社区，负责技能辅导与 GitHub 项目工程治理。\n\n核心技术栈：\n• AI 与辅助工程流：Claude, Codex, Prompt & Context Engineering, Agents\n• 前端：React 19, Next.js, TypeScript, Tailwind CSS, Vue.js, Astro\n• 后端与云：Node.js, SQL, Cloudflare, Vercel, Supabase, Git/GitHub Actions\n• 移动端与系统：Flutter, Dart, C++\n• 知识架构：Notion Certified (Advanced, Workflows, Essentials), Obsidian\n\n认证与语言：\n• 37 项官方权威认证收录于作品集中\n• 语言：葡萄牙语（母语）、英语（精通）、中文与日语",
     "githubName": "GitHub",
     "githubSummary": "这是我的工程和协作中心。这不仅仅是一个文件存储库，这个空间集中了我在不同技术生态系统中的工作，我在其中应用架构模式和项目领导力。\n\n--- 个人资料 ---\n专注于尝试新的技术栈（React、Astro、Tailwind）、实用工具以及此投资组合的核心开发。\n\n--- 组织和社区 ---\n• Centro Universitário União das Américas - UniAmérica（技术领导）: 我负责协调扩展项目（PEX）存储库。我的任务是确保文档Wiki的标准化、审查拉取请求，并在代码组织方面指导其他学生。\n• [其他组织名称]: 为未来在开源项目中的合作伙伴关系和贡献保留的空间。",
     "langName": "语言",

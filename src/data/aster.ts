@@ -181,7 +181,7 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
       gradient: ["#6c63ff", "#a29bfe"],
       summary: itemsText.sobreMimSummary,
       links: [
-        { title: "LinkedIn", url: "https://www.linkedin.com/in/douglas-l-santos/", icon: "linkedin" },
+        { title: "LinkedIn", url: "#", icon: "linkedin" },
         { title: "GitHub", url: "https://github.com/zAstergun", icon: "github" },
         { title: "Email", url: "mailto:hello@asterdev.me", icon: "mail" },
       ],
@@ -231,13 +231,13 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
       gradient: ["#fd79a8", "#e84393"],
       summary: itemsText.cvSummary,
       links: [
-        { title: "LinkedIn", url: "https://www.linkedin.com/in/douglas-l-santos/", icon: "linkedin" },
+        { title: "LinkedIn", url: "#", icon: "linkedin" },
         { title: "Download [PDF]", url: "/Currículo_Aster_Frontend.pdf", icon: "file-pdf" },
         { title: "Download [DOCX]", url: "/Currículo_Aster_Frontend.docx", icon: "file-word" },
         { title: "Download [Markdown]", url: "/Currículo_Aster_Frontend.md", icon: "file-text" },
         { title: "Download [JSON]", url: "/Currículo_Aster_Frontend.json", icon: "file-json" },
       ],
-      tags: ["Frontend", "CV"],
+      tags: [],
       lang,
     },
     {

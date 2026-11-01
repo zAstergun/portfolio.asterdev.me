@@ -19,7 +19,7 @@
   },
   "items": {
     "sobreMimName": "Over Mij",
-    "sobreMimSummary": "Ik ben Aster, een Frontend Developer gericht op het maken van performante interfaces en schone architecturen. Momenteel in het 5e semester Informatica, verdeel ik mijn tijd tussen coderen en het leiden van een academische technische gemeenschap.\n\nMijn interesse in programmeren begon met reverse engineering en gameservers. Vandaag gebruik ik deze analytische nieuwsgierigheid om veilige webapplicaties te bouwen.\n\nOm dit niveau van technische eis vol te houden, train ik intensief met als doel een Ironman-triatlon te voltooien.",
+    "sobreMimSummary": "Ik ben Aster, een Frontend Developer gericht op het maken van performante interfaces en schone architecturen. Momenteel in het 6e semester Informatica, verdeel ik mijn tijd tussen coderen en het leiden van een academische technische gemeenschap.\n\nMijn interesse in programmeren begon met reverse engineering en gameservers. Vandaag gebruik ik deze analytische nieuwsgierigheid om veilige webapplicaties te bouwen.\n\nOm dit niveau van technische eis vol te houden, train ik intensief met als doel een Ironman-triatlon te voltooien.",
     "blogName": "Blog",
     "blogProjName": "Hackathons & Projecten",
     "blogProjSummary": "Hier documenteer ik mijn leerprocessen, deelnames aan Hackathons en groepsprojecten.",
@@ -27,7 +27,7 @@
     "certProjName": "Binnenkort",
     "certProjSummary": "Gereserveerde ruimte voor toekomstige officiële certificeringen.",
     "cvName": "Cv",
-    "cvSummary": "--- PROFESSIONELE SAMENVATTING ---\nFrontend Developer gericht op prestaties en architectuur.\n\n--- TECH STACK ---\nFrontend: React, Next.js, TS, Tailwind CSS.\nBack & Infra: Node.js, SQL, Vercel, Git/GitHub.\n\n--- HOOGTEPUNTEN ---\nSpecialist in workflow-structurering en PKM.",
+    "cvSummary": "Frontend Developer & Software Engineer gericht op prestaties, schaalbaarheid en systeemarchitectuur. Momenteel in het 6e semester Informatica aan UniAmérica / Descomplica, met ervaring in design systems en AI-ondersteund ontwikkelen (Claude, Codex).\n\nOpleiding & Community:\n• Bachelor Informatica – UniAmérica / Descomplica (6e Semester, afstuderen 2027)\n• Technisch Leiderschap: Oprichter van een studenten tech-community gericht op mentoring en GitHub.\n\nTech Stack:\n• AI & Geassisteerde Engineering: Claude, Codex, Prompt & Context Engineering, Agents\n• Frontend: React 19, Next.js, TypeScript, Tailwind CSS, Vue.js, Astro\n• Backend & Cloud: Node.js, SQL, Cloudflare, Vercel, Supabase, Git/GitHub Actions\n• Mobile & Systemen: Flutter, Dart, C++\n• PKM: Notion Certified (Advanced, Workflows, Essentials), Obsidian\n\nCertificeringen & Talen:\n• 37 Officiële Certificeringen geverifieerd in het portfolio\n• Talen: Portugees (Moedertaal), Engels (Vloeiend), Mandarijn en Japans",
     "githubName": "GitHub",
     "githubSummary": "Dit is mijn Engineering en Collaboration Hub. Meer dan een bestandsrepository, centraliseert deze ruimte mijn werk in verschillende technische ecosystemen.\n\n--- PERSOONLIJK PROFIEL ---\nFocus op het experimenteren met nieuwe stacks (React, Astro, Tailwind).\n\n--- ORGANISATIES EN GEMEENSCHAPPEN ---\n• Centro Universitário União das Américas - UniAmérica (Technisch Leiderschap): Ik coördineer de repositories voor uitbreidingsprojecten (PEX).\n• [Andere Org Naam]: Ruimte gereserveerd voor toekomstige partnerschappen.",
     "langName": "Taal",
