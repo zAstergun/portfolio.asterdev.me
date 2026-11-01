@@ -121,4 +121,23 @@ describe("Certifications Data Suite", () => {
     expect(tsCertAr?.links[0].title).toBe("التحقق من الشهادة الرسمية");
     expect(tsCertAr?.summary).toContain("عدد الساعات:");
   });
+
+  it("should have all certifications sorted chronologically with the most recent first", () => {
+    const certs = getCertifications("br");
+    expect(certs.length).toBe(37);
+
+    // First certification should be the most recent (IoT Developer, Oct 2026)
+    expect(certs[0].id).toBe("cert-descomplica-iot");
+    // Second certification should be AI Developer (Aug 2026)
+    expect(certs[1].id).toBe("cert-descomplica-ia");
+    // Last certification should be the oldest (Conectar - Rocketseat, Jan 2023)
+    expect(certs[certs.length - 1].id).toBe("cert-rocketseat-conectar");
+
+    // Every item in ALL_CERTIFICATIONS must have an issueDate, and they should be monotonically non-increasing
+    for (let i = 0; i < ALL_CERTIFICATIONS.length - 1; i++) {
+      const current = ALL_CERTIFICATIONS[i].issueDate || ALL_CERTIFICATIONS[i].year;
+      const next = ALL_CERTIFICATIONS[i + 1].issueDate || ALL_CERTIFICATIONS[i + 1].year;
+      expect(current >= next).toBe(true);
+    }
+  });
 });
