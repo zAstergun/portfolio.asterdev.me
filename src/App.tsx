@@ -11,6 +11,7 @@ import { BlogPostsFeed } from "./components/BlogPostsFeed";
 import { BlogPostReader } from "./components/BlogPostReader";
 import { CurriculumDetail } from "./components/CurriculumDetail";
 import { AboutMeDetail } from "./components/AboutMeDetail";
+import { GitHubDetail } from "./components/GitHubDetail";
 import { type BlogPostItem, getBlogPostById } from "./data/blogData";
 import {
   GithubLogo,
@@ -377,8 +378,29 @@ function getCategoryTag(item: DetailableItem, ui?: any, language: Language = "br
       kr: "프로필",
       cn: "个人档案",
       vn: "Hồ sơ",
+      id: "Profil",
     };
     return (profileMap[language] || "Perfil").toUpperCase();
+  }
+  if (item.id === "github") {
+    const githubMap: Record<Language, string> = {
+      br: "Open Source & Código",
+      pt: "Open Source & Código",
+      en: "Open Source & Code",
+      es: "Código Abierto & Código",
+      fr: "Open Source & Code",
+      de: "Open Source & Code",
+      it: "Open Source & Codice",
+      nl: "Open Source & Code",
+      ru: "Open Source & Код",
+      ar: "المصدر المفتوح والبرمجة",
+      jp: "オープンソース & コード",
+      kr: "오픈소스 & 코드",
+      cn: "开源与代码",
+      vn: "Mã nguồn mở & Code",
+      id: "Open Source & Kode",
+    };
+    return (githubMap[language] || "Open Source & Código").toUpperCase();
   }
   const map: Record<string, string> = {
     "sobre-mim": "Perfil",
@@ -406,6 +428,7 @@ function DetailPanel({
   item,
   onClose,
   isDesktop,
+  isPhoneMockup = false,
   isClosing,
   onAnimationEnd,
   origin,
@@ -418,6 +441,7 @@ function DetailPanel({
   item: DetailableItem;
   onClose: () => void;
   isDesktop: boolean;
+  isPhoneMockup?: boolean;
   isClosing?: boolean;
   onAnimationEnd?: () => void;
   origin?: { x: string; y: string };
@@ -471,9 +495,20 @@ function DetailPanel({
           <div className={`w-full h-[1px] transition-colors duration-500 ${isDark ? 'bg-stone-700' : 'bg-aster-dark/[0.08]'}`} />
         </div>
 
-        {/* iPad physical circular home button (desktop tablet) */}
-        {isDesktop && (
-          <div className={`relative flex justify-center py-4 shrink-0 transition-colors duration-500 ${panelBg}`}>
+        {/* Bottom Navigation: Phone pill in desktop phone companion; Physical circular button on tablet and standalone mobile */}
+        {isPhoneMockup ? (
+          <div className={`shrink-0 flex justify-center pb-2.5 pt-1 transition-colors duration-500 ${panelBg}`}>
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Voltar ao início"
+              className="group py-1 px-4 cursor-pointer"
+            >
+              <div className={`w-28 h-1 rounded-full transition-colors duration-500 group-hover:bg-aster-accent/60 ${isDark ? 'bg-white/20' : 'bg-aster-dark/20'}`} />
+            </button>
+          </div>
+        ) : (
+          <div className={`relative flex justify-center ${isDesktop ? 'py-4' : 'py-3 pb-[max(0.75rem,env(safe-area-inset-bottom,12px))]'} shrink-0 transition-colors duration-500 ${panelBg}`}>
             <div
               className={`absolute inset-0 pointer-events-none transition-colors duration-500 ${
                 isDark
@@ -484,27 +519,13 @@ function DetailPanel({
             <button
               type="button"
               onClick={onClose}
-              className={`home-btn relative z-10 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ${
+              className={`home-btn relative z-10 w-12 h-12 @tablet:w-14 @tablet:h-14 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ${
                 isDark
-                  ? "bg-stone-900/50 border border-stone-700 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)] hover:bg-stone-800"
-                  : "bg-black/[0.02] border border-aster-dark/10 shadow-[inset_0_3px_6px_rgba(0,0,0,0.08)] hover:bg-black/[0.04]"
+                  ? "bg-stone-900/80 border border-stone-700 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)] hover:bg-stone-800"
+                  : "bg-aster-beige-dark/80 border border-aster-dark/10 shadow-[inset_0_3px_6px_rgba(0,0,0,0.08)] hover:bg-aster-beige-dark"
               }`}
               aria-label={ui?.homeButton || "Botão Home"}
             />
-          </div>
-        )}
-
-        {/* Bottom bar pill (phone only) */}
-        {!isDesktop && (
-          <div className={`shrink-0 flex justify-center pb-2.5 pt-1 transition-colors duration-500 ${panelBg}`}>
-            <button
-              type="button"
-              onClick={onClose}
-              aria-label="Voltar ao início"
-              className="group py-1 px-4 cursor-pointer"
-            >
-              <div className={`w-28 h-1 rounded-full transition-colors duration-500 group-hover:bg-aster-accent/60 ${isDark ? 'bg-white/20' : 'bg-aster-dark/20'}`} />
-            </button>
           </div>
         )}
       </div>
@@ -647,7 +668,7 @@ function DetailPanel({
             </h2>
 
             {/* Tags */}
-            {item.id !== "sobre-mim" && (Boolean(item.appUrl) || (item.tags && item.tags.length > 0)) && (
+            {item.id !== "sobre-mim" && item.id !== "github" && (Boolean(item.appUrl) || (item.tags && item.tags.length > 0)) && (
               <div className="flex flex-wrap gap-1.5 mb-6">
                 {item.appUrl && (
                   <span
@@ -672,7 +693,7 @@ function DetailPanel({
               </div>
             )}
 
-            {/* Curriculum Detail, About Me Detail or Standard Resumo */}
+            {/* Curriculum Detail, About Me Detail, GitHub Detail or Standard Resumo */}
             {item.id === "curriculo" ? (
               <CurriculumDetail
                 isDark={isDark}
@@ -682,6 +703,14 @@ function DetailPanel({
               />
             ) : item.id === "sobre-mim" ? (
               <AboutMeDetail
+                isDark={isDark}
+                isDesktop={isDesktop}
+                language={language}
+                links={item.links}
+                onOpenApp={onOpenApp}
+              />
+            ) : item.id === "github" ? (
+              <GitHubDetail
                 isDark={isDark}
                 isDesktop={isDesktop}
                 language={language}
@@ -792,9 +821,20 @@ function DetailPanel({
         <div className={`w-full h-[1px] transition-colors duration-500 ${isDark ? 'bg-stone-700' : 'bg-aster-dark/[0.08]'}`} />
       </div>
 
-      {/* iPad physical circular home button (desktop tablet) */}
-      {isDesktop && (
-        <div className={`relative flex justify-center py-4 shrink-0 transition-colors duration-500 ${panelBg}`}>
+      {/* Bottom Navigation: Phone pill in desktop phone companion; Physical circular button on tablet and standalone mobile */}
+      {isPhoneMockup ? (
+        <div className={`shrink-0 flex justify-center pb-2.5 pt-1 transition-colors duration-500 ${panelBg}`}>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Voltar ao início"
+            className="group py-1 px-4 cursor-pointer"
+          >
+            <div className={`w-28 h-1 rounded-full transition-colors duration-500 group-hover:bg-aster-accent/60 ${isDark ? 'bg-white/20' : 'bg-aster-dark/20'}`} />
+          </button>
+        </div>
+      ) : (
+        <div className={`relative flex justify-center ${isDesktop ? 'py-4' : 'py-3 pb-[max(0.75rem,env(safe-area-inset-bottom,12px))]'} shrink-0 transition-colors duration-500 ${panelBg}`}>
           <div
             className={`absolute inset-0 pointer-events-none transition-colors duration-500 ${
               isDark
@@ -805,27 +845,13 @@ function DetailPanel({
           <button
             type="button"
             onClick={onClose}
-            className={`home-btn relative z-10 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ${
+            className={`home-btn relative z-10 w-12 h-12 @tablet:w-14 @tablet:h-14 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ${
               isDark
-                ? "bg-stone-900/50 border border-stone-700 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)] hover:bg-stone-800"
-                : "bg-black/[0.02] border border-aster-dark/10 shadow-[inset_0_3px_6px_rgba(0,0,0,0.08)] hover:bg-black/[0.04]"
+                ? "bg-stone-900/80 border border-stone-700 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)] hover:bg-stone-800"
+                : "bg-aster-beige-dark/80 border border-aster-dark/10 shadow-[inset_0_3px_6px_rgba(0,0,0,0.08)] hover:bg-aster-beige-dark"
             }`}
             aria-label={ui?.homeButton || "Botão Home"}
           />
-        </div>
-      )}
-
-      {/* Bottom bar pill (phone only) */}
-      {!isDesktop && (
-        <div className={`shrink-0 flex justify-center pb-2.5 pt-1 transition-colors duration-500 ${panelBg}`}>
-          <button
-            type="button"
-            onClick={onClose}
-            aria-label="Voltar ao início"
-            className="group py-1 px-4 cursor-pointer"
-          >
-            <div className={`w-28 h-1 rounded-full transition-colors duration-500 group-hover:bg-aster-accent/60 ${isDark ? 'bg-white/20' : 'bg-aster-dark/20'}`} />
-          </button>
         </div>
       )}
     </div>
@@ -2272,18 +2298,44 @@ export default function App() {
 
   const handleOpenAppById = useCallback(
     (appId: string) => {
-      const item = HOME_ITEMS.find((i) => i.id === appId);
-      if (!item) return;
-      if (isFolder(item)) {
+      let foundItem: GridItem | null = null;
+      let parentFolder: FolderItem | null = null;
+      let foundIndex = 0;
+
+      for (let i = 0; i < HOME_ITEMS.length; i++) {
+        const item = HOME_ITEMS[i];
+        if (item.id === appId) {
+          foundItem = item;
+          foundIndex = i;
+          break;
+        }
+        if (isFolder(item)) {
+          const childIndex = item.children.findIndex((c) => c.id === appId);
+          if (childIndex !== -1) {
+            foundItem = item.children[childIndex];
+            parentFolder = item;
+            foundIndex = childIndex;
+            break;
+          }
+        }
+      }
+
+      if (!foundItem) return;
+
+      if (isFolder(foundItem)) {
         closePhoneDetail();
         closeTabletDetail();
-        setOpenFolder(item);
-      } else {
-        setPhoneDetail(item);
-        setTabletDetail(item);
+        setOpenFolder(foundItem);
+      } else if (isDetailable(foundItem)) {
+        if (parentFolder) {
+          setOpenFolder(parentFolder);
+        }
+        setFocusedIndex(foundIndex);
+        setPhoneDetail(foundItem);
+        setTabletDetail(foundItem);
         setIsPhoneClosing(false);
         setIsTabletClosing(false);
-        window.history.replaceState({}, '', `${window.location.pathname}?app=${item.id}`);
+        window.history.replaceState({}, '', `${window.location.pathname}?app=${foundItem.id}`);
       }
     },
     [HOME_ITEMS, closePhoneDetail, closeTabletDetail]
@@ -2512,6 +2564,7 @@ export default function App() {
           <ChatBot
             onClose={closePhoneDetail}
             isDesktop={false}
+            isPhoneMockup={isDesktop}
             isClosing={isPhoneClosing}
             onAnimationEnd={
               isPhoneClosing
@@ -2552,6 +2605,7 @@ export default function App() {
             item={phoneDetail}
             onClose={closePhoneDetail}
             isDesktop={false}
+            isPhoneMockup={isDesktop}
             isClosing={isPhoneClosing}
             onAnimationEnd={
               isPhoneClosing
@@ -2597,14 +2651,12 @@ export default function App() {
       {!isDesktop && (
         <div ref={containerRef} className={`@container w-full h-[100dvh] flex flex-col relative transition-colors duration-500 ${isDark ? 'bg-stone-900' : 'bg-aster-beige'}`}>
           {phoneContent}
-          {/* Floating home button — visible on home, folders, and standard info details; hidden during live iframe apps */}
-          {(!phoneDetail || !phoneDetail.appUrl) && (
+          {/* Floating home button on mobile — only on home grid and folders; hidden when any detail or app is open */}
+          {!phoneDetail && (
             <HomeButton
               isDark={isDark}
               onClick={
-                phoneDetail
-                  ? closePhoneDetail
-                  : openFolder
+                openFolder
                   ? goBackFromFolder
                   : goHome
               }

@@ -4,12 +4,6 @@ import {
   Cpu,
   Database,
   Cloud,
-  Monitor,
-  VideoCamera,
-  FilmStrip,
-  Gauge,
-  Flame,
-  CheckCircle,
 } from "@phosphor-icons/react";
 import { isImageIcon, type DetailableItem, type Language } from "../data/aster";
 import { PreviewVisual } from "./PreviewVisual";
@@ -40,15 +34,6 @@ export function StudioOSPhoneCompanion({
   const staticCardBg = isDark
     ? "bg-stone-700/40 border-stone-600/70"
     : "bg-aster-beige-dark/50 border-aster-dark/[0.08]";
-
-  const appUrl = item.appUrl || "https://studio.asterdev.me/";
-  const githubUrl =
-    item.links.find(
-      (l) =>
-        l.icon === "file-code" ||
-        l.title.toLowerCase().includes("código") ||
-        l.title.toLowerCase().includes("source")
-    )?.url || "https://github.com/zAstergun/StudioOS";
 
   const toolCategories = [
     {

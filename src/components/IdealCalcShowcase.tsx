@@ -11,11 +11,9 @@ import {
   ArrowLeft,
   ArrowRight,
   X,
-  ChartBar,
   Calculator,
   Database,
   ShareNetwork,
-  UsersThree,
   Heart,
   Sliders,
 } from "@phosphor-icons/react";

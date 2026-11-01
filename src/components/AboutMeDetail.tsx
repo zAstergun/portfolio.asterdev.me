@@ -1,4 +1,3 @@
-import React from "react";
 import {
   TerminalWindow,
   Cpu,
@@ -920,6 +919,65 @@ const ABOUT_I18N: Record<Language, AboutTranslations> = {
     certsCardAction: "Xem Chứng chỉ",
 
     secContact: "Kết nối & Liên hệ",
+  },
+
+  id: {
+    tagline: "Membangun aplikasi web berdampak tinggi dengan memadukan antarmuka yang lancar, pola pikir sistem tingkat rendah, dan ketelitian teknis tanpa kompromi.",
+    quote: "Minat saya dalam pemrograman tidak dimulai dari teori, melainkan dari membedah sistem secara langsung dan memahami bagaimana mesin beroperasi pada tingkat rendah.",
+
+    secOrigin: "Asal Usul & Rasa Ingin Tahu Praktis",
+    originTitle: "Dari Server Game & Cheat ke Rekayasa Perangkat Lunak yang Kuat",
+    originP1: "Pintu masuk saya bukan dari tutorial umum. Di masa remaja, rasa ingin tahu analitis muncul dari mengelola server game khusus dan rekayasa balik (reverse engineering) biner untuk membuat cheat.",
+    originP2: "Eksplorasi langsung ini menuntut pemahaman dini tentang manajemen memori: pointer, offset, injeksi proses, dan penyadapan paket TCP/UDP mentah.",
+    originP3: "Kini, dorongan analitis yang sama disalurkan ke rekayasa web modern: merancang sistem tangguh, arsitektur aman, antarmuka berkualitas tinggi, dan performa tanpa pemborosan.",
+    originPills: ["Rekayasa Balik", "Manajemen Memori", "Inspeksi Paket", "Keamanan Web"],
+
+    secPillars: "Filosofi Rekayasa",
+    pillar1Title: "Pengetikan Ketat & TypeScript",
+    pillar1Desc: "Kontrak tipe ekspresif dan aman. Kode yang memverifikasi dirinya sendiri saat kompilasi, mencegah regresi dan siap berkembang tanpa cemas.",
+    pillar2Title: "Performa Obsesif",
+    pillar2Desc: "Animasi stabil 60fps, skor Core Web Vitals sempurna, tanpa pergeseran tata letak (layout shift), dan interaksi mikro taktil yang dirancang presisi.",
+    pillar3Title: "Rekayasa Berbantuan AI",
+    pillar3Desc: "Penguasaan mendalam atas Claude, Codex, dan alur konteks terotomatisasi untuk melipatgandakan produktivitas rekayasa dengan kualitas tertinggi.",
+    pillar4Title: "Kepemimpinan Teknis & Komunitas",
+    pillar4Desc: "Pendiri komunitas akademik pengembang, mengelola repositori GitHub, tinjauan kode yang ketat, dan memajukan open-source.",
+
+    secBeyond: "Di Luar Kode: Kebiasaan & Minat",
+    disciplineTitle: "Disiplin & Ketahanan",
+    disciplineDesc: "Latihan ketahanan harian dalam lari, bersepeda, dan renang (latihan triathlon) sebagai rutinitas konsistensi yang memperkuat resiliensi mental untuk menyelesaikan masalah kompleks.",
+    languagesTitle: "Bahasa Mandarin & Jepang",
+    languagesDesc: "Bahasa Portugis asli, bahasa Inggris fasih, dan pembelajaran aktif bahasa-bahasa Asia Timur untuk mempertajam ketangkasan kognitif dan pemikiran terstruktur.",
+    esportsTitle: "Esports Kompetitif & Strategi",
+    esportsDesc: "Analisis taktis skena esports global secara real-time dan eksekusi strategi terarah di bawah tekanan.",
+
+    metricEducationTitle: "Pendidikan",
+    metricEducationValue: "Semester ke-6",
+    metricEducationSubtitle: "Ilmu Komputer (UniAmérica)",
+
+    metricFocusTitle: "Fokus Utama",
+    metricFocusValue: "Frontend & UI",
+    metricFocusSubtitle: "TypeScript, React & Arsitektur",
+
+    metricCertsTitle: "Sertifikasi",
+    metricCertsValue: "37 Resmi",
+    metricCertsSubtitle: "Terverifikasi (IoT, AI, Web)",
+
+    metricCommunityTitle: "Komunitas",
+    metricCommunityValue: "Tech Lead",
+    metricCommunitySubtitle: "Mentoring & Open Source",
+
+    secExplore: "Ekosistem & Pintasan Interaktif",
+    botCardTitle: "Ngobrol dengan AsterBot",
+    botCardDesc: "Tanyakan tentang perjalanan rekayasa, proyek, dan pola pikir arsitektur saya melalui asisten AI.",
+    botCardAction: "Buka AsterBot",
+    cvCardTitle: "Curriculum Vitae Lengkap",
+    cvCardDesc: "Lihat latar belakang akademis terperinci, keahlian teknis lengkap, dan unduh dokumen resmi (PDF, DOCX).",
+    cvCardAction: "Lihat CV",
+    certsCardTitle: "37 Sertifikasi Resmi",
+    certsCardDesc: "Jelajahi semua sertifikasi terverifikasi di bidang IoT, AI, TypeScript, React, dan Rekayasa Perangkat Lunak.",
+    certsCardAction: "Lihat Sertifikasi",
+
+    secContact: "Koneksi & Jaringan",
   },
 };
 

@@ -4,10 +4,8 @@ import {
   ArrowRight,
   Sparkle,
   Cpu,
-  ShieldCheck,
   ChartBar,
   Database,
-  Sliders,
 } from "@phosphor-icons/react";
 import { isImageIcon, type DetailableItem, type Language } from "../data/aster";
 

@@ -83,7 +83,7 @@ describe("geminiChatService", () => {
       expect(response).toBeDefined();
       expect(response.text.length).toBeGreaterThan(0);
       expect(["gemini", "heuristic"]).toContain(response.source);
-    });
+    }, 15000);
   });
 });
 

@@ -28,6 +28,7 @@ export interface ChatMessage {
 interface ChatBotProps {
   onClose: () => void;
   isDesktop: boolean;
+  isPhoneMockup?: boolean;
   isClosing?: boolean;
   onAnimationEnd?: () => void;
   origin?: { x: string; y: string };
@@ -41,6 +42,7 @@ interface ChatBotProps {
 export function ChatBot({
   onClose,
   isDesktop,
+  isPhoneMockup = false,
   isClosing,
   onAnimationEnd,
   origin,
@@ -493,9 +495,20 @@ export function ChatBot({
         </div>
       )}
 
-      {/* iPad physical home button (desktop) */}
-      {isDesktop && (
-        <div className={`relative flex justify-center py-4 shrink-0 transition-colors duration-500 ${panelBg}`}>
+      {/* Bottom Navigation: Phone pill in desktop phone companion; Physical circular button on tablet and standalone mobile */}
+      {isPhoneMockup ? (
+        <div className={`shrink-0 flex justify-center pb-2.5 pt-1 transition-colors duration-500 ${panelBg}`}>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Voltar ao início"
+            className="group py-1 px-4 cursor-pointer"
+          >
+            <div className={`w-28 h-1 rounded-full transition-colors duration-500 group-hover:bg-aster-accent/60 ${isDark ? 'bg-white/20' : 'bg-aster-dark/20'}`} />
+          </button>
+        </div>
+      ) : (
+        <div className={`relative flex justify-center ${isDesktop ? 'py-4' : 'py-3 pb-[max(0.75rem,env(safe-area-inset-bottom,12px))]'} shrink-0 transition-colors duration-500 ${panelBg}`}>
           <div
             className={`absolute inset-0 pointer-events-none transition-colors duration-500 ${
               isDark
@@ -506,10 +519,10 @@ export function ChatBot({
           <button
             type="button"
             onClick={onClose}
-            className={`home-btn relative z-10 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ${
+            className={`home-btn relative z-10 w-12 h-12 @tablet:w-14 @tablet:h-14 rounded-full flex items-center justify-center cursor-pointer transition-all duration-500 ${
               isDark
-                ? "bg-stone-900/50 border border-stone-700 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)] hover:bg-stone-800"
-                : "bg-black/[0.02] border border-aster-dark/10 shadow-[inset_0_3px_6px_rgba(0,0,0,0.08)] hover:bg-black/[0.04]"
+                ? "bg-stone-900/80 border border-stone-700 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)] hover:bg-stone-800"
+                : "bg-aster-beige-dark/80 border border-aster-dark/10 shadow-[inset_0_3px_6px_rgba(0,0,0,0.08)] hover:bg-aster-beige-dark"
             }`}
             aria-label={ui?.homeButton || "Botão Home"}
           />

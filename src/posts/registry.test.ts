@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { getBlogPosts, getBlogPostById } from "./registry";
-import { LANGUAGES, type Language } from "../data/aster";
+import { LANGUAGES } from "../data/aster";
 
 describe("Blog Posts i18n Verification", () => {
   it("should have all 15 languages registered", () => {
