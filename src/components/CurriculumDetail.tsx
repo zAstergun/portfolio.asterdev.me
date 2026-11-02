@@ -484,7 +484,7 @@ export function CurriculumDetail({
     : "bg-white/90 text-stone-700 border border-stone-200/90 hover:border-stone-300";
 
   return (
-    <div className={`space-y-8 ${isDesktop ? "max-w-2xl" : "w-full"}`}>
+    <div className={`space-y-8 ${isDesktop ? "max-w-4xl mx-auto w-full" : "w-full"}`}>
       {/* ── Resumo ── */}
       <div className="space-y-2">
         <h3 className={`text-xs @tablet:text-sm font-bold uppercase tracking-widest ${textFaint}`}>

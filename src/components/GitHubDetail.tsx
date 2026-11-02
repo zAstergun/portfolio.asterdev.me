@@ -1379,7 +1379,7 @@ export function GitHubDetail({
   };
 
   return (
-    <div className={`space-y-8 ${isDesktop ? "max-w-3xl" : "w-full"}`}>
+    <div className={`space-y-8 ${isDesktop ? "max-w-4xl mx-auto w-full" : "w-full"}`}>
       {/* ── 1. Hero Identity Card: Developer Profile ── */}
       <div
         className={`p-4 @tablet:p-6 rounded-2xl border transition-all ${cardBase} relative overflow-hidden`}

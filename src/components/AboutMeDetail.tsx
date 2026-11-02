@@ -1015,7 +1015,7 @@ export function AboutMeDetail({
     : "bg-white/60 border-stone-200/80 hover:border-stone-300 hover:bg-white";
 
   return (
-    <div className={`space-y-8 ${isDesktop ? "max-w-3xl" : "w-full"}`}>
+    <div className={`space-y-8 ${isDesktop ? "max-w-4xl mx-auto w-full" : "w-full"}`}>
       {/* ── Hero Pitch ── */}
       <div className="space-y-3.5">
         <p className={`text-base @tablet:text-lg font-medium leading-relaxed ${textPrimary}`}>

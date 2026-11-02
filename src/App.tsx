@@ -624,7 +624,7 @@ function DetailPanel({
             ui={ui}
           />
         ) : (
-          <>
+          <div className={isDesktop ? "max-w-4xl mx-auto w-full" : "w-full"}>
             {/* Icon */}
             <div
               className={`relative rounded-[22.5%] flex items-center justify-center shadow-md shrink-0 mb-3 ${
@@ -725,7 +725,7 @@ function DetailPanel({
                 </h3>
                 <p
                   className={`leading-relaxed transition-colors duration-500 mb-6 ${isDark ? 'text-stone-300' : 'text-aster-dark/80'} ${
-                    isDesktop ? "text-base max-w-2xl" : "text-xs @tablet:text-sm"
+                    isDesktop ? "text-base w-full" : "text-xs @tablet:text-sm"
                   } whitespace-pre-wrap`}
                 >
                   {item.summary}
@@ -739,7 +739,7 @@ function DetailPanel({
                     </h3>
                     <div
                       className={`grid gap-2.5 ${
-                        isDesktop ? "grid-cols-2 max-w-2xl" : "grid-cols-1"
+                        isDesktop ? "grid-cols-2 w-full" : "grid-cols-1"
                       }`}
                     >
                       {item.links.map((link) => {
@@ -798,7 +798,7 @@ function DetailPanel({
 
             {/* Preview Visual */}
             {item.previewMedia && (
-              <div className="mb-6">
+              <div className="mb-6 w-full">
                 <h3 className={`text-xs font-bold uppercase tracking-widest mb-3 transition-colors duration-500 ${panelFaint}`}>
                   Preview
                 </h3>
@@ -812,7 +812,7 @@ function DetailPanel({
                 />
               </div>
             )}
-          </>
+          </div>
         )}
       </div>
 
