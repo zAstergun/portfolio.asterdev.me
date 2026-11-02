@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import githubContributionsData from "../data/githubContributions.json";
 import {
   GithubLogo,
   GitBranch,
@@ -1302,9 +1303,9 @@ export function GitHubDetail({
     followers: number;
     avatarUrl: string;
   }>({
-    publicRepos: 18,
-    followers: 17,
-    avatarUrl: "https://avatars.githubusercontent.com/u/73000882?v=4",
+    publicRepos: githubContributionsData.publicRepos ?? 18,
+    followers: githubContributionsData.followers ?? 17,
+    avatarUrl: githubContributionsData.avatarUrl ?? "https://avatars.githubusercontent.com/u/73000882?v=4",
   });
 
   useEffect(() => {
@@ -1318,9 +1319,9 @@ export function GitHubDetail({
           const data = await res.json();
           if (isMounted) {
             setLiveStats({
-              publicRepos: data.public_repos ?? 18,
-              followers: data.followers ?? 17,
-              avatarUrl: data.avatar_url ?? "https://avatars.githubusercontent.com/u/73000882?v=4",
+              publicRepos: data.public_repos ?? githubContributionsData.publicRepos ?? 18,
+              followers: data.followers ?? githubContributionsData.followers ?? 17,
+              avatarUrl: data.avatar_url ?? githubContributionsData.avatarUrl ?? "https://avatars.githubusercontent.com/u/73000882?v=4",
             });
           }
         }
@@ -1334,7 +1335,14 @@ export function GitHubDetail({
     };
   }, []);
 
-  const heatmapMatrix = useMemo(() => generateHeatmapData(), []);
+  const heatmapMatrix = useMemo<Array<Array<{ level: number; count?: number; date?: string }>>>(() => {
+    if (Array.isArray(githubContributionsData?.weeks) && githubContributionsData.weeks.length > 0) {
+      return githubContributionsData.weeks as Array<Array<{ level: number; count?: number; date?: string }>>;
+    }
+    return generateHeatmapData().map((week) =>
+      week.map((level) => ({ level, count: level * 3 }))
+    );
+  }, []);
 
   // Theme palettes matching Aster OS
   const textPrimary = isDark ? "text-stone-100" : "text-stone-900";
@@ -1567,7 +1575,9 @@ export function GitHubDetail({
             </h4>
           </div>
           <span className="text-[11px] font-mono text-emerald-600 dark:text-emerald-400 font-semibold">
-            {t.heatmapCommitsCount}
+            {githubContributionsData.totalContributions
+              ? `${githubContributionsData.totalContributions.toLocaleString()} commits`
+              : t.heatmapCommitsCount}
           </span>
         </div>
 
@@ -1586,18 +1596,24 @@ export function GitHubDetail({
             <div className="flex gap-[3.5px] min-w-max">
               {heatmapMatrix.map((week, wIdx) => (
                 <div key={wIdx} className="flex flex-col gap-[3.5px]">
-                  {week.map((level, dIdx) => {
+                  {week.map((day, dIdx) => {
+                    const level = day.level ?? 0;
+                    const count = day.count ?? 0;
                     let tileColor = isDark ? "bg-stone-800/90" : "bg-stone-200/80";
                     if (level === 1) tileColor = isDark ? "bg-emerald-950" : "bg-emerald-100";
                     if (level === 2) tileColor = isDark ? "bg-emerald-800" : "bg-emerald-300";
                     if (level === 3) tileColor = isDark ? "bg-emerald-600" : "bg-emerald-500";
                     if (level === 4) tileColor = isDark ? "bg-emerald-400" : "bg-emerald-600";
 
+                    const tooltipText = day.date
+                      ? `${count} commit${count === 1 ? "" : "s"} em ${day.date}`
+                      : `Semana ${wIdx + 1}, Dia ${dIdx + 1}: ${count} commits`;
+
                     return (
                       <span
                         key={dIdx}
                         className={`w-[11px] h-[11px] rounded-[2px] transition-transform hover:scale-125 cursor-pointer ${tileColor}`}
-                        title={`Semana ${wIdx + 1}, Dia ${dIdx + 1}: ${level * 3} commits`}
+                        title={tooltipText}
                       />
                     );
                   })}
@@ -1611,7 +1627,11 @@ export function GitHubDetail({
             <div className="flex flex-wrap items-center gap-3">
               <div className="flex items-center gap-1.5">
                 <CheckCircle weight="fill" className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>{t.heatmapStreak}</span>
+                <span>
+                  {githubContributionsData.currentStreak > 0
+                    ? `Streak: ${githubContributionsData.currentStreak} dias`
+                    : t.heatmapStreak}
+                </span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Sparkle weight="fill" className="w-3.5 h-3.5 text-amber-500 shrink-0" />

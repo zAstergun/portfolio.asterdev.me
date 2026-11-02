@@ -1,0 +1,41 @@
+name: Sync GitHub Contributions
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC (00:00 BRT)
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from the GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest contributions from GitHub
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-github-contributions.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/githubContributions.json
+          if git diff --staged --quiet; then
+            echo "No changes in contributions data."
+          else
+            git commit -m "chore(data): auto-sync github contributions [skip ci]"
+            git push
+          fi
+

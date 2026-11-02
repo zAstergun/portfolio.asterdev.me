@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "translate": "node --env-file=.env scripts/translate.js",
+    "sync:github": "node scripts/sync-github-contributions.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },
