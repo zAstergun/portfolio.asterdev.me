@@ -309,7 +309,7 @@ export function getHomeItems(lang: Language, itemsText: TranslationDict["items"]
           type: "project",
           id: "soul-fighter-memory",
           name: itemsText.soulName,
-          icon: "/icons/memory.png",
+          icon: "/icons/memory.svg",
           gradient: ["#6c5ce7", "#a29bfe"],
           summary: itemsText.soulSummary,
           links: [

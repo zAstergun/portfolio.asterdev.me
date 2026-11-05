@@ -106,11 +106,11 @@ export function SoulFighterShowcase({
           <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-6">
             {/* Chibi Icon Avatar */}
             <div className="relative group shrink-0">
-              <div className="w-24 h-24 md:w-28 md:h-28 rounded-2xl overflow-hidden border-2 border-[#ff4655]/60 shadow-[0_0_24px_rgba(255,70,85,0.4)] bg-[#1a0f2e]">
+              <div className="w-24 h-24 md:w-28 md:h-28 rounded-2xl overflow-hidden border-2 border-[#ff4655]/60 shadow-[0_0_24px_rgba(255,70,85,0.4)] bg-[#1a0f2e] p-2.5 flex items-center justify-center">
                 <img
-                  src={item.icon || "/icons/memory.png"}
+                  src={item.icon || "/icons/memory.svg"}
                   alt="Gwen Soul Fighter"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(255,70,85,0.4)]"
                 />
               </div>
               <span className="absolute -bottom-2 -right-2 px-2 py-0.5 rounded-md bg-gradient-to-r from-[#ff4655] to-[#705df2] text-[10px] font-black uppercase tracking-wider text-white shadow-md">
