@@ -13,10 +13,11 @@ interface ChatRequestBody {
 }
 
 const CANDIDATE_MODELS = [
-  "gemini-2.5-flash",
-  "gemini-2.0-flash",
-  "gemini-2.0-flash-lite",
-  "gemini-1.5-flash",
+  "gemini-flash-lite-latest",
+  "gemini-3.1-flash-lite",
+  "gemini-3.5-flash-lite",
+  "gemini-3.5-flash",
+  "gemini-flash-latest",
 ];
 
 const ASTER_SYSTEM_INSTRUCTION = `Você é o AsterBot, o assistente oficial e alter-ego de inteligência artificial do portfólio de Douglas Luiz (conhecido como Aster ou Astergun), desenvolvedor mobile e de software.
@@ -71,12 +72,11 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
 
   for (const model of CANDIDATE_MODELS) {
     try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
       const geminiRes = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-goog-api-key": apiKey,
         },
         body: JSON.stringify({
           systemInstruction: {
@@ -100,7 +100,7 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
         continue;
       }
 
-      const data = await geminiRes.json();
+      const data = (await geminiRes.json()) as any;
       const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text;
       if (generatedText && generatedText.trim()) {
         return new Response(
