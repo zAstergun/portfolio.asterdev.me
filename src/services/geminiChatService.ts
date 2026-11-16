@@ -46,7 +46,7 @@ function getStorage(): { getItem: (k: string) => string | null; setItem: (k: str
 }
 
 /**
- * Retrieves the Gemini API key from localStorage or Vite environment variable.
+ * Retrieves the Gemini API key from user localStorage (nunca de variáveis de frontend).
  */
 export function getGeminiApiKey(): string {
   const storage = getStorage();
@@ -55,12 +55,6 @@ export function getGeminiApiKey(): string {
     if (customKey && customKey.trim().length > 0) {
       return customKey.trim();
     }
-  }
-
-  // Vite environment variable
-  const envKey = import.meta.env.VITE_GEMINI_API_KEY;
-  if (typeof envKey === "string" && envKey.trim().length > 0) {
-    return envKey.trim();
   }
 
   return "";
@@ -440,10 +434,40 @@ export async function sendChatMessage(
   history: AIChatMessage[] = [],
   currentLang: string = "br"
 ): Promise<AIChatResponse> {
-  const apiKey = getGeminiApiKey();
+  const customApiKey = getGeminiApiKey();
 
-  // If no API key is available, fallback immediately to the rich heuristic classifier
-  if (!apiKey) {
+  // 1. Se o usuário não configurou chave pessoal, consulta o backend proxy seguro da Cloudflare (/api/chat)
+  if (!customApiKey) {
+    try {
+      const serverRes = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        signal: AbortSignal.timeout(6000),
+        body: JSON.stringify({
+          userMessage,
+          history,
+          currentLang,
+        }),
+      });
+
+      if (serverRes.ok) {
+        const serverData = await serverRes.json();
+        if (serverData?.text) {
+          const enriched = enrichActionsAndSuggestions(userMessage, serverData.text, currentLang);
+          return {
+            text: serverData.text,
+            source: "gemini",
+            modelUsed: serverData.modelUsed || "gemini-serverless",
+            actions: enriched.actions,
+            suggestions: enriched.suggestions,
+          };
+        }
+      }
+    } catch {
+      // Falha de rede ou ambiente local sem Cloudflare Pages proxy
+    }
+
+    // Fallback instantâneo para o motor heurístico rico do site
     const heuristicResult: ClassifierResult = classifyIntent(userMessage, currentLang);
     return {
       text: heuristicResult.response,
@@ -452,6 +476,8 @@ export async function sendChatMessage(
       suggestions: heuristicResult.suggestions,
     };
   }
+
+  const apiKey = customApiKey;
 
   // Format conversational contents for Gemini API
   const contents = [
